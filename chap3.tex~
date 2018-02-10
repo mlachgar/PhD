@@ -1,0 +1,17 @@
+
+\chapter{Structure des réseaux complexes}
+
+\minitoc
+
+\section{Introduction}
+aaaaaaaaaaaaaa
+\section{Les réseaux scale-free non corrélé}
+\section{L'existence de la composante géante}
+\section{Structure des couches dans un réseau scale-free non corrélé}
+        \subsection{Intorduction}
+        \subsection{Expression théorique et simulations numériques}
+    
+\section{Plus court chemin dans un réseau scale-free non corrélé }
+   \subsection{Introduction}
+   \subsection{Expression théorique et simulations numériques}
+\section{conclusion} 

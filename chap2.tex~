@@ -1,0 +1,16 @@
+% contenu du fichier : chap2.tex
+%
+\chapter{Les réseaux croissance avec l'attachement préférentielle}
+
+\minitoc
+
+\section{Introduction}
+On remet une petite couche de biblio\cite{Kresse1993}. Toujours pour voir si la
+bibliographie est bonne\cite{Kresse1996}.
+\section{Propriétés des réseaux de l'attachement préférentielle}
+\section{Les réseaux de l'attachement préférentielle non linéaire}
+\section{Attachement préférentielle sans l'effet "rich get richer "}
+   \subsection{Introduction}
+   \subsection{Degré de distribution}
+   \subsection{Comparaison au niveau microscopique avec le modèle de BA}
+\section{conclusion}

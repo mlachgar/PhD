@@ -1,0 +1,17 @@
+%
+% contenu du fichier : intro.tex
+%
+\chapter*{Résumé}
+% pour faire apparaitre l'introduction dans le sommaire et que les minitocs soient au bon
+% endroit
+%\addstarredchapter{Introduction générale}  
+% Pour que l'entete soit correcte car chapter* ne redefinit pas l'entete.
+%\markboth{INTRODUCTION}{}
+\addstarredchapter{Résumé} 
+
+................\
+concernant la comprhénsion de la mécanisme 'riche get richer' dans le modèle Barabazi-Albert, la structure des 
+couches dans les réseaux libre-échelle et en fin on va faire un profond étude théorique sur la structure de modèle des NW afin
+de bien comprendre propriét, soit par proposé des modèles ou par résoudres quelques problèmes concernant la comportemant et la
+structure des réseaux complexes.
+ 

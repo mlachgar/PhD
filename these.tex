@@ -1,0 +1,65 @@
+\documentclass[12pt,french]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[frenchb]{babel}
+\usepackage{microtype}
+\usepackage{lipsum}
+\usepackage{caption}
+\usepackage{cite}
+%\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning}
+\usepackage[nottoc, notlot]{tocbibind} 
+%\usepackage[nottoc, notlof, notlot]{tocbibind}
+%\usepackage[nottoc]{tocbibind}
+\usepackage[french]{minitoc} 
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{booktabs}
+\geometry{hmargin=3cm,vmargin=3cm}
+\usepackage{epic,eepic,amssymb,amsmath,amsfonts}
+\usepackage{setspace}
+\linespread{1.5}
+% biblio ordonnee classique
+\bibliographystyle{unsrt} 
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1pt}
+%\fancyhead[C]{\textbf{page \thepage}} 
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{ }
+% biblio ordonnee classique
+\bibliographystyle{unsrt}
+\title{Contribution à la modélisation des réseaux complexes}
+\author{A. Lachgar}
+\date{\today}
+\begin{document}
+	\sffamily
+	%\ttfamily
+	%\bfseries
+\frontmatter  
+% le titre
+\maketitle
+\include{files/remers}
+\include{files/resume}
+% table des matieres generale
+\tableofcontents
+%insere la liste des tableaux
+\listoffigures
+% inclusion des chapitres
+\mainmatter
+\include{files/intro}
+\include{files/chap1}
+\include{files/chap2}
+\include{files/chap3}
+\include{files/chap4}
+\include{files/chap5}
+\include{files/conclu} 
+%\include{files/biblio}
+%\bibliographystyle{unsrt}
+ \bibliographystyle{acm}
+\bibliography{files/allbiblio}
+ \appendix
+% \include{files/annexe}
+\end{document}

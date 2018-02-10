@@ -1,0 +1,17 @@
+% contenu du fichier : chap4.tex
+%
+\chapter{Transition vers la propriété petit-monde dans le modèle petit-monde}
+ 
+\section{Introduction}
+Ici on cite un article de Dudarev\cite{Dudarev1998}, puis un sur 
+Bader\cite{Henkelman2006} et un petit dernier\cite{Blochl1994}. 
+Le tout pour tester la bibliographie.
+\subsection{Clustering}
+\subsection{Distribution de degré}
+\section{Le groupe de renormalisation et la théorie de champs moyen}
+\section{Structur des couches dans le modèle petit-monde}
+\subsection{Couches-aléatoires}
+\subsection{Couches-régulières}
+\section{Plus court chemin}
+\section{Transition spectaculaire vers la prepriété petit-monde}
+\section{Conclusion}

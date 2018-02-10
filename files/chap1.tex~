@@ -1,0 +1,504 @@
+% contenu du fichier : chap1.tex
+%
+\chapter{Notions et préliminaire}
+
+ \section{Les réseaux complexes}
+  \subsection{Définition}
+  Un \textit{réseau} est tous simplement une collection de points réunis sous forme de paires par lignes, les points sont 
+  appelés sommets ou nœuds et les lignes sont appelées liens ou vertices (Fig.1). Le mots \textit{complexe} est en général le
+  résultat de  l'évolution décentralisée et non planifiée dans ces réseaux. De nombreux objets d'intérêt dans les sciences
+  physiques, biologiques et sociales peuvent être considérés comme des réseaux complexes, cette nouvelle façons de penser
+  peuvent souvent conduire à des nouvelles et utiles idées. Alors Un réseau est une représentation simplifiée qui réduit un 
+  système à une structure abstraite capturant uniquement les bases des modèles de connexion.
+  Les noeuds et les liens d'un réseau peuvent être accompagné avec informations supplémentaires pour capturer plus de détails 
+  sur le système, même qu'il y a un inconvénient de perdue des informations dans le processus de réduction d'un système complet
+  à une représentation du réseau, mais il présente également des avantages.
+  \subsection{Différents exemples des Réseaux complexes}
+  L'étude des réseaux complexes a été inspiré par le désir de comprendre les différents systèmes réels, allant des réseaux
+  de communications aux réseaux écologiques. Ainsi, les bases de données empiriques disponibles pour l'étude couvrent plusieurs
+  disciplines, en générale, on les classé en quatre grands catégories: Réseaux Technologique, Réseaux Biologiques, Réseaux Sociales
+  et Réseaux d'Informations.
+  \subsubsection{Réseaux Technologique}
+  les réseaux technologiques sont de réseux artificiels, qui ont grandi au cours du siècle dernier et qui constituent un grand
+  partie de notre société moderne, comme les réseaux élictriques, réseaux téléphoniques, réseaux de transports,..ect \cite{Pi1965,Am-al2000,Do-al2007,Se-al2003}.
+  L'Internet est un parmi les exemples les plus connus et les plus largement étudiés des réseaux technologiques, on peut le définir
+  comme un réseau de données informatiques dans lequel les noeuds sont des ordinateurs et les liens sont des connexions de données
+  physiques entre eux, tels que des câbles à fibres optiques ou des lignes téléphoniques \cite{F-al1999,BC2001}. Il est curieux que, bien qu'Internet
+  est un réseau artificiel, nous ne connaissons pas exactement sa structure, nos meilleures données actuelles sur sa structure
+  proviennent d'études expérimentales.
+  Il existe un certain nombre d'excellentes raisons pratiques pour être intéressé à étudier la structure du réseau d'Internet,
+  la fonction d'Internet consiste à transporter des données entre des ordinateurs dans différentes parties du monde, ce qui se
+  fait en divisant les données en pièces ou en paquets et en les transportant du noeud vers noeud sur le réseau jusqu'à ce 
+  qu'ils atteignent leur destination, sans aucun doute, la structure du réseau affectera la manière dont il accomplit
+  efficacement cette fonction et si nous connaissons la structure du réseau, nous pouvons aborder de nombreuses questions et
+  problèmes de pertinence pratique.
+  \subsubsection{Réseaux Biologiques}
+  Une autre classe de réseaux les plus étudiées dans la littérature est celle des réseaux biologiques. Cette classe
+  contient une grande variété de réseaux naturels. Les corps soit humain ou animal contient un grand nombre de réseaux, dont 
+  certains se produisent dans l'espace réel, tels que le système nerveux. Ces réseaux ont été étudiés depuis longtemps \cite{WB1997}.
+  Une autre classe de réseau, ce sont les réseaux d'interactions gène-gène, gène-gène et protéines-protéines \cite{DM2003},
+  ainsi que les réseaux d'interactions entre les espèces dans les écosystèmes, comme la prédation ou la coopération.\\
+  
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{./figures/PPI.eps}
+\caption{A modular network is illustrated by means of the human proteome (data obtained from the DIP database: http://dip-doe-mbi.ucla.edu).
+Nodes are proteins and links indicate their physical (protein–protein) interaction}
+\label{PPI}
+\end{figure}
+
+  La structure de ces réseaux se différe selon chaque cas. Par exemple, les réseaux métaboliques sont des réseaux de protéines, interagissant
+  les uns avec les autres à l'intérieur de la cellule. Il s'agit d'un réseau dirigé, car chaque protéine peut catalyser ou 
+  réprimer la création de toutes les autres protéines, ce qui n'implique pas nécessairement le processus inverse. la structure
+  à grande échelle des réseaux métaboliques a été étudiée. On a conclu que, pour de nombreuses espèces, le réseau métabolique
+  est sans échelle \cite{Je-al2000}. De plus, il a été observé que le diamètre du réseau est très petit et est pratiquement 
+  indépendant de la taille du réseau. Cette indépendance s'explique par que certain classe de réseaux libre-échelle est
+  Ultra-small \cite{CH2003,Do-al2003,ChL2003}, d'une autre coté notre résultats du chapitre $3$ refore cette explication et indiquent que la dépendance du
+  diamètre sur $N$ est très faible. Dans les réseaux génétiques, les noeuds représentent des gènes, et les liens sont dirigés 
+  et représentent l'influence d'un gène sur un autre, le réseau E. coli est un des réseaux génétiques qui est bien étudiés dans
+  la littérature \cite{Mi-al2002}.
+
+
+  \subsubsection{Réseaux Sociales}
+  Un réseau social est un ensemble de noeuds, où ces noeuds se represent par des  personnes  (individus ou groupes sociaux) et
+  les liens par une relation parmi les différents types qui peuvent être exister (parenté, amitié, statut, affaires,...) 
+  \cite{JS2000}, cette diversité des liens est une chose apprécier dans l'étude des réseaux sociaux, car il existe de
+  nombreuses définitions possibles d'un tel réseau et la définition particulière que l'on utilisera dépendra des questions
+  auxquelles on est intéressé à répondre. Tel que les réseaux d'amitiés entre les individus \cite{WW1977,Mo1934}, les relations
+  d'affaires entre les entreprises \cite{JP1977}.
+  La société offre une grande variété d'organisations de groupes possibles: les familles, les milieux de travail et d'amitié,
+  les villages, les villes, les nations. La diffusion d'Internet a également conduit à la création de groupes virtuels, en 
+  direct sur le Web, comme Facebook qui reliant presque tous  notre monde entier (voir Fig\ref{Facebook}).
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.18]{./figures/Facebook.eps}
+\caption{Le 'Social Graph' derrière Facebook, Friendship graph 500 mln people\\
+image by Paul Butley, 2010.}
+\label{Facebook}
+\end{figure}
+  \subsubsection{Réseaux d'informations}        
+ Les  réseaux de citation de divers types et le World Wide Web (WWW) sont un bon exemple des réseaux d'informations, car leur 
+ contenues d'informations étant stockée dans les noeuds, c’est pour cette raison que l’on utilise le terme réseau
+ d’informations. Parfois on rencontre une certaine confusion à propos de réseau  WWW  et le réseau d'Internet. Dans la WWW, 
+ les nœuds sont les pages HTML, et les bords représentent les liens entre les pages. d'autre part dans l'Internet,
+ les liens correspondent aux câbles physiques entre les ordinateurs. Alors  le WWW est virtuelle et Internet est physique
+
+\section{Les réseaux complexes,la physique moderne et l'unification}
+La physique explique les phénomènes complexes dans la nature en les réduisant à une interaction de lois fondamentales simples.
+Cette méthode très réussie semble rencontrer certaines difficultés surtout dans l'application à des systèmes complexes en
+général et à des réseaux complexes en particulier, où il reste peu clair s'il existe des lois universelles uniques expliquant
+une variété de similitudes structurelles et dynamiques trouvées dans de nombreux réseaux réels différents\cite{K-al2012,BS2009,La-al2009,Li-al2011}.
+En revanche, cette \textit{unification} des lois universelles qui paraissaient jusqu'alors complètement séparés sont d'une 
+origine commune, c'est ce que les physiciens théoriques rêvent de la découvrir. Une telle  \textit{unification}
+va \^{e}tre, sans doute, un grand pas dans notre compréhension de la nature. En outre, l'existence de cette belle idée au cœur 
+de l'unification montre le pouvoir mystérieux que les êtres humains peuvent à découvrir derrière les apparences de la nature \cite{Sm1997}.
+
+le réseau causal représentant la structure à grande échelle de l'espace-temps dans notre univers accéléré est un graphe de loi
+de puissance avec un regroupement fort, similaire à de nombreux réseaux complexes tels que les réseaux Internet, sociaux ou 
+biologiques \cite{K-al2012}. Cette similitude structurelle est une conséquence de l'équivalence asymptotique entre la dynamique
+de croissance à grande échelle des réseaux complexes et des réseaux causaux. Par conséquent, un intérêt croissant est adressé
+à l'étude de la gravité quantique à partir de la théorie de l'information et de la perspective du réseau complexe \cite{Tr2015,Bi-al2015}.
+
+Récemment, des relations intrigantes entre les propriétés des réseaux de communication quantique avec des topologies de réseau
+et la physique statistique ont été rapportées. Sur la base des concepts classiques de percolation \cite{BR2006}, il a été
+montré que ces réseaux quantiques peuvent présenter une transition de phase de percolation d'enchevêtrement \cite{Ac-al2007,Sa1999}.
+L'avancement rapide de la technologie de l'information quantique a suscité un intérêt considérable pour 
+les propriétés dynamiques des réseaux quantiques formés par les systèmes élémentaires, tels que les qubits, en raison de leur
+rôle privilégié dans la communication quantique et le calcul quantique \cite{J-al2015,BG2007,MC2000}.
+ 
+
+\section{La théorie des graphes}
+En termes généraux, un réseau se décrit comme un graphique dont les noeuds (sommets) identifient les éléments du
+système et les liens de connexion (arêtes) représente la présence d'une relation ou d'une interaction entre ces
+éléments. Avec un tel niveau de généralité, il est facile de percevoir qu'un large éventail de systèmes peuvent être abordés
+dans le cadre de la théorie du graphe. Alors nous fournissons ici un bref historique et quelques notations de base nécessaires
+dans la théorie de graphe pour décrire les réseaux. Le cadre naturel pour une description mathématique rigoureuse des réseaux
+se trouve dans la théorie des graphes, mais il faut noter que la théorie des graphes 
+consiste un branche des mathématiques vastes et compliques et nous ne sommes pas dans l'état de fournir une présentation formelle et complète de 
+celui-ci. Cependant notre but dans ce chapitre d'introduction est de fournir seulement quelques notions utiles pour décrire 
+les réseaux dans le reste du cette thèse. Pour les lecteurs intéressés à poursuivre l'étude de la théorie des graphes
+en plus de taille pourraient regarder les livres \cite{Ha1995,West1996}.
+  \subsection{Bref historique}
+  En plus de la topologie, Euler est devenue le père de la théorie des graphes quand il a résolu, en 1736, un problème célèbre
+sous le nom \textit{le problème du pont de K\"{o}nigsberg}, la question était de savoir s'il était possible de visiter les quatre
+quartiers de la ville séparés les uns des autres par un bras de rivière, en passant exactement une fois par chaque pont et en 
+revenant à son point de départ (voir Fig.\ref{Konig}).
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.25]{./figures/Konig.eps}
+\caption{Ponts de K$\ddot{o}$nigsberg, 1736}
+\label{Konig}
+\end{figure}
+A fin de trouver une solution de ce problème Euler a remplacé chaque zone de terrain par un point et chaque pont par une ligne 
+joignant les points correspondants, produisant ainsi un \textit{graphique}. Ainsi il a montré que le problème
+est insoluble et que le graphique de cette ville ne peut pas être parcouru d'une certaine manière.
+
+En 1847 Kirchhoff a développé la théorie des arbres afin de résoudre le Système d'équations linéaires simultanées qui 
+donnent le courant dans chaque Branche et autour de chaque circuit d'un réseau électrique. Bien qu'un physicien,
+Il a pensé comme un mathématicien lorsqu'il a soulevé un réseau électrique avec et l'a remplacé par sa structure combinatoire 
+correspondante constituée uniquement de points et de lignes sans indication du type d'élément électrique représenté par des
+lignes individuelles.
+Dans les années 1960, deux mathématiciens, Paul Erdos et Alfred Rényi (ER), ont introduit un nouveau idée ingénieuse, ils ont 
+combiné les concepts de la théorie graphique avec les outils de la théorie des probabilité, celà permetant d'envisager des
+familles de graphiques plutôt que des graphiques spécifiques.
+
+  \subsection{L’expérience de Milgram}
+En $1967$, Stanley Milgram a effectué une expérience intéressante. Il a envoyé $60$ lettres à diverses personnes à Wichita, 
+Kansas, aux États-Unis, qui ont été invitées à remettre la lettre à l'épouse d'un étudiant à un endroit précis à Cambridge.
+Les participants ne pouvaient passer que les lettres (à la main) aux connaissances personnelles qu'ils pensaient pouvoir 
+atteindre la cible, soit directement, soit via un «ami d'un ami».  dans sa première experience seules trois lettres ont
+finalement atteint leur destination. Mais dans les expériences ultérieures, Milgram a réussi à augmenter
+le taux de réussite à $95\%$, pour plus de détails (voir \cite{Mi1967,TM1969}). La conclusion principale du cette experience
+de Milgram était que la plupart des gens sur notre planète n'est séparé que par six autres personnes en moyen. Cette idée de
+Milgram a été reprise encore une fois en 2001 par Duncan Watts et ses collègues en utilisant un message électronique qui
+devait etre livé à des expéditeurs autour de monde, étonnamment, Watts a constaté que le nombre moyen d'intermédiaires était
+$6$. Pour plus de détails et une analyse statistique beaucoup plus étendue des données par rapport à l'analyse de Milgram,
+voir Dodds et al \cite{D-al2003}.
+
+  \subsection{Représentation d'un graphe}
+  Comme dans toute abstraction mathématique, lorsque nous décrivons un système en tant que graphique, nous décidons de rejeter
+  plusieurs des particularités particulières des phénomènes réels et de nous concentrer uniquement sur quelques caractéristiques
+  d'intérêt. En particulier, un graphique est essentiellement un moyen de coder une relation (liens physiques, interactions,
+  etc.) entre les éléments d'un système. Les éléments du système identifient l'ensemble $V$ (ensemble des sommets) et les 
+  relations entre ceux de l'ensemble $E$ (ensemble des arêtes). Le graphique indiqué comme $G(V, E)$ peut être tracé en traçant les
+  sommets en tant que points et les bords comme lignes entre eux. Parmi les façons de représentation basant sur cette définition
+  on peut citer la matrice adjacence et la liste adjacence. 
+  
+  \subsubsection{La matrice d’adjacence}
+ Un graphe est représenté fréquemment par une matrice d'adjacence, $M_{i,j}$, qui est une matrice dans laquelle chaque ligne et
+ chaque colonne représente un sommet du graphique. L'élément $M_{i,j}$ est $1$ si un lien existe entre les $i^{th}$ et $j^{th}$
+ vertices, ou $0$ sinon (voir Fig\ref{matrice d'adjacence}). Dans un graphe dirigé, la matrice sera en général asymétrique et les éléments diagonales ne sont pas
+ nécessairement $0$.
+ \begin{figure}[h]
+\centering
+\subfloat{
+\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=2cm,
+  thick,main node/.style={circle,fill=black!20,draw}]
+
+  \node[main node] (1) {$v_2$};
+  \node[main node] (2) [below left of=1] {$v_1$};
+  \node[main node] (3) [below right of=1] {$v_3$};
+  \node[main node] (4) [below of=3] {$v_4$};
+  \node[main node] (5) [below of=2] {$v_5$};
+
+  \path[every node/.style={font=\sffamily\small}]
+    (2) edge node [left] {} (1)
+    (2) edge node [left] {} (3)
+    (1) edge node [left] {} (5)
+    (1) edge node [left] {} (3)
+    (3) edge node [left] {} (4)
+    (4) edge node [left] {} (5)
+    ;
+\end{tikzpicture}}
+\subfloat{
+\vbox{\hbox{
+\begin{math}
+M_{G} = \left(
+\begin{array}{ccccc}
+0 & 1 & 1 & 0 & 0 \\
+1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 0 & 1 & 0 \\
+0 & 0 & 1 & 0 & 1 \\
+0 & 1 & 0 & 1 & 0
+\end{array}
+\right)
+\end{math}
+}% end of first hbox
+\null% last null hbox, which sets the baseline of the \vbox
+} % end of vbox
+} % end of subfloat
+\caption{Un simple graphe et matrice d'adjacence: Exemple d'un graphe non-orienté avec 5 sommets et 5 aretes et sa matrice
+d'adjacence $M_G$.}
+\label{matrice d'adjacence}
+\end{figure}
+
+\subsubsection{La liste d’adjacence}
+Le format de liste d'adjacence est utile pour les graphiques sans données associées à des noeuds ou des bords et à des noeuds
+qui peuvent être représentés de manière significative sous la forme de chaînes, il se compose de 
+lignes avec des étiquettes de noeud, la première étiquette dans une ligne est le noeud source, d'autres étiquettes dans la
+ligne sont considérées comme des noeuds cibles et sont ajoutées au graphique avec un bord entre le noeud source et le nœud 
+cible.\\
+En règle générale, les matrices sont généralement utilisées pour les tableaux denses et les listes d'adjacence pour les 
+tableaux dispersés. La raison en est que les matrices consomment moins d'espace pour les tableaux denses et les listes
+d'adjacence consomment moins d'espace pour les tableaux dispersés. Cependant, l'espace n'est qu'une considération, d'autres
+facteurs doivent également être pris en compte.
+
+\section{Caractéristiques des réseaux complexes}
+
+Je crois que nous ne comprenons toujours pas les réseaux de manière appropriée. Par exemple, si les données (par exemple, la
+matrice d'adjacence) d'un grand graphique sont données et que vous n'êtes pas autorisé à visualiser le réseau,
+il semble assez complexe de le dire, en calculant uniquement la topologie graphique, quelles sont les propriétés du réseau. Alors
+le caractérisation de ces réseaux oblige d'ajouter d'autres caractéristiques supplémentaires, tant que, Plus court chemin,
+Clustering, etc.
+   \subsection{Plus court chemin}
+   
+   Le plus court chemin entre deux sommets d'un graphique est mesurée comme la longueur de trajet la plus courte parmi eux. Une
+   mesure statistique globale de la distance entre les sommets peut alors être exprimée comme la longueur de chemin moyenne la
+   plus courte parmi tous les couples possibles de sommets du réseau, mathématiquement on peut le définir par la forme suivante
+   \begin{equation}
+    l=\frac{1}{n(n-1)}\sum_{i,j} d_{i,j}
+   \end{equation}
+   avec $d_{ij}$ est la distance du nœud $i$ au nœud $j$ et $n$ est le nombre total de noeuds dans le réseau. sachant 
+   que la distance entre deux noeuds s'ils ne peuvent être atteints l'un par l'autre est $0$  et la distance d'un noeud à 
+   lui-même est également $0$.\\
+   Dans de nombreux réseaux à grande échelle, la distance moyenne entre les sommets est très faible par rapport à la taille des
+   graphiques, ce phénomène connu sous le nom la propriété \textit{petit-monde}. Cette propriété a été popularisé dans le
+   contexte sociologique où il est parfois appelé \textit{six degrés de séparation}\cite{Mi1967}.\\
+   L'importance de cette propriété se représente en son rôle important dans le transport et la communication au sein d'un réseau. Supposons
+   qu'il soit nécessaire d'envoyer un paquet de données d'un ordinateur à l'autre via Internet: la géodésique fournit un chemin 
+   optimal, car on pourrait obtenir un transfert rapide et enregistrer des ressources système \cite{PV2004}. Pour une telle raison, les
+   chemins 
+   les plus courts ont également joué un rôle important dans la caractérisation de la structure interne d'un graphique \cite{Wa1994,JS2000}.
+
+   
+   \subsection{Coefficient de regroupement (Clustering)}
+   En plus de l'effet du petit monde un haut niveau de regroupement s'en accompagne dans de nombreux
+   réseaux sociaux et dans de nombreux autres réseaux ont montré cette tendance telle
+   que le réseau mondial \cite{Lad1999}, les réseaux de transport \cite{Seb-al2022} et les réseaux métaboliques \cite{WD2000,SC2001}.
+   Le concept de regroupement d'un graphique
+   se réfère à la tendance observée dans de nombreux réseaux naturels à former des cliques au voisinage d'un sommet donné. 
+   cette propriété appelé également la transitivité dans le contexte de la sociologie \cite{Wa1994}.\\
+   Le coefficient de regroupement peut être considéré comme la fraction de paires de sommets avec un sommet commun
+   ou équivalent comme la probabilité moyenne que deux sommets voisins ont un sommet commun. C'est peut-\^{e}tre la manière
+   la plus utile de définir le coefficient de regroupement. En notation mathématique:
+    \begin{equation}
+    C=\frac{3\times\text{(Nombre de triangles)}}{\text{(Nombre de triples connectés)}}
+   \end{equation}
+   Le facteur $3$ dans le numérateur compense le fait que chaque triangle complet de trois nœuds contribue à trois triples
+   connectés, l'un centré sur chacun des trois noeuds et assure que $0\leq C\leq 1$.
+   \begin{figure}[h!]
+   \begin{center}
+   \begin{tikzpicture}
+   \tikzset{main node/.style={circle,fill=blue!20,draw,minimum size=0.5cm,inner sep=0pt},
+            }
+    \begin{scope}[xshift=1.5cm]
+    \node[main node] (1) {};
+    \node[main node] (2) [right = 1cm  of 1]  {};
+    \node[main node] (3) [below = 1cm  of 1] {};
+    \node[main node] (4) [right = 1cm  of 3] {};
+
+    \path[draw,thick]
+    (1) edge node {} (2)
+    (4) edge node {} (3)
+    (3) edge node {} (1)
+    (4) edge node {} (2);
+     \end{scope}
+    \begin{scope}[xshift=5cm]
+    \node[main node] (1) {};
+    \node[main node] (2) [right = 1cm  of 1]  {};
+    \node[main node] (3) [below = 1cm  of 1] {};
+    \node[main node] (4) [right = 1cm  of 3] {};
+
+    \path[draw,thick]
+    (1) edge node {} (2)
+    (1) edge node {} (3)
+    (3) edge node {} (2)
+    (3) edge node {} (4)
+    ;
+    \end{scope}
+    \begin{scope}[xshift=8.5cm]
+     \node[main node] (1) {};
+    \node[main node] (2) [right = 1cm  of 1]  {};
+    \node[main node] (3) [below = 1cm  of 1] {};
+    \node[main node] (4) [right = 1cm  of 3] {};
+    
+    \path[draw,thick]
+    (1) edge node {} (2)
+    (1) edge node {} (3)
+    (1) edge node {} (4)
+    (2) edge node {} (3)
+    (2) edge node {} (4)
+    (3) edge node {} (4)
+    ;
+    \end{scope}
+\node[text width=2cm] at (2.7,-2.2) {$C=0$};
+\node[text width=2cm] at (6.1,-2.2) {$C=7/12$};
+\node[text width=2cm] at (9.7,-2.2) {$C=1$};
+\end{tikzpicture}
+\end{center}
+   \caption{ Exemple de coefficient de regroupement.}
+\label{Clustering}
+\end{figure}
+Une autre définition du coefficient de regroupement, également largement utilisé, a été donnée par Watts et Strogatz \cite{WS1998},
+qui a proposé de définir une valeur locale
+ \begin{equation}
+    C_i=\frac{\text{(Nombre de triangles connectés au sommet $i$)}}{\text{(Nombre de triples centrés sur le sommet $i$)}}
+  \end{equation}
+  Dans le cas où le sommet a le degré $0$ ou $1$, nous mettons $C_i=0$, Ensuite, le coefficient de regroupement pour l'ensemble
+  du réseau est la moyenne
+  \begin{equation}
+    C=\frac{1}{n}\sum_i C_i
+  \end{equation}
+ Le coefficient de regroupement mesure la densité des triangles dans un réseau. Une généralisation évidente est de demander à 
+propos de la densité des boucles plus longues aussi: boucles de longueur quatre et plus. Un certain nombre d'auteurs ont 
+examiné ces coefficients de regroupement d'ordre supérieur \cite{Ne2003,BC2003,Fron-al2002,Gle-al2001}, bien qu'il n'y ait jusqu'à présent
+aucune théorie propre qui sépare les contributions indépendantes des différents ordres l'un de l'autre.
+ %\vspace{2 cm}
+   \subsection{Distribution des degrés}
+   La propriété la plus importante qui caractérise une structure de réseau est la distribution de degré $P(k)$,
+   définie comme la probabilité qu'un noeud choisi uniformément au hasard ait un degré $k$ ou, de manière équivalente, la
+   fraction de noeuds dans le graphique ayant le degré $k$.
+   Si le graphe est dirigé, le degré du noeud comporte deux composantes: le nombre de liens sortants $k^{out}$ (appelé
+   "out-degree") et le nombre de liens entrants $k^{in}$ (appelé "in-degree"). Le degré total est alors défini comme 
+   $k=k^{out}+k^{in}$.
+   \begin{figure}[h!]
+\centering
+\includegraphics[scale=0.12]{./figures/distribution-degree3.eps}
+\caption{A modular network is illustrated by means of the human proteome (data obtained from the DIP database: 
+http://dip-doe-mbi.ucla.edu). Nodes are proteins and links indicate their physical (protein–protein) interaction.}
+\label{distribution-degree}
+\end{figure}
+
+Un réseau ordinaire a une séquence de degré simple parce que tous les noeuds ont le même nombre de bords, et donc une forme de
+distribution de degré contient une seule pointe forte (voir Fig.\ref{distribution-degree}). En outre dans le cas limitant d'un réseau complètement aléatoire, 
+la séquence de degré obéit à la distribution de Poisson qui diminue exponentiellement, loin de la valeur moyenne $\textless k\textgreater$. En
+raison de ce déclin exponentiel, la probabilité de trouver un noeud avec $k$ bord devient négligeable pour 
+$k\gg \textless k\textgreater$ (voir Fig.\ref{distribution-degree}).
+Au cours des dernières années, de nombreux résultats empiriques ont montré que pour la plupart des réseaux réels à grande
+échelle, la distribution de degré s'écarte de manière significative de la distribution de Poisson.\\
+En particulier, pour un certain nombre de réseaux, la distribution du degré peut être mieux décrite par une loi de puissance de
+la forme $P(k)\sim k^{\gamma}$. Cette distribution de la loi de puissance diminue progressivement permet de créer quelques
+noeuds de très grande importance. Étant donné que ces lois de puissance sont libres de toute échelle caractéristique, pour
+cette raison un tel réseau avec une distribution de puissance est appelé un réseau sans-échelle.
+
+\subsection{Degré de corrélation} 
+Un grand nombre de réseaux réels sont corrélés en ce sens que la probabilité qu'un noeud de degré $k$ soit connecté à un autre
+noeud de degré, disons $k'$, dépend de $k$. Dans ces cas, il est nécessaire d'introduire la probabilité conditionnelle 
+$P(k'\backslash k)$, étant défini comme la probabilité qu'un lien d'un noeud de degré $k$ points à un noeud de degré 
+$k'$ \cite{BP2002}. Bien que les corrélations de degré soient formellement caractérisées par $P(k'\backslash k)$, l'évaluation
+directe de la probabilité conditionnelle donne des résultats extrêmement bruyants pour la plupart des réseaux réels en raison
+de leur taille finie $N$. Ce problème peut être surmonté en définissant le degré moyen voisin le plus proche d'un noeud $i$
+comme
+\begin{equation}
+ k_{nn,i}=\frac{1}{k_i}\sum_{j\in N_j}k_j
+\end{equation}
+Où la somme s'exécute sur les noeuds appartenant à $N_i$, l'ensemble des premiers voisins de $i$.\\
+Où la somme s'exécute sur les noeuds appartenant à $N_i$, l'ensemble des premiers voisins de $i$. on peut calculer le degré 
+moyen des voisins les plus proches des nœuds avec le degré $k$, noté $k_{nn}(k)$, obtenant une expression qui intègre implicitement
+la dépendance de $k$. Une telle quantité peut, en effet, être exprimée en termes de probabilité conditionnelle comme
+\begin{equation}
+ k_{nn}(k)=\sum_{k'}k'P(k'\backslash k)
+ \label{knn}
+\end{equation}
+S'il n'y a pas de corrélations de degré, l'équation Eq.\ref{knn} donne
+$k_{nn}(k)=\frac{\textless k^2\textgreater}{\textless k\textgreater}$, c'est-à-dire que $k_{nn}(k)$ est independent de $k$
+\cite{Bo-al2006}.\\
+Selon l'équation Eq.\ref{knn} on peut déstinguer deux différents types des réseaux, si les sommets de haut degré dans un réseau 
+associent préférentiellement avec d'autres sommets à haut degré on dit que le réseu est assortative, et s'ils préfèrent 
+s'attacher à ceux à faible degré on dit que le réseau est disassortative. Les deux situations sont observées dans certains
+réseaux, mais le cas du  assortative est particulièrement intéressant, car le degré est lui-même une propriété de la topologie
+des graphes, alors les corrélations de degré peuvent donner lieu à des effets de structure de réseau intéressants \cite{MS2002,Ne2003}. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{./figures/assortative_disassortative.eps}
+\caption{Exemple des réseaux assortative et disassortative.}
+\label{assortative_disassortative}
+\end{figure}
+
+\section{Propriétés des réseaux réels}
+\subsection{La prepriété petit-monde}
+La propriété du petit monde se réfère au fait que dans plusieurs réseaux, peut-être la plupart des réseaux à grande échelle, la
+distance moyenne entre les sommets est très faible par rapport à la taille des graphiques. La distance entre deux sommets d'un
+graphe est mesurée comme la plus petite longueur de chemin entre eux. Une mesure statistique globale de la distance entre les
+sommets peut alors être exprimée comme la longueur de trajet moyenne la plus courte parmi tous les couples possibles de sommets
+dans le réseau. Nous avons discuté dans la Section 1.3 l'expérience passante de Stanley Milgram dans les années 1960, 
+dans laquelle on a trouvé que le nombre d'étapes qu'une personne cible obteni une lettre d'un titulaire initial, via le réseau
+social, est environ six en moyenne. L'expérience de Milgram est une démonstration magnifique et puissante de l'effet de
+petit-monde.\\
+L'effet du petit monde a des implications évidentes pour la dynamique des processus qui se déroulent sur les réseaux. Par
+exemple, si l'on considère la diffusion de l'information, ou encore tout autre chose, à travers un réseau, l'effet du petit
+monde implique que cette propagation sera rapide sur la plupart des réseaux réels.
+Cela affecte le nombre de "sauts" qu'un paquet doit faire pour passer d'un ordinateur à l'autre sur Internet,
+le nombre de jambes d'un voyage pour un voyageur aérien ou en train, le temps qu'il faut pour qu'une maladie se propage dans
+une population, et ainsi de suite. L'effet du petit monde sous-tend également certains jeux de société bien connus, en
+particulier le calcul des nombres d'Erd\H{o}s \cite{RG1999} et des nombres de bacon.
+
+\subsection{La distribution de degré libre-échelle}
+La distribution des degrés libre-échelle qu'on appelle également la loi de puissance a suscité un intérêt particulier au cours 
+des dernières années pour ses propriétés mathématiques, ce qui entraîne parfois des conséquences physiques surprenantes et son
+apparence dans une diversité de phénomènes naturels et artificiels, voir quelques exemples dans la Fig.\ref{scal-free-reels}.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{./figures/scal-free-reels.eps}
+\caption{Exemples de quelques exemples des réseaux libre échelle, (\textbf{A}) Graphique de collaboration d'acteur avec
+$n=212250$ de noeuds et un degré moyen $\textless k=28.78\textgreater$, (\textbf{B}) WWW, $n=325729$, $\textless k=5.46\textgreater$,
+(\textbf{C}) Données du réseau électrique, $n=4941$ et $\textless k=2.69\textgreater$. Les lignes pointillées ont des pentes
+(\textbf{A}) $\gamma_{actor}=2.3$, (\textbf{B}) $\gamma_{www}=2.1$ et (\textbf{C}) $\gamma_{electrique}=4$.}
+
+\label{scal-free-reels}
+\end{figure}
+Les distributions de la loi de puissance se produisent dans une gamme de phénomènes extraordinairement diversifiée, tels que,
+les populations des  villes \cite{New2005,Aa-al2009}, la taille des tremblements de terre \cite{GuR1944}, des cratères de lune 
+\cite{NeI1994}, la fréquence d'utilisation des mots dans n'importe quelle langue humaine \cite{Zipf1949,Estoup1916}, la 
+fréquence de l'apparition de noms personnels dans la plupart des cultures \cite{ZaM2001}, le nombre de documents scientifiques
+écrivent \cite{LoW1926}, le nombre de citations reçues par les documents \cite{Price1965}, le nombre de visites sur les pages
+Web \cite{AdH2000} Les ventes de livres, les enregistrements musicaux et presque tous les autres produits de marque \cite{Cox-al1995},
+le nombre d'espèces dans les taxons biologiques \cite{WilY1922}, les revenus annuels des personnes \cite{Pareto1896}, les
+collecteurs de réseaux quantiques complexes \cite{BiR2015} et une foule d'autres variables sont toutes suivies des
+distributions des lois de puissances.\\
+
+Mathématiquement, une quantité $x$ obéit à une loi de puissance si elle est tirée d'une distribution de probabilité
+\begin{equation}
+ P(x)\propto x^{\gamma}
+\end{equation}
+Avec $\gamma$ est un paramètre constant de la distribution connue sous le nom d'exposant, empiriquement cee exposant se situe
+généralement dans l'intervale $2<\gamma<3$, bien qu'il existe des exceptions occasionnelles.
+
+\subsection{Structure communautaire}
+La société offre une grande variété d'organisations de groupes possibles: les familles, les milieux de travail et d'amitié, les
+villages, les villes, les nations (voir Fig.\ref{community-network}). La diffusion d'Internet a également conduit à la création de groupes virtuels, en direct 
+sur le Web, ainsi que, ces communautés se produisent également dans de nombreux systèmes en réseau, de la biologie, de 
+l'informatique, de l'ingénierie, de l'économie, de la politique, etc. Par exemple dans le graphique du World Wide Web Peuvent
+correspondre à des groupes de pages portant sur les mêmes sujets ou des sujets connexes \cite{Dou-al2007,Flak-al2002}
+ou Dans les réseaux d'interactions protéines-protéines, les communautés sont susceptibles de regrouper des protéines ayant la
+même fonction spécifique dans la cellule \cite{ChY2006,RivT2003}.\\
+Les communautés peuvent avoir des applications concrètes. Clustering les clients Web qui ont des intérêts similaires et qui
+sont géographiquement proches l'un de l'autre peuvent améliorer la performance des services fournis sur le World Wide Web,
+en ce sens que chaque groupe de clients pourrait être desservi par un serveur miroir dédié \cite{KriW2000}.
+Les réseaux auto-configurés formés par des nœuds de communication agissant dans la même région et en changeant rapidement n'ont
+généralement pas de tables de routage centralisées qui spécifient comment les noeuds doivent communiquer avec d'autres nœuds.
+Alors Le regroupement des nœuds en clusters permet de générer des tables de routage compactes alors que le choix des chemins de
+communication est encore efficace \cite{Steen2001}.\\
+La détection communautaire est également importante pour d'autres raisons. L'identification des modules et de leurs limites
+permet une classification des sommets, en fonction de leur position structurelle dans les modules. Donc, les sommets avec une
+position centrale dans leurs grappes partagent un grand nombre de bords avec les autres partenaires du groupe, ce qui est
+une caractéristique importante de contrôle et de stabilité au sein du groupe, en outre, Les sommets situés aux frontières entre
+les modules jouent un rôle important de médiation et mènent les relations et les échanges entre les différentes communautés
+\cite{Csermely2008}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.23]{./figures/community-network.eps}
+\caption{Exemples d'un réseau de communautaire, chaque coleur represent un groupe plus connecté par rapport au reste du réseau.}
+\label{community-network}
+\end{figure}
+\section{Les modèles thèoriques les plus connus} 
+De façon générale on peut destinguer trois modèles des réseaux: aléatoire, de petit monde et le modèle libre-échelle. Ces
+modèles se caractérisent chacun par la manière dont les réseaux sont créés et par plusieurs statistiques résultantes,
+telles que la distribution des degrés, la longueur moyenne entre les paires de noeuds et le coefficient clustering.
+
+   \subsection{Réseau aléatoire d'Erd\H{o}s-Rényi}
+ Un réseau aléatoire est créé en spécifiant que chaque paire de noeuds est connecté par un lien avec une probabilité uniforme
+ $p$. Ce tel réseau a été étudié d'un point de vue des mathématiques pures par Erod\H{o}s et Rényi \cite{Erdos-Renyi1959,Erdos-Renyi1960,Erdos-Renyi1961}. 
+ Dans la limite du grand $n$, bon nombre des propriétés moyennes de l'ensemble des réseaux aléatoires ont été exprimées 
+ analytiquement de façon parfait et élégant.\\
+ Les graphiques aléatoires ER sont les mieux étudiés parmi les modèles graphiques, les propriétés structurelles des graphiques
+ aléatoires ER varient en fonction de $p$ montrant notamment un changement dramatique à une probabilité critique $p_c=\frac{1}{n}$,
+ correspondant à un degré moyen critique $k_c=1$. Erdös et Rényi ont prouvé que:\\
+ \begin{itemize}
+  \item Si $p <p_c$, presque avec certitude lorsque $n$ tend à l'infini, le graphique n'a pas de composante de taille 
+  supérieure à $(ln n)$.
+  \item Si $p=p_c$, presque certainement le composant le plus important a la taille de $n^{\frac{2}{3}}$.
+  \item Si $p> p_c$, le graphique a un composant de taille de l'ordre $n$ et aucun autre composant n'a plus de taille
+  supérieure à $(ln n)$.
+ \end{itemize}
+
+ 
+ 
+ 
+   \subsection{Le modèle petit-monde de Watts-Strogatz}
+   aaaaaa
+   \subsection{Le modèle d'attachement préférentielle de Barabasi-Albert}
+   aaaaaaaaaaaa

@@ -1,0 +1,38 @@
+% contenu du fichier : chap1.tex
+%
+\chapter{Notions et préliminaire}
+
+ \minitoc
+
+ \section{Les réseaux complexes dans notre vie}
+aaaaaa
+\section{Les réseaux complexes et la physique moderne} 
+aaaaaa
+\section{La théorie des graphes}
+aaaaaaa
+  \subsection{Bref historique}
+  aaaaaaaa
+  \subsection{Représentation d'un graphe}
+  aaaaaaaa
+  \subsection{La matrice d’adjacence}
+  aaaaaaaaa
+  \subsection{Les types des liens}
+  aaaaaaaa
+\section{Caractéristiques des réseaux complexes}
+aaaaa
+   \subsection{Plus court chemin}
+   aaaaaa
+   \subsection{Coefficient de regroupement (Clustering)}
+   aaaaaaaa
+   \subsection{Distribution des degrés}
+   aaaaaaaaa
+   \subsection{Degré de corrélation} 
+   aaaaaaaa
+\section{Les modèles thèoriques les plus connus} 
+aaaaaaaaaaaaaa
+   \subsection{Réseau aléatoire d'Erd\H{o}s-Rényi}
+   aaaaaaaa
+   \subsection{Le modèle petit-monde de Watts-Strogatz}
+   aaaaaa
+   \subsection{Le modèle d'attachement préférentielle de Barabasi-Albert}
+   aaaaaaaaaaaa

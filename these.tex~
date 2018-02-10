@@ -1,0 +1,61 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[frenchb]{babel}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning}
+\usepackage{subcaption}
+\usepackage{caption}
+%\usepackage[nottoc, notlot, numbib]{tocbibind} 
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+%\usepackage[nottoc]{tocbibind}
+\usepackage[french]{minitoc} 
+\usepackage[nottoc]{tocbibind}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{subfig}
+\geometry{hmargin=3cm,vmargin=3.5cm}
+\usepackage{epic,eepic,amssymb,amsmath,amsfonts}
+% biblio ordonnee classique
+\bibliographystyle{unsrt}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1pt}
+%\fancyhead[C]{\textbf{page \thepage}} 
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{ }
+% biblio ordonnee classique
+\bibliographystyle{unsrt}
+ 
+\title{Titre de thèse}
+\author{A. Lachgar}
+\date{\today}
+ 
+\begin{document}
+\frontmatter  
+% le titre
+\maketitle
+\include{files/remers}
+\include{files/resume}
+% table des matieres generale
+\tableofcontents
+%insere la liste des tableaux
+\listoffigures
+% inclusion des chapitres
+\mainmatter
+\include{files/intro}
+\include{files/chap1}
+\include{files/chap2}
+\include{files/chap3}
+\include{files/chap4}
+\include{files/conclu} 
+%\include{files/biblio}
+ 
+%bibliographie
+%\bibliographystyle{plain}
+\bibliography{files/allbiblio}
+ \appendix
+ \include{files/annexe}
+
+\end{document}
