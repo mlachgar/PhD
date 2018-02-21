@@ -38,7 +38,7 @@ Dans le présent chapitre, nous présentons l'importance de notre domaine de rec
 \caption{Un réseau modulaire est illustré au moyen du protéome humain (données obtenues à partir de la base de données DIP: http://dip-doe-mbi.ucla.edu). Les nœuds sont des protéines et des liens indiquent leur interaction physique (protéine-protéine).}
 \label{PPI}
 \end{figure}
- La structure de ces réseaux se diffère selon chaque cas. Par exemple, les réseaux métaboliques sont des réseaux de protéines interagissant les uns avec les autres à l'intérieur de la cellule Fig.~\ref{PPI}, il s'agit d'un réseau dirigé, car chaque protéine peut catalyser ou réprimer la création d'autres protéines, ce qui n'implique pas nécessairement le processus inverse. La structure à grande échelle des réseaux métaboliques a été étudiée pour de nombreuses espèces, il a été trouvé que ces réseaux ont une distribution des degrés libre-échelle \cite{Je-al2000}. De plus, il a été observé que le diamètre du réseau est très petit et presque indépendant de la taille du réseau, cette indépendance s'explique par que certain classe de réseaux libre-échelle est Ultra-small \cite{Cohen-Havlin2003,Do-al2003,ChL2003}, d'une autre coté notre résultats du troisième chapitre renforcent cette explication et indiquent que la dépendance du diamètre avec la taille $N$ est très faible.\\ Dans les réseaux génétiques, les nœuds représentent des gènes, et les liens sont dirigés  et représentent l'influence d'un gène sur un autre, le réseau E. coli est un des réseaux génétiques qui est bien étudiés dans la littérature \cite{Mi-al2002}.
+ La structure de ces réseaux se diffère selon chaque cas. Par exemple, les réseaux métaboliques sont des réseaux de protéines interagissant les uns avec les autres à l'intérieur de la cellule Fig.~\ref{PPI}, il s'agit d'un réseau dirigé, car chaque protéine peut catalyser ou réprimer la création d'autres protéines, ce qui n'implique pas nécessairement le processus inverse. La structure à grande échelle des réseaux métaboliques a été étudiée pour de nombreuses espèces, il a été trouvé que ces réseaux ont une distribution des degrés sans-échelle \cite{Je-al2000}. De plus, il a été observé que le diamètre du réseau est très petit et presque indépendant de la taille du réseau, cette indépendance s'explique par que certain classe de réseaux sans-échelle est Ultra-small \cite{Cohen-Havlin2003,Do-al2003,ChL2003}, d'une autre coté notre résultats du troisième chapitre renforcent cette explication et indiquent que la dépendance du diamètre avec la taille $N$ est très faible.\\ Dans les réseaux génétiques, les nœuds représentent des gènes, et les liens sont dirigés  et représentent l'influence d'un gène sur un autre, le réseau E. coli est un des réseaux génétiques qui est bien étudiés dans la littérature \cite{Mi-al2002}.
 
 
   \subsubsection{Réseaux Sociales}
@@ -73,7 +73,7 @@ de croissance à grande échelle des réseaux complexes et des réseaux causaux.
 Récemment, des relations intrigantes entre les propriétés des réseaux de communication quantique avec des topologies de réseau et la physique statistique ont été rapportées. Sur la base des concepts classiques de percolation \cite{BR2006}, il a été montré que ces réseaux quantiques peuvent présenter une transition de phase de percolation d'enchevêtrement \cite{Ac-al2007,Sa1999}.
 L'avancement rapide de la technologie de l'information quantique a suscité un intérêt considérable pour les propriétés dynamiques des réseaux quantiques formés par les systèmes élémentaires, tels que les qubits, en raison de leur rôle privilégié dans la communication et le calcul quantiques \cite{J-al2015,BG2007,MC2000}.\\
 
-Une autre domaine de recherche en relation avec les sciences des réseaux et notamment aux réseaux complexes. La science générale des réseaux et de ses diverses applications a une pertinence significative pour les praticiens de l'intelligence artificiel IA. Par exemple, la compréhension de la structure d'Internet et du World Wide Web sera importante pour l'orientation de la direction de l'intelligent, l'équilibrage de charge, la recherche de toutes sortes et le déploiement d'agents\footnote{Un agent est un terme important en IA qui désigne une entité capable d’interagir avec
+Une autre domaine de recherche en relation avec les sciences des réseaux et notamment aux réseaux complexes. La science générale des réseaux et de ses diverses applications a une pertinence significative pour les praticiens de l'intelligence artificiel (IA). Par exemple, la compréhension de la structure d'Internet et du World Wide Web sera importante pour l'orientation de la direction de l'intelligent, l'équilibrage de charge, la recherche de toutes sortes et le déploiement d'agents\footnote{Un agent est un terme important en IA qui désigne une entité capable d’interagir avec
 	son environnement.} intelligents qui assistent les utilisateurs dans leurs tâches réseau. La réflexion en réseau sera également fondamentale pour développer des algorithmes décentralisés efficaces pour les réseaux de calcul, de communication et de détection de plus en plus distribués et liés, ainsi que des méthodes de sécurité efficaces pour ces systèmes de plus en plus vulnérables. Ce sont tous des domaines dans lesquels la recherche sur l'IA et l'apprentissage automatique ont joué et joueront un rôle majeur \cite{Mitchell2006,Basheer-Hajmeerb2000,Passerini-al2017}.
 
 \section{La théorie des graphes}
@@ -87,28 +87,28 @@ constitue une branche des mathématiques vaste et compliquée et nous ne sommes 
 celle-ci. Cependant notre but dans ce chapitre d'introduction est de fournir seulement quelques notions utiles pour décrire 
 les réseaux dans la suite de cette thèse. Pour les lecteurs souhaitant aller plus en détail dans l'étude de la théorie des graphes pourraient consulter ces livres \cite{Ha1995,West1996}.
   \subsection{Bref historique}
-  En plus de la topologie, Euler est devenue le père de la théorie des graphes quand il a résolu, en 1736, un problème célèbre
+  En plus de la topologie, Euler est devenue le père de la théorie des graphes quand il a résolu, en $1736$, un problème célèbre
 sous le nom \textit{"le problème du pont de K\"{o}nigsberg"}, la question était de savoir s'il était possible de visiter les quatre
 quartiers de la ville séparés les uns des autres par un bras de rivière, en passant exactement une fois par chaque pont et en 
 revenant à son point de départ (voir Fig.~\ref{Konig}).
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.7]{./figures/Konig}
-\caption{Ponts de K$\ddot{o}$nigsberg, 1736}
+\caption{Ponts de K$\ddot{o}$nigsberg, $1736$}
 \label{Konig}
 \end{figure}
 Afin de trouver une solution à ce problème Euler a remplacé chaque zone de terrain par un point et chaque pont par une ligne 
 joignant les points correspondants, produisant ainsi un \textit{"graphe"}. Ainsi il a montré que le problème
 est insoluble et que le graphe de cette ville ne peut pas être parcouru d'une certaine manière.
 
-En 1847 Kirchhoff a développé la théorie des arbres afin de résoudre le système d'équations linéaires simultanées qui 
+En $1847$ Kirchhoff a développé la théorie des arbres afin de résoudre le système d'équations linéaires simultanées qui 
 donnent le courant dans chaque branche et autour de chaque circuit d'un réseau électrique. Bien qu'un physicien, il a pensé comme un mathématicien lorsqu'il a remplacé un réseau électrique par sa structure combinatoire  correspondante constituée uniquement de points et de lignes sans indication du type d'élément électrique représenté par des lignes individuelles.
 Dans les années $1960$, deux mathématiciens, Paul Erd\H{o}s et Alfred Rényi (ER), ont introduit une nouvelle idée ingénieuse, ils ont 
 combiné les concepts de la théorie graphique avec les outils de la théorie des probabilités, cela permettant d'envisager des
 familles de graphes plutôt que des graphes spécifiques.
 
   \subsection{L’expérience de Milgram}
-  
+ \label{Milgram} 
 En $1967$, Stanley Milgram a effectué une expérience intéressante.  Dans sa première expérience, Milgram a demandé à des personnes choisies au hasard au Nebraska d'envoyer des lettres à une personne cible éloignée à Boston.
 Les participants ne pouvaient passer que les lettres (à la main) aux connaissances personnelles qu'ils pensaient pouvoir 
 atteindre la cible, soit directement, soit via un % «ami d'un ami».  dans sa première experience seules trois lettres ont
@@ -170,7 +170,7 @@ voir Dodds et al \cite{D-al2003}.
  	\label{matrice d'adjacence}
  \end{figure}  
  
-  Un graphe orienté est un graphe où les bords sont dirigés, c'est-à-dire que chaque bord est une paire de nœuds ordonnée avec ($\mathrm{i}$,$\mathrm{j}$) désignant un bord (flèche) qui commence au nœud $\mathrm{i}$ et se termine au nœud $\mathrm{j}$ Fig.~\ref{matrice d'adjacence2}. 
+  Un graphe orienté est un graphe où les bords sont dirigés, c'est-à-dire que chaque bord est une paire de nœuds ordonnée avec ($i$,$j$) désignant un bord (flèche) qui commence au nœud $i$ et se termine au nœud $j$ Fig.~\ref{matrice d'adjacence2}. 
  
  
  \begin{figure}[h]
@@ -282,8 +282,8 @@ Clustering, etc.
    Les ensembles de données massifs du réseau s'accumulent à un rythme énorme dans des champs variés \cite{Qi-al2010}. En utilisant la mesure moyenne du plus court chemin, les réseaux de petit-monde peuvent être considérés comme des systèmes à la fois efficaces à l'échelle mondiale et locale \cite{Latora-Marchiori2001}. Nous utilisons souvent la longueur du plus court chemin comme mesure de l'efficacité du réseau, ce qui nous permet de donner une analyse quantitative précise de l'efficacité du flux d'information dans les réseaux. Le calcul du plus court chemin a également été utilisé pour estimer la précision des approximations analytiques de la dynamique sur les réseaux \cite{Melnik-al2011}, en examinant l'apparition de la synchronisation \cite{Zhao-al2006} et en évaluant la résilience des réseaux de communication aux attaques et aux échecs \cite{Albert-al2000}.
    
    \subsection{Coefficient de regroupement (Clustering)}
-   En plus de l'effet du petit monde un haut niveau de regroupement s'en accompagne dans de nombreux
-   réseaux sociaux, et différents autres réseaux ont montré cette tendance également notamment le réseau mondial \cite{Lad1999}, les réseaux de transport \cite{Seb-al2022} et les réseaux métaboliques \cite{WD2000,SC2001}.
+   En plus de l'effet du petit-monde un haut niveau de regroupement s'en accompagne dans de nombreux
+   réseaux sociaux et différents autres réseaux ont montré cette tendance également, notamment le réseau mondial \cite{Lad1999}, les réseaux de transport \cite{Seb-al2022} et les réseaux métaboliques \cite{WD2000,SC2001}.
    Le concept de regroupement d'un graphe
    se réfère à la tendance observée dans de nombreux réseaux naturels à former des cliques au voisinage d'un nœud donné, 
    cette propriété est appelée également la transitivité dans le contexte de la sociologie \cite{Wa1994}.\\
@@ -380,10 +380,10 @@ aucune théorie propre qui sépare les contributions indépendantes des différe
 %   	\label{distribution-degree}
 %   \end{figure}
 
-Un réseau ordinaire a une séquence de degré simple parce que tous les nœuds ont le même nombre de bords, et donc une forme de distribution de degré qui contient une seule pointe forte. En outre dans le cas d'un réseau complètement aléatoire, 
+Un réseau ordinaire a une séquence de degré simple parce que tous les nœuds ont le même nombre de bords, et donc une forme de distribution des degrés qui contient une seule pointe forte. En outre dans le cas d'un réseau complètement aléatoire, 
 la séquence de degré obéit à la distribution de Poisson qui diminue exponentiellement, loin de la valeur moyenne $\textless k\textgreater$. En raison de ce déclin exponentiel, la probabilité de trouver un nœud avec $k$ bord devient négligeable pour  $k\gg \textless k\textgreater$.
 Au cours des dernières années, de nombreux résultats empiriques ont montré que pour la plupart des réseaux réels à grande échelle, la distribution des degrés s'écarte de manière significative de la distribution de Poisson.\\
-En particulier, pour un certain nombre de réseaux, la distribution des degrés peut être mieux décrite par une loi de puissance de la forme $P(k)\sim k^{-\gamma}$. Cette distribution de la loi de puissance diminue progressivement et permet de créer quelques nœuds de très grande importance. Étant donné que ces lois de puissance sont libres de toute échelle caractéristique, un tel réseau est appelé un réseau libre-échelle.
+En particulier, pour un certain nombre de réseaux, la distribution des degrés peut être mieux décrite par une loi de puissance de la forme $P(k)\sim k^{-\gamma}$. Cette distribution de la loi de puissance diminue progressivement et permet de créer quelques nœuds de très grande importance. Étant donné que ces lois de puissance sont libres de toute échelle caractéristique, un tel réseau est appelé un réseau sans-échelle.
 
 \subsection{Degré de corrélation} 
 Un grand nombre de réseaux réels sont corrélés en sens que la probabilité qu'un nœud de degré $k$ soit connecté à un autre
@@ -391,7 +391,7 @@ nœud de degré, disons $k'$, dépend de $k$. Dans ces cas, il est nécessaire d
 $P(k'\backslash k)$, étant défini comme la probabilité qu'un lien d'un nœud de degré $k$ soit connecté à un nœud de degré 
 $k'$ \cite{BP2002}. Bien que les corrélations de degré soient formellement caractérisées par $P(k'\backslash k)$, l'évaluation
 directe de la probabilité conditionnelle donne des résultats extrêmement bruyants pour la plupart des réseaux réels en raison
-de leur taille finie $N$. Ce problème peut être surmonté en définissant le degré moyen des voisins les plus proches d'un nœud $i$
+de leur taille finie $N$. Ce problème peut êtr e surmonté en définissant le degré moyen des voisins les plus proches d'un nœud $i$
 comme
 \begin{equation}
  k_{nn,i}=\frac{1}{k_i}\sum_{j\in N_i}k_j,
@@ -403,7 +403,7 @@ la dépendance de $k$. Une telle quantité peut, en effet, être exprimée en te
  k_{nn}(k)=\sum_{k'}k'P(k'\backslash k).
  \label{knn}
 \end{equation}
-S'il n'y a pas de corrélation de degré, l'équation Eq.\ref{knn} donne
+S'il n'y a pas de corrélation de degré, l'équation Eq.~\eqref{knn} donne
 $k_{nn}(k)=\frac{\textless k^2\textgreater}{\textless k\textgreater}$, c'est-à-dire que $k_{nn}(k)$ est indépendant de $k$
 \cite{Bo-al2006}.\\
 \begin{figure}[h!]
@@ -414,7 +414,7 @@ $k_{nn}(k)=\frac{\textless k^2\textgreater}{\textless k\textgreater}$, c'est-à-
 \end{figure}
 \label{s-correl}
 
-Selon l'équation Eq.\ref{knn} on peut distinguer deux différents types de réseaux, si les nœuds de haut degré dans un réseau  s'associent préférentiellement avec d'autres nœuds à haut degré on dit que le réseau est assortatif, et s'ils préfèrent  s'attacher à ceux à faible degré on dit que le réseau est disassortatif (voir Fig.~\ref{assortative_disassortative}). Les deux situations sont observées dans certains réseaux, mais le cas du réseau assortatif est particulièrement intéressant, car le degré est lui-même une propriété de la topologie des graphes, alors les corrélations de degré peuvent donner lieu à des effets de structure du réseau intéressants \cite{MS2002,Ne2003}. 
+Selon l'équation Eq.~\eqref{knn} on peut distinguer deux différents types de réseaux, si les nœuds de haut degré dans un réseau  s'associent préférentiellement avec d'autres nœuds à haut degré on dit que le réseau est assortatif, et s'ils préfèrent  s'attacher à ceux à faible degré on dit que le réseau est disassortatif (voir Fig.~\ref{assortative_disassortative}). Les deux situations sont observées dans certains réseaux, mais le cas du réseau assortatif est particulièrement intéressant, car le degré est lui-même une propriété de la topologie des graphes, alors les corrélations de degré peuvent donner lieu à des effets de structure du réseau intéressants \cite{MS2002,Ne2003}. 
 
 \subsection{Mesures de la centralité}
 
@@ -446,19 +446,18 @@ C_C(i)=\dfrac{n}{\sum_{j=1}^nd_{ji}}.
 
 \section{Propriétés des réseaux réels}
 \subsection{La propriété petit-monde}
-La propriété petit monde se réfère au fait que dans plusieurs réseaux, peut-être la plupart des réseaux à grande échelle, la distance moyenne entre les nœuds est très faible par rapport à la taille des graphes. La distance entre deux nœuds d'un graphe est mesurée comme la plus petite longueur de chemin entre eux. Une mesure statistique globale de la distance entre les nœuds peut alors être exprimée comme la longueur moyenne des trajets  les plus courts pour tous les couples possibles de nœuds dans le réseau. Nous avons discuté dans la Section 1.3 l'expérience de Stanley Milgram réalisée dans les années 1960, dans laquelle on a trouvé que le nombre d'étapes pour qu'un destinataire reçoit la lettre de l'expéditeur, via le réseau social, est égale à six en moyenne. L'expérience de Milgram est une démonstration simple, magnifique et puissante de l'effet de
-petit-monde.\\
+La propriété petit monde se réfère au fait que dans plusieurs réseaux, peut-être la plupart des réseaux à grande échelle, la distance moyenne entre les nœuds est très faible par rapport à la taille des graphes. La distance entre deux nœuds d'un graphe est mesurée comme la plus petite longueur de chemin entre eux. Une mesure statistique globale de la distance entre les nœuds peut alors être exprimée comme la longueur moyenne des trajets  les plus courts pour tous les couples possibles de nœuds dans le réseau. Nous avons discuté dans la Section.~\ref{Milgram} l'expérience de Stanley Milgram réalisée dans les années $1960$, dans laquelle on a trouvé que le nombre d'étapes pour qu'un destinataire reçoit la lettre de l'expéditeur, via le réseau social, est égale à six en moyenne. L'expérience de Milgram est une démonstration simple, magnifique et puissante de l'effet de petit-monde.\\
 L'effet petit-monde a des implications évidentes pour la dynamique des processus qui se déroulent sur les réseaux. Par exemple, si l'on considère la diffusion de l'information, ou encore tout autre chose, à travers un réseau, l'effet petit-monde implique que cette propagation sera rapide sur la plupart des réseaux réels. Cela affecte le nombre de "sauts" qu'un paquet doit faire pour passer d'un ordinateur à l'autre sur Internet, le nombre d'escales d'un voyage pour un voyageur aérien ou en train, le temps qu'il faut pour qu'une maladie se propage dans
 une population, et ainsi de suite. L'effet petit-monde atteint également certains jeux de société bien connus, en particulier le calcul des nombres d'Erd\H{o}s \cite{RG1999} et de Bacon.
 
-\subsection{La distribution des degrés libre-échelle}
+\subsection{La distribution des degrés sans-échelle}
 \label{s-libre-echelle}
-La distribution des degrés libre-échelle qu'on appelle également la loi de puissance a suscité un intérêt particulier au cours des dernières années pour ses propriétés mathématiques, ce qui entraîne parfois des conséquences physiques surprenantes et son apparence dans la diversité des réseaux naturels et artificiels, voir quelques exemples dans la Fig.~\ref{scal-free-reels}.\\
+La distribution des degrés sans-échelle qu'on appelle également la loi de puissance a suscité un intérêt particulier au cours des dernières années pour ses propriétés mathématiques, ce qui entraîne parfois des conséquences physiques surprenantes et son apparence dans la diversité des réseaux naturels et artificiels, voir quelques exemples dans la Fig.~\ref{scal-free-reels}.\\
 
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.3]{./figures/scal-free-reels}
-\caption{Quelques exemples des réseaux libre-échelle, (\textbf{A}) Graphe de collaboration d'acteur avec un nombre des nœuds
+\caption{Quelques exemples des réseaux sans-échelle, (\textbf{A}) Graphe de collaboration d'acteur avec un nombre des nœuds
 $n=212250$ et un degré moyen $\textless k\textgreater=28.78$, (\textbf{B}) WWW, $n=325729$, $\textless k\textgreater=5.46$,
 (\textbf{C}) Données du réseau électrique, $n=4941$ et $\textless k\textgreater=2.69$. Les lignes pointillées ont des pentes
 (\textbf{A}) $\gamma_{actor}=2.3$, (\textbf{B}) $\gamma_{www}=2.1$ et (\textbf{C}) $\gamma_{electrique}=4$.}
@@ -491,7 +490,7 @@ La détection communautaire est également importante pour d'autres raisons. L'i
 
 \section{Les modèles théoriques les plus connus} 
 
-De façon générale on peut distinguer trois modèles des réseaux: aléatoire, de petit monde et le modèle libre-échelle. Ces modèles se caractérisent chacun par la manière dont les réseaux sont créés et par plusieurs statistiques résultantes, telles que la distribution des degrés, la longueur moyenne entre les paires de nœuds et le coefficient de Clustering.
+De façon générale on peut distinguer trois modèles des réseaux: aléatoire, de petit monde et le modèle sans-échelle. Ces modèles se caractérisent chacun par la manière dont les réseaux sont créés et par plusieurs statistiques résultantes, telles que la distribution des degrés, la longueur moyenne entre les paires de nœuds et le coefficient de Clustering.
 
    \subsection{Réseau aléatoire d'Erd\H{o}s-Rényi}
    
@@ -525,7 +524,7 @@ P(k)=C^k_{n-1}p^k(1-p)^{n-1-k}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=1]{./figures/fig-ER-dist}
-	\caption{Illustration de la distribution des degrés d'un réseau aléatoire ER de degré moyen égale $6$, les cercles représentent les simulations numériques et la ligne noire représente Eq.\ref{ER}.}
+	\caption{Illustration de la distribution des degrés d'un réseau aléatoire ER de degré moyen égale $6$, les cercles représentent les simulations numériques et la ligne noire représente Eq.~\eqref{ER}.}
 	
 	\label{ER-distribution}
 \end{figure} 
@@ -543,7 +542,7 @@ Cette valeur de Clustering qui tend vers $0$ quand $n$ tend vers l'infini est l'
  
 
    Le réseau aléatoire ER reproduit très bien l'observation concernant la longueur moyenne relativement petite des chemins, mais le coefficient de regroupement (Clustering) dans ce réseau est très faible par rapport à ceux observés dans les systèmes réels, et la distribution des degrés est déférente de celle du réseau réel. En 1998 Watts et Strogatz \cite{Watss-Strogatz1998} ont proposé un modèle qui reproduit deux propriétés parmi celles mentionnées précédemment de manière simple.\\
-   Les modèles de petit-monde peuvent être construits sur des réseaux de n'importe quelle dimension ou topologie, mais le cas le mieux étudié est l'unidimensionnel. Soit $n$ le nombre de nœuds et $k$ un nombre pair, le modèle Watt-Strogatz commence par la construction suivante (voir Fi.\ref{SW1}): 
+   Les modèles de petit-monde peuvent être construits sur des réseaux de n'importe quelle dimension ou topologie, mais le cas le mieux étudié est l'unidimensionnel. Soit $n$ le nombre de nœuds et $k$ un nombre pair, le modèle Watt-Strogatz commence par la construction suivante (voir Fig.\ref{SW1}): 
    \begin{itemize}
    	\item Placez tous les noeuds en cercle;
    	\item Connectez chaque nœud à ses premiers $k$ voisins les plus proches;
@@ -581,7 +580,7 @@ f(x)&\sim
 \end{cases}
 \end{align}
 
-   Le coefficient de regroupement C est défini par Eq.\ref{Clustering}, que nous reproduisons ici:
+   Le coefficient de regroupement C est défini par Eq.~\eqref{Clustering}, que nous reproduisons ici:
  \begin{equation}
  C=\frac{3\times\text{(Nombre de triangles)}}{\text{(Nombre de triples connectés)}}.
  \end{equation}  
@@ -595,9 +594,9 @@ En ce qui concerne la répartition de degré, lorsque $p=0$ est une fonction del
 P(k)=\sum_{i=0}^{\text{min}(k-m,m)}C_i^m\frac{(pm)^{k-m-i}}{(k-m-i)}e^{pm}.
 \end{equation} 
 
-   \subsection{Le modèle libre-échelle de Barabási-Albert}
+   \subsection{Le modèle sans-échelle de Barabási-Albert}
    
-Une caractéristique commune entre le graphe aléatoire ER et les modèles de petit monde de WS est que la distribution des degrés du réseau est homogène, avec un pic à une valeur moyenne et une décroissance exponentielle, de tels réseaux s'appellent des réseaux exponentiels. Les inconvénients de ces deux modèles précédents est qu'ils ne tiennent pas compte de deux attributs importants de la plupart des réseaux réels.  Premièrement, les réseaux réels sont ouverts et ils sont dynamiquement formés par l'ajout continu de nouveaux nœuds au réseau, par exemple, la WWW génère continuellement de nouvelles pages Web et la littérature de recherche se développe constamment car les nouveaux articles sont en cours de publication. Deuxièmement, le graphique aléatoire ER et le modèle de petit-monde prennent des probabilités uniformes lors de la création de nouvelles arêtes, mais ce n'est pas réaliste non plus.
+Une caractéristique commune entre le graphe aléatoire ER et les modèles de petit-monde de WS est que la distribution des degrés du réseau est homogène, avec un pic à une valeur moyenne et une décroissance exponentielle, de tels réseaux s'appellent des réseaux exponentiels. Les inconvénients de ces deux modèles précédents est qu'ils ne tiennent pas compte de deux attributs importants de la plupart des réseaux réels.  Premièrement, les réseaux réels sont ouverts et ils sont dynamiquement formés par l'ajout continu de nouveaux nœuds au réseau, par exemple, la WWW génère continuellement de nouvelles pages Web et la littérature de recherche se développe constamment car les nouveaux articles sont en cours de publication. Deuxièmement, le graphique aléatoire ER et le modèle de petit-monde prennent des probabilités uniformes lors de la création de nouvelles arêtes, mais ce n'est pas réaliste non plus.
 
 Une découverte relativement récente et importante dans le domaine des réseaux complexes est l'observation qu'un certain nombre de réseaux complexes à grande échelle, y compris Internet, WWW et les réseaux métaboliques, sont sans échelle et leurs distributions de connectivité ont une forme de puissance (voir Fig.~\ref{scal-free-reels}).\\
 Nous parlons alors ici d'une classe de modèles dont l'objectif principal est de reproduire les processus de croissance qui se déroulent dans des réseaux réels. Nous nous concentrons principalement sur le modèle de croissance du réseau proposé par Barabási et Albert en 1999 \cite{BA1999}, ce modèle repose sur deux hypothèses simples concernant l'évolution du réseau:
@@ -619,12 +618,12 @@ D'autres méthodes plus rigoureuse d'analyse de ce modèle utilisant des outils 
 \label{pk-1}
 \end{equation}
 
-L'Eq.\ref{pk-1} a d'abord été dérivée par Krapivsky et al. \cite{Krapivsky-al2000} et de manière indépendante par Dorogovtsev et al. \cite{Dorogovtsev-al2000-2}. Un traitement plus détaillé a ensuite été donné par Bollobas et al. \cite{Bollobas-Riordan2002}, qui clarifie précisément le domaine de validité de la solution et les écarts éventuels par rapport à la valeur attendue de  $P(k)$ .
+L'Eq.~\eqref{pk-1} a d'abord été dérivée par Krapivsky et al. \cite{Krapivsky-al2000} et de manière indépendante par Dorogovtsev et al. \cite{Dorogovtsev-al2000-2}. Un traitement plus détaillé a ensuite été donné par Bollobas et al. \cite{Bollobas-Riordan2002}, qui clarifie précisément le domaine de validité de la solution et les écarts éventuels par rapport à la valeur attendue de  $P(k)$ .
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=1]{./figures/fig-barabasi}
-	\caption{La distribution des degrés du réseau BA en échelle logarithmique, où les cercles sont les simulations numériques et la ligne continue représente la formule théorique, Eq.~\ref{pk-1}. La taille du réseau est $\mathrm{n}=10^{6}$ et $\mathrm{m}=2$ .}	
+	\caption{La distribution des degrés du réseau BA en échelle logarithmique, où les cercles sont les simulations numériques et la ligne continue représente la formule théorique, Eq.~\eqref{pk-1}. La taille du réseau est $\mathrm{n}=10^{6}$ et $\mathrm{m}=2$ .}	
 	\label{BA-distribution}
 \end{figure} 
 
