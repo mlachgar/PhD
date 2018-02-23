@@ -5,7 +5,7 @@ L'émergence de la propriété petit-monde dans le modèle Newman-Watts est enco
 Par des études théoriques confirmant par une intense nombre de simulations, on abordera quelques questions de ce genre.
 \section{Introduction}
 
-Le modèle de Watts-Storogatz (WS) connaît une attention énorme depuis son apparition en 1998 \cite{Watss-Strogatz1998}, il a deux propriétés très intéressantes: la présence d'un coefficient de Clustering élevé et d'un petit PCC. Ces deux propriétés se trouvent dans la plupart des réseaux réels \cite{Cohen-Havlinl2010,Newman2010}, en plus ce modèle est très simple et combine la régularité avec l'aléatoire. En $1999$ Newman et Watts \cite{Newman-Watts1999} ont réalisé une petite modification sur le modèle WS, dont il y a $n$ nœuds qui se distribuent dans un réseau régulier unidimensionnelle sous forme d'une cercle où chaque nœud fait $2k$ liens avec ses plus proches voisins (voir Fig.\ref{NW}), le nombre de nœuds reste fixe puis chaque lien se reconnecte par une probabilité $\phi$ entre deux autres nœuds choisis aléatoirement sans supprimer aucuns liens, les liens ajoutés sont nommé raccourcis, en moyenne il y a $x=nk\phi$ raccourcis. Ce modèle aussi connaît une grande attention car il a les m\^{e}mes propriétés du modèle WS, sauf pour $k=1$ où il y a une certaine différence\footnote{Le cas $k=1$ ne nous intériorisons jamais dans ce modèle, car dans ce cas le coefficient de Clustering est zéro, alors on prend toujours $k>1$. }, au m\^{e}me temps il est moins difficile dans l'étude.
+Le modèle de Watts-Storogatz (WS) connaît une attention énorme depuis son apparition en 1998 \cite{Watss-Strogatz1998}, il a deux propriétés très intéressantes: la présence d'un coefficient de Clustering élevé et d'un petit PCC. Ces deux propriétés se trouvent dans la plupart des réseaux réels \cite{Cohen-Havlinl2010,Newman2010}, en plus ce modèle est très simple et combine la régularité avec l'aléatoire. En $1999$ Newman et Watts \cite{Newman-Watts1999} ont réalisé une petite modification sur le modèle WS, dont il y a $n$ nœuds qui se distribuent dans un réseau régulier unidimensionnelle sous forme d'une cercle où chaque nœud fait $2k$ liens avec ses plus proches voisins (voir Fig.~\ref{NW}), le nombre de nœuds reste fixe puis chaque lien se reconnecte par une probabilité $\phi$ entre deux autres nœuds choisis aléatoirement sans supprimer aucuns liens, les liens ajoutés sont nommé raccourcis, en moyenne il y a $x=nk\phi$ raccourcis. Ce modèle aussi connaît une grande attention car il a les m\^{e}mes propriétés du modèle WS, sauf pour $k=1$ où il y a une certaine différence\footnote{Le cas $k=1$ ne nous intériorisons jamais dans ce modèle, car dans ce cas le coefficient de Clustering est zéro, alors on prend toujours $k>1$. }, au m\^{e}me temps il est moins difficile dans l'étude.
 
 \begin{figure}[h!]
 	\centering 
@@ -181,7 +181,7 @@ la $i^{\text{ème}}$ distance ($i<j$) à travers un seul raccourci:
 	mathématiques exactes, certes comme tous les systèmes de très grand nombre de constituants, il suffit de faire la bonne 
 	approximation au niveau microscopique, c'est-à-dire local, pour trouver la description parfaite des grandeurs macroscopique de système, ce que nous
 	avons exactement fait.\\
-	De l'Eq.~\ref{pi1} la probabilité $P^1_r(j)$ qu'un nœud ne change pas sa distance régulière $j$ à travers un seul raccourci est:
+	De l'Eq.~\eqref{pi1} la probabilité $P^1_r(j)$ qu'un nœud ne change pas sa distance régulière $j$ à travers un seul raccourci est:
 	\begin{eqnarray}\nonumber
 	P_r^1(j)&=&\pi^1(1)\pi^1(2)...\pi^1(j-1)\\\nonumber
 	&=& (1-q)(1-q)^4(1-q)^{4\cdot2}...(1-q)^{4(j-2)}\\\nonumber
@@ -415,7 +415,7 @@ n_j&=&n_{j}^{r}+n_{j}^{al}\\\nonumber
 \nonumber
 \label{c}
 \end{eqnarray}
-Maintenant on va calculer la somme des nœuds de couches-régulières $S'_r$ et la somme des nœuds de couches-aléatoires $S'_{al}$ afin de les utiliser dans le calcul de PCC. De Eq.~\ref{pr} et Eq.~\ref{cr} on obtient
+Maintenant on va calculer la somme des nœuds de couches-régulières $S'_r$ et la somme des nœuds de couches-aléatoires $S'_{al}$ afin de les utiliser dans le calcul de PCC. De Eq.~\eqref{pr} et Eq.~\eqref{cr} on obtient
 
 \begin{eqnarray}
 S'_r &=&n_{1}^{r}+\sum^{\frac{\acute{n}}{2}}_2n_{i}^{r}\\\nonumber
@@ -487,11 +487,11 @@ On commence par le PCC de réseau régulier $\ell_r$ qui s'écrit sous la forme
 \end{equation}
 avec $a_r=\int_1^{\frac{\acute{n}}{2}}n_{i}^{r}di=S'_r$
 est la constante de normalisation, d'où $\ell_r=\int_1^{\frac{\acute{n}}{2}}i\cdot\frac{n_{i}^{r}}{\acute{n}}di$.\\
-De Eq.~\ref{pr} et Eq.~\ref{cr} on obtient
+De Eq.~\eqref{pr} et Eq.~\eqref{cr} on obtient
 \begin{eqnarray}
 \ell_r&=&\frac{1}{\acute{n}}\int^{\frac{\acute{n}}{2}}_1 2ie^{-4q\int_{j=1}^{i-1}(j-1)(q(\acute{n}-2j)+1)^{j-2}dj}di,\nonumber
 \end{eqnarray}
-en utilisant la m\^{e}me approximation précédente de l'Eq.~\ref{sr} on obtient
+en utilisant la m\^{e}me approximation précédente de l'Eq.~\eqref{sr} on obtient
 \begin{eqnarray}
 \ell_r &\approx&\frac{1}{\acute{n}}\int_1^{\frac{\acute{n}}{2}}2ie^{-2qi^2}di \\\nonumber
 &\approx&\frac{1}{\acute{n}}\frac{e^{-2q}-e^{-\frac{q\acute{n}^2}{2}}}{2q}\\\nonumber
@@ -504,9 +504,9 @@ sachant que $\frac{q\acute{n}^2}{2}=nk\phi=x$ et $\acute{n}=\frac{n}{k}$ alors $
 \label{lr}
 \end{eqnarray}
 
-A fin de calculer $\ell_{al}$, nous utilisons la proposition que le PCC est la position de la couche maximale (voir Section.~\ref{pcc}). Dans notre cas ici c'est la position de la couche aléatoire maximale, de point de vue mathématique il suffit de résoudre $\frac{\partial n'_{al}(i)}{di}=0$. Soit $u(i)=4q(i-1)(q(\acute{n}-2i)+1)^{i-2}$, de l'Eq.~\ref{pr} et Eq.~\ref{pal} on obtient que $P_{al}(i)=u(i)e^{-\int_{j=1}^{i-1}u(j)dj}$. D'autre coté, il est évident que $\ell_{al}$ prédomine dans l'expression du PCC si $S_{al}\gg S_r$, alors la dimension de PCC devient négligeable devant la dimension de $\acute{n}$ car le nombre de raccourcis dans le réseau est important, d'où on peut prendre que $\acute{n}-2i\approx \acute{n}$, donc
+A fin de calculer $\ell_{al}$, nous utilisons la proposition que le PCC est la position de la couche maximale (voir Section.~\ref{pcc}). Dans notre cas ici c'est la position de la couche aléatoire maximale, de point de vue mathématique il suffit de résoudre $\frac{\partial n'_{al}(i)}{di}=0$. Soit $u(i)=4q(i-1)(q(\acute{n}-2i)+1)^{i-2}$, de l'Eq.~\eqref{pr} et Eq.~\eqref{pal} on obtient que $P_{al}(i)=u(i)e^{-\int_{j=1}^{i-1}u(j)dj}$. D'autre coté, il est évident que $\ell_{al}$ prédomine dans l'expression du PCC si $S_{al}\gg S_r$, alors la dimension de PCC devient négligeable devant la dimension de $\acute{n}$ car le nombre de raccourcis dans le réseau est important, d'où on peut prendre que $\acute{n}-2i\approx \acute{n}$, donc
 $u(i)=4q(i-1)(q\acute{n}+1)^{i-2}$. Soit  $y=q\acute{n}$ le paramètre qui représente le degré moyen de raccourcis pour chaque nœud après la transformation de GR, car $q$ est la probabilité pour qu'un pair de nœuds se connecte et $\acute{n}$ est le nombre de nœuds.\\
- De l'Eq.~\ref{cal} et $P_{al}(i)=u(i)e^{-\int_{j=1}^{i-1}u(j)dj}$  on obtient
+ De l'Eq.~\eqref{cal} et $P_{al}(i)=u(i)e^{-\int_{j=1}^{i-1}u(j)dj}$  on obtient
 \begin{eqnarray}
 n'_{al}(i)=\acute{n}u(i)e^{-\int_{j=1}^{i-1}u(j)dj},
 \end{eqnarray}
@@ -523,12 +523,12 @@ alors la solution de $\frac{\partial n'_{al}(i)}{\partial i}=0$ est la solution 
 On a $\frac{\partial u(i)}{\partial i}=u(i)\big[\frac{1}{i-1}+\ln(y+1)\big]$ et on sait que $ln(y+1)\gg\frac{1}{i-1}$, car $i$ reflet ici la valeur de PCC qui croit avec la taille 
 du réseau $\acute{n}$, alors si $\acute{n}$ croit l'expression $\frac{1}{i-1}$ tend vers $0$, par contre $y=2k^2\phi$ ne dépend pas de la taille de réseau, d'où on peut négliger $\frac{1}{i-1}$ devant
 $\ln(y+1)$ et  on obtient $\frac{\partial u(i)}{\partial i}=u(i)ln(y+1)$.\\
-Alors l'Eq.~\ref{28} devient
+Alors l'Eq.~\eqref{28} devient
 \begin{equation}
 u(i)=\ln(y+1),
 \label{29}
 \end{equation}
-si on remplace $u(i)$ par son expression $u(i)=4q(i-1)(q\acute{n}+1)^{i-2}=4q(i-1)(y+1)^{i-2}$, on va trouver la solution de l'Eq.~\ref{29} qui nous 
+si on remplace $u(i)$ par son expression $u(i)=4q(i-1)(q\acute{n}+1)^{i-2}=4q(i-1)(y+1)^{i-2}$, on va trouver la solution de l'Eq.~\eqref{29} qui nous 
 donne la position de la couche-aléatoire maximal $i_{max}$ 
 \begin{equation}
 i_{max}=\frac{W\big(\frac{\ln(y+1)^2(y+1)}{4q}\big)}{\ln(y+1)}+1,
@@ -542,11 +542,11 @@ Alors selon notre proposition, la valeur de $\ell_{al}$ est $i_{max}$ multiplié
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=1.25,angle=0]{./figures/fig-kpn}
-	\caption{L'expression universelle $f(x)=\ell/\acute{n}$ en fonction de $x$ pour un réseau de taille $n=10^6$. La formule de Newman et watts Eq.~\ref{eq-ws} (ligne rouge), Eq.~\ref{l2} (ligne vert), Eq.~\ref{l} (ligne noir) et les simulations numériques pour $k=1$ (cercle) et $k=5$ (carré). L'échelle est linéaire-log dans \textbf{a)} et log-log dans \textbf{b)}. Chaque simulation est moyennée à $100$ réalisations.}
+	\caption{L'expression universelle $f(x)=\ell/\acute{n}$ en fonction de $x$ pour un réseau de taille $n=10^6$. La formule de Newman et watts Eq.~\eqref{eq-ws} (ligne rouge), Eq.~\eqref{l2} (ligne vert), Eq.~\eqref{l} (ligne noir) et les simulations numériques pour $k=1$ (cercle) et $k=5$ (carré). L'échelle est linéaire-log dans \textbf{a)} et log-log dans \textbf{b)}. Chaque simulation est moyennée à $100$ réalisations.}
 	\label{chemin}
 \end{figure}
 
-De l'Eq.~\ref{lr} et Eq.~\ref{lal} on obtient l'expression globale de PCC 
+De l'Eq.~\eqref{lr} et Eq.~\eqref{lal} on obtient l'expression globale de PCC 
 \begin{equation}
 \ell=\bigg(\frac{W\big(\frac{\ln(y+1)^2(y+1)}{4q}\big)}{ln(y+1)}+1\bigg)h(x)+\acute{n}\frac{1-e^{-x}}{4x}
 \label{l}
@@ -557,12 +557,12 @@ pour trouver une expression universelle de $l$ en fonction du nombre des raccour
 \label{l2}
 \end{eqnarray}
 avec $f(x)=\big(\frac{2W(\frac{x}{2})h(x)+1-e^{-x}}{4x}\big)$ est la nouvelle fonction universelle.\\
-De la Fig.~\ref{chemin}, on voit que l'Eq.~\ref{l} est en accord avec les simulations sauf dans l'intervalle
+De la Fig.~\ref{chemin}, on voit que l'Eq.~\eqref{l} est en accord avec les simulations sauf dans l'intervalle
 $1<x<20$  où il y a une certaine déviation, on explique cela par la proposition de l'existence des fluctuations élevé dans cette intervalle, car il est évident que lorsque les fluctuations devient importantes l'approximation du champs moyen n'est plus valable,  comme le cas usuel dans tous les systèmes physiques au voisinage des points critiques. On montre notre proposition par les simulations en utilisant le paramètre
 d'ordre, $\frac{S_{al}}{n}$.
 Soit $\sigma=\frac{\sqrt{\textless \frac{S_{al}}{n}^2\textgreater-\textless \frac{S_{al}}{n}\textgreater^2}}{\textless \frac{S_{al}}{n}\textgreater}$
 les fluctuations de $\frac{S_{al}}{n}$ par rapport à sa taille,  en effet selon la Fig.~\ref{fluct} le maximum des fluctuations
-est dans l'intervalle $1<x<20$ où l'Eq.~\ref{l} montre une petite déviation.\\
+est dans l'intervalle $1<x<20$ où l'Eq.~\eqref{l} montre une petite déviation.\\
 
 \begin{figure}[h!]
 	\centering
@@ -573,7 +573,7 @@ est dans l'intervalle $1<x<20$ où l'Eq.~\ref{l} montre une petite déviation.\\
 
 \section{Émergence spectaculaire vers la propriété petit-monde}
 \subsection{Échoué de l'ancien fonction universelle et la saturation des raccourcis}
-Selon l'Eq.~\ref{l}, l'expression universel $\ell=\acute{n}f(x)$
+Selon l'Eq.~\eqref{l}, l'expression universel $\ell=\acute{n}f(x)$
 n'est plus valable si la condition $y\ll 1$ n'est pas vérifié, qu'on peut aussi montrer par les simulations numériques. Soit $\Delta$ l'écart de $\frac{\ell}{\acute{n}}$ en fonction
 de $y$ entre un réseau de $n$, $k$ et $\phi$ donné et d'autres réseaux possédant des valeur aléatoires $n_{al}$, $k_{al}$ 
 et $\phi_{al}$ sous la condition que $nk\phi=n_{al}k_{al}\phi_{al}$. L'expression de l'écart de $\frac{\ell}{\acute{n}}$  peut s'écrire  comme
@@ -597,7 +597,7 @@ La saturation des raccourcis peut signifier que le réseau commence à posséder
 autrement dit le PCC devient de l'ordre de $\ln(n)$, pour confirmer cette proposition on réalise des simulations numériques et on  les compare avec notre équation. En effet, de la Fig.~\ref{fu} on voit que le rapport
 $\frac{\ln(n)}{\ell}$ émerge et devient important d'une façon universelle en fonction du même paramètre $y$ avec lequel la saturation émerge. Alors une nouvelle équation universelle $g$ sous la forme $g(y)=\frac{\ln(n)}{\ell}$ apparaît.\\
 
-Maintenant on essaye de formuler l'expression analytique de cette nouvelle équation universelle $g$, de l'Eq.~\ref{l} on peut trouver facilement que dans la limite de grande taille de système on va obtenir que
+Maintenant on essaye de formuler l'expression analytique de cette nouvelle équation universelle $g$, de l'Eq.~\eqref{l} on peut trouver facilement que dans la limite de grande taille de système on va obtenir que
 \begin{eqnarray}
 \frac{\ln(n)}{\ell}=\ln(y+1).
 \label{kp1}
@@ -606,17 +606,17 @@ Maintenant on essaye de formuler l'expression analytique de cette nouvelle équa
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=1,angle=0]{./figures/fig4-4}
-	\caption{L'expression universelle de PCC en fonction de $y$, par Eq.\ref{kp2} (ligne continue) et par les simulations numériques pour différents valeurs de $n$ et $k$, $n=10^{-6}$ et $k=20$ (étoile), $n=10^{-5}$ et $k=5$ (carré), $n=10^{-4}$ et $k=2$ (cercle),$n=10^{-3}$ et $k=1$ (triangle), nombre de réalisations pour chaque simulations est $100$. En \textbf{a)} l' échelle est linéaire-log et en \textbf{b)} l'échelle est log-log.}
+	\caption{L'expression universelle de PCC en fonction de $y$, par Eq.~\eqref{kp2} (ligne continue) et par les simulations numériques pour différents valeurs de $n$ et $k$, $n=10^{-6}$ et $k=20$ (étoile), $n=10^{-5}$ et $k=5$ (carré), $n=10^{-4}$ et $k=2$ (cercle),$n=10^{-3}$ et $k=1$ (triangle), nombre de réalisations pour chaque simulations est $100$. En \textbf{a)} l' échelle est linéaire-log et en \textbf{b)} l'échelle est log-log.}
 	\label{fu}
 \end{figure}
 
-Il est évident que l'Eq.~\ref{kp1} n'est pas une expression exacte à cause de la transformation de GR que nous avons utilisé au début lorsque nous avons supposé que chaque $k$ voisins, on le dénommé ici \textsf{amas}, est comme  un seul nœud.\\
+Il est évident que l'Eq.~\eqref{kp1} n'est pas une expression exacte à cause de la transformation de GR que nous avons utilisé au début lorsque nous avons supposé que chaque $k$ voisins, on le dénommé ici \textsf{amas}, est comme  un seul nœud.\\
 Sur le trajet de PCC entre deux amas quelconques dans le réseau on trouve des liens ordinaires et des raccourcis, dans le cas où il y a deux raccourcis successifs sur le trajet, c'est-à-dire on a deux raccourcis liant au m\^{e}me \textsf{amas}, la probabilité que les deux raccourcis liant au m\^{e}me nœuds dans cette amas est $\frac{1}{k}$ et la probabilité que les deux raccourcis ne lient pas au m\^{e}me nœud, c'est-à-dire on aura un lien en plus, est  $1-\frac{1}{k}$, autrement dit chaque fois on a deux raccourcis successifs il y a une probabilité de $1-\frac{1}{k}$ que le PCC augment par $1$.\\
 D'autre part, le nombre des liens réguliers qui lient entre les \textsf{amas} est toujours
 $\acute{n}$ et le nombre des raccourcis entre les \textsf{amas} est $\frac{q\acute{n}(\acute{n}-1)}{2}\approx\frac{q\acute{n}^2}{2}$, 
 $q$ est la probabilité qu'un pair d'amas se connecte et $\frac{\acute{n}(\acute{n}-1)}{2}$ est le nombre des pairs possibles. Alors la fraction des raccourcis par rapport au nombre totale des liens est $\frac{q\acute{n}}{2+q\acute{n}}=\frac{y}{2+y}$, d'où la probabilité d'obtenir deux raccourcis liant au m\^{e}me \textsf{amas} dans le trajet entre deux nœuds quelconque est $(\frac{y}{2+y})^2$. Par conséquent la probabilité pour que la valeur de PCC sera doublé est $(\frac{y}{2+y})^2(1-\frac{1}{k})$, où $(\frac{y}{2+y})^2$ est la probabilité d'avoir deux 
 raccourcis liant au m\^{e}me \textsf{amas}, et $(1-\frac{1}{k})$ est la probabilité que ces deux amas seront liant à deux nœuds différent. La probabilité que le PCC restera sans aucun changement est $(1-(\frac{y}{2+y})^2)+\frac{1}{k}(\frac{y}{2+y})^2$, le première terme représente la probabilité que deux raccourcis n'est pas liant au m\^{e}me \textsf{amas} et le deuxième représente la probabilité 
-que deux raccourcis liant au m\^{e}me \textsf{amas} et au m\^{e}me nœud $\frac{1}{k}(\frac{y}{2+y})^2$, d'où l'Eq.\ref{kp1} devient
+que deux raccourcis liant au m\^{e}me \textsf{amas} et au m\^{e}me nœud $\frac{1}{k}(\frac{y}{2+y})^2$, d'où l'Eq.~\eqref{kp1} devient
 \begin{eqnarray}
 \frac{\ln(n)}{l}=\frac{\ln(y+1)}{\frac{1}{k}(\frac{y}{2+y})^2+(1-(\frac{y}{2+y})^2)+2(1-\frac{1}{k})(\frac{y}{2+y})^2}
 \end{eqnarray}
