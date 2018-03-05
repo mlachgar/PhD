@@ -76,6 +76,63 @@ Le modèle de Watts-Storogatz (WS) retient une attention particulière depuis so
 \caption{Un réseau petit-monde WS pour  $n=20$, $k=2$ sans raccourcis.}
 \label{NW}
 \end{figure}
+
+ \subsection{Le modèle petit-monde de Watts-Strogatz}
+ 
+ 
+ Le réseau aléatoire ER reproduit très bien l'observation concernant la longueur moyenne relativement petite des chemins, mais le coefficient de regroupement (Clustering) dans ce réseau est très faible par rapport à ceux observés dans les systèmes réels, et la distribution des degrés est déférente de celle du réseau réel. En 1998 Watts et Strogatz \cite{Watss-Strogatz1998} ont proposé un modèle qui reproduit deux propriétés parmi celles mentionnées précédemment de manière simple.\\
+ Les modèles de petit-monde peuvent être construits sur des réseaux de n'importe quelle dimension ou topologie, mais le cas le mieux étudié est l'unidimensionnel. Soit $n$ le nombre de nœuds et $k$ un nombre pair, le modèle Watt-Strogatz commence par la construction suivante (voir Fig.\ref{SW1}): 
+ \begin{itemize}
+ 	\item Placez tous les noeuds en cercle;
+ 	\item Connectez chaque nœud à ses premiers $k$ voisins les plus proches;
+ 	\item  Avec une probabilité $p$ en prenant chaque lien du réseau et on le reconnecte.
+ \end{itemize}
+ \begin{figure}[h!]
+ 	\centering
+ 	\includegraphics[scale=0.6]{./figures/SW1}
+ 	\caption{Représentation schématique de l'évolution du processus de "reconnexion" dans le modèle Watts-Strogatz.}  	
+ 	\label{SW1}
+ \end{figure}
+ 
+ Ce modèle peut être justifié en disant que la plupart des gens sont amis avec leurs voisins immédiats,  par exemple les voisins de la même rue ou des collègues du même bureau. D'autre part, beaucoup des gens ont quelques amis qui se vivent loin. Les propriétés structurelles du modèle sont quantifiées par la longueur de chemin caractéristique $L(p)$ et le coefficient de regroupement $C(p)$ en tant que fonctions de la probabilité de reconnecter $p$. La longueur de chemin caractéristique $L$ est définie comme la valeur moyenne de nombre d'arêtes dans le chemin le plus court entre deux nœuds.\\
+ Nous savons que le réseau ordinaire à $p=0$ est un grand monde en grappe, où $L$ se développe linéairement avec $n$, tandis que le graphe aléatoire à $p=1$ est un petit monde faiblement regroupé où $L$ ne se développe que logarithmiquement avec $n$. 
+ \begin{figure}[h!]
+ 	\centering
+ 	\includegraphics[scale=0.75]{./figures/SW2}
+ 	\caption{Représentation de la variation de la longueur moyenne du chemin $L(p)$ et du coefficient de regroupement $C(p)$ avec la modification de la probabilité de reconnexion $p$ dans le modèle Watts-Strogatz.}  	
+ 	\label{SW2}
+ \end{figure}
+ 
+ 
+ Selon Fig.~\ref{SW2} on voit que l'introduction de quelques bords à longue distance entraîne une baisse immédiate de $L(p)$, par contre $C(p)$ reste pratiquement inchangé pour les petites $p$ même si $L(p)$ chute rapidement. L'implication importante est que, au niveau local, la mise à l'échelle du petit monde de la distance géodésique moyenne entre les nœuds peut se produire pour les mêmes valeurs de $p$ auxquelles le coefficient de regroupement local du réseau est significativement important.\\
+ Le plus court chemin moyen a été montré comme \cite{Barthelemy-Amaral1999,Newman-al2000}
+ \begin{equation}
+ L\sim \frac{n}{k}f(x),
+ \end{equation}
+ avec $x$ le nombre moyen des bords qui se reconnectent dans le réseau et $f(x)$  une fonction universelle qui a les formes asymptotiques suivantes:
+ \begin{align}
+ f(x)&\sim
+ \begin{cases}
+ \dfrac{1}{4} & \text{si } x \gg1\\
+ \\
+ \dfrac{\log\mathrm{2x}}{\mathrm{4x}}& \text{si } x \ll1.
+ \end{cases}
+ \end{align}
+ 
+ Le coefficient de regroupement C est défini par Eq.~\eqref{Clustering}, que nous reproduisons ici:
+ \begin{equation}
+ C=\frac{3\times\text{(Nombre de triangles)}}{\text{(Nombre de triples connectés)}}.
+ \end{equation}  
+ Pour évaluer $C$, nous devons calculer le nombre de triangles et les triplets connectés dans le réseau, alors on va trouver la valeur moyenne de $C$ comme la suite \cite{Newman2010-558}:
+ \begin{equation}
+ C=\frac{3(k-1)}{4(k-1)+8kp+4kp^2}.
+ \end{equation}  
+ 
+ En ce qui concerne la répartition de degré, lorsque $p=0$ est une fonction delta positionnée à $k$, alors que pour $p=1$ elle est similaire à celle d'un réseau ER. Pour les valeurs intermédiaires de $p$, la répartition du degré est donnée par \cite{Barrat-Weigt2000}:
+ \begin{equation}
+ P(k)=\sum_{i=0}^{\text{min}(k-m,m)}C_i^m\frac{(pm)^{k-m-i}}{(k-m-i)}e^{pm}.
+ \end{equation} 
+ 
 \begin{sloppypar}
 \section{La théorie de groupe de renormalisation et transition de phase}
 \end{sloppypar}

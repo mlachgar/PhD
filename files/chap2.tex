@@ -55,6 +55,41 @@ Le modèle de réseau aléatoire suppose qu'on a un nombre fixe de nœuds, $N$. 
 	\label{hosts}
 \end{figure}
 Par conséquent, si nous souhaitons modéliser ces réseaux, nous ne pouvons pas recourir à un modèle statique. Notre approche de modélisation doit plutôt reconnaître que les réseaux sont le produit d'un processus de croissance constant.
+\subsection{Le modèle sans-échelle de Barabási-Albert}
+
+Une caractéristique commune entre le graphe aléatoire ER et les modèles de petit-monde de WS est que la distribution des degrés du réseau est homogène, avec un pic à une valeur moyenne et une décroissance exponentielle, de tels réseaux s'appellent des réseaux exponentiels. Les inconvénients de ces deux modèles précédents est qu'ils ne tiennent pas compte de deux attributs importants de la plupart des réseaux réels.  Premièrement, les réseaux réels sont ouverts et ils sont dynamiquement formés par l'ajout continu de nouveaux nœuds au réseau, par exemple, la WWW génère continuellement de nouvelles pages Web et la littérature de recherche se développe constamment car les nouveaux articles sont en cours de publication. Deuxièmement, le graphique aléatoire ER et le modèle de petit-monde prennent des probabilités uniformes lors de la création de nouvelles arêtes, mais ce n'est pas réaliste non plus.
+
+Une découverte relativement récente et importante dans le domaine des réseaux complexes est l'observation qu'un certain nombre de réseaux complexes à grande échelle, y compris Internet, WWW et les réseaux métaboliques, sont sans échelle et leurs distributions de connectivité ont une forme de puissance (voir Fig.~\ref{scal-free-reels}).\\
+Nous parlons alors ici d'une classe de modèles dont l'objectif principal est de reproduire les processus de croissance qui se déroulent dans des réseaux réels. Nous nous concentrons principalement sur le modèle de croissance du réseau proposé par Barabási et Albert en 1999 \cite{BA1999}, ce modèle repose sur deux hypothèses simples concernant l'évolution du réseau:
+\begin{itemize}
+	\item \textbf{Croissance}: De nouveaux nœuds sont ajoutés au réseau, chaque nouveau nœud étant connecté à $m$ des nœuds existants.
+	\item \textbf{Attachement préférentielle}: Chaque nouveau nœud est connecté aux nœuds existants avec une probabilité proportionnelle à son degré.
+\end{itemize}
+De manière plus détaillée, considérons un réseau évoluant dans le temps, $t$, où, à chaque fois, un nouveau nœud est ajouté au réseau et connecté à $m$ des nœuds existants, où la probabilité de se connecter à un nœud existant,  $i$, $\Pi(i)$ est donné par:
+\begin{equation}
+\Pi(i)=\dfrac{k_i}{\sum_jk_j}.
+\end{equation}
+Le nombre de nœuds initial à l'instant $t=0$ est généralement supposé être connecté et doit être supérieur à $m$, mais les détails de sa structure n'ont qu'un faible effet sur le résultat final.\\
+
+Il existe plusieurs méthodes pour analyser les résultats du modèle Barabási-Albert.
+La méthode la plus simple est une analyse de champ moyen décrite initialement dans \cite{BA1999}.
+D'autres méthodes plus rigoureuse d'analyse de ce modèle utilisant des outils de la physique statistique comprennent l'approche de l'équation maîtresse \cite{Dorogovtsev-al2000} et l'approche de l'équation du taux \cite{Krapivsky-al2000}. La distribution des degrés trouvée est décrite par une loi de puissance avec l'exposant $-3$, c'est-à-dire que la probabilité de trouver un nœud avec le degré $k$ est proportionnelle à $k^{-3}$ (voir Fig.~\ref{BA-distribution}). plus précisément l'expression exacte de $P(k)$ est:
+\begin{equation}
+P(k)=\dfrac{2m(m+1)}{k(k+1)(k+2)}.
+\label{pk-1}
+\end{equation}
+
+L'Eq.~\eqref{pk-1} a d'abord été dérivée par Krapivsky et al. \cite{Krapivsky-al2000} et de manière indépendante par Dorogovtsev et al. \cite{Dorogovtsev-al2000-2}. Un traitement plus détaillé a ensuite été donné par Bollobas et al. \cite{Bollobas-Riordan2002}, qui clarifie précisément le domaine de validité de la solution et les écarts éventuels par rapport à la valeur attendue de  $P(k)$ .
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=1]{./figures/fig-barabasi}
+	\caption{La distribution des degrés du réseau BA en échelle logarithmique, où les cercles sont les simulations numériques et la ligne continue représente la formule théorique, Eq.~\eqref{pk-1}. La taille du réseau est $\mathrm{n}=10^{6}$ et $\mathrm{m}=2$ .}	
+	\label{BA-distribution}
+\end{figure} 
+
+La distance moyenne dans le modèle BA est plus petite que dans le graphe aléatoire ER. Les résultats analytiques prédisent une correction de double logarithmique qui diminue la dépendance logarithmique $ L\sim\frac{\log \mathrm{N}}{\log\log\mathrm{N} }$ \cite{Bollobas-Riordan2002}. Le coefficient de regroupement décroît avec la taille du système comme $C\sim N^{-0,75}$. Il s'agit d'une décroissance plus lente que celle observée pour les graphes aléatoires, $C\sim N^{-1}$, mais le comportement reste différent par rapport aux modèles du petit monde, où $C$ est une constante indépendante de la taille du réseau $\mathrm{N}$.
+
 \begin{sloppypar}
 \subsection{L'attachement préférentielle et le mécanisme "rich get richer"}
 \end{sloppypar}

@@ -8,7 +8,7 @@ Dans le présent chapitre, nous présentons l'importance de notre domaine de rec
   
   \begin{figure}[h!]
   	\centering
-  	\includegraphics[scale=0.95]{./figures/exemples-reseaux}
+  	\includegraphics[scale=0.55]{./figures/types-networks2}
   	\caption{Représentation de quelques types de réseaux composés par des nœuds et des arêtes. }
   	\label{exemples-reseaux}
   \end{figure}
@@ -478,7 +478,7 @@ La société offre une grande variété d'organisations de groupes possibles: le
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.55]{./figures/community-network}
+	\includegraphics[scale=0.2]{./figures/community-network2}
 	\caption{Exemples d'un réseau communautaire, chaque couleur représente un groupe plus connecté par rapport au reste du réseau.}
 	\label{community-network}
 \end{figure}
@@ -491,140 +491,3 @@ La détection communautaire est également importante pour d'autres raisons. L'i
 \section{Les modèles théoriques les plus connus} 
 
 De façon générale on peut distinguer trois modèles des réseaux: aléatoire, de petit monde et le modèle sans-échelle. Ces modèles se caractérisent chacun par la manière dont les réseaux sont créés et par plusieurs statistiques résultantes, telles que la distribution des degrés, la longueur moyenne entre les paires de nœuds et le coefficient de Clustering.
-
-   \subsection{Réseau aléatoire d'Erd\H{o}s-Rényi}
-   
- Un réseau aléatoire est créé en spécifiant que chaque paire de nœuds est connecté par un lien avec une probabilité uniforme $p$. Ce type de réseaux a été étudié d'un point de vue mathématique pure par Erd\H{o}s et Rényi (ER) \cite{Erdos-Renyi1959,Erdos-Renyi1960,Erdos-Renyi1961}, il est souvent désigné par son nom mathématique $G(n,m)$, avec $n$ est le nombre de nœuds et $m$ le nombre de liens. 
- Dans la cas où $n$ est très grand, bon nombre de propriétés de l'ensemble des réseaux aléatoires ont été exprimées analytiquement de façon parfaite et élégante.\\
- Les graphes aléatoires ER sont les mieux étudiés parmi les modèles de graphes, leurs propriétés structurelles varient en fonction de $p$ montrant notamment un changement radical à une probabilité critique $p_c=\frac{1}{n}$,
- correspondant à un degré moyen critique $\textless k \textgreater_c=1$. Erdös et Rényi ont prouvé que:\\
- \begin{itemize}
-  \item Si $p <p_c$, lorsque $n$ tend vers l'infini, le graphe n'a quasiment pas de composante de taille  
-  supérieure à $(ln(n))$.
-  \item Si $p=p_c$, la composante la plus importante a quasiment la taille de $n^{\frac{2}{3}}$.
-  \item Si $p> p_c$, le graphe a une composante de taille de l'ordre de $n$ et aucune autre composante n'a de taille supérieure à $(ln(n))$.
- \end{itemize}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=12cm,height=9cm]{./figures/fig-ER-CG}
-	\caption{Les simulations numériques du seuil de percolation dans le modèle ER en fonction du degré moyen, pour un réseau de taille $n=10^5$. On observe que le point où la fraction de la composante géante, $S$, émerge est à $\textless k\textgreater=1$ .}
-	
-	\label{percolation-graph}
-\end{figure}
-
-La transition au $p_c$ présente les caractéristiques typiques d'une transition de phase de deuxième ordre. En particulier, si on considère la taille de la composante la plus importante comme paramètre d'ordre, la transition tombe dans la même classe d'universalité que celle des transitions de percolation de champ moyen (voir Fig.~\ref{percolation-graph}). Erdös et Rényi ont étudié la distribution des degrés minimum et maximum dans le graphe aléatoire, mais la distribution des degrés complet a été obtenue plus tard par Bollobás \cite{Bollobas1998}. La probabilité qu'un nœud possédant le degré  $k$ est la distribution binomiale:
-\begin{equation}
-P(k)=C^k_{n-1}p^k(1-p)^{n-1-k}
-\end{equation}
- Pour $n$ très grand, la répartition du degré est bien approchée par une distribution de Poisson:
- \begin{equation}
- P(k)=e^{-\textless k\textgreater}\dfrac{\textless k\textgreater^k}{k!}
- \label{ER}
- \end{equation}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=1]{./figures/fig-ER-dist}
-	\caption{Illustration de la distribution des degrés d'un réseau aléatoire ER de degré moyen égale $6$, les cercles représentent les simulations numériques et la ligne noire représente Eq.~\eqref{ER}.}
-	
-	\label{ER-distribution}
-\end{figure} 
-
- Le coefficient de regroupement, $C$, est une quantité très simple à calculer pour le graphe aléatoire de Poisson, rappelons qu'il est défini comme la probabilité que deux voisins d'un nœud du réseau soient également voisins les uns des autres. Dans un graphe aléatoire, la probabilité que les deux nœuds soient voisins est égale à $p=\frac{\textless k\textgreater}{(n - 1)}$. Par conséquent:
- 
- \begin{equation}
- C=\dfrac{\textless k\textgreater}{(n - 1)}
- \end{equation}
- 
-Cette valeur de Clustering qui tend vers $0$ quand $n$ tend vers l'infini est l'un des nombreux aspects dans lesquels le graphe aléatoire diffère fortement de la plupart des réseaux réels, dont beaucoup ont des coefficients de regroupement assez élevés.
- 
- 
- \subsection{Le modèle petit-monde de Watts-Strogatz}
- 
-
-   Le réseau aléatoire ER reproduit très bien l'observation concernant la longueur moyenne relativement petite des chemins, mais le coefficient de regroupement (Clustering) dans ce réseau est très faible par rapport à ceux observés dans les systèmes réels, et la distribution des degrés est déférente de celle du réseau réel. En 1998 Watts et Strogatz \cite{Watss-Strogatz1998} ont proposé un modèle qui reproduit deux propriétés parmi celles mentionnées précédemment de manière simple.\\
-   Les modèles de petit-monde peuvent être construits sur des réseaux de n'importe quelle dimension ou topologie, mais le cas le mieux étudié est l'unidimensionnel. Soit $n$ le nombre de nœuds et $k$ un nombre pair, le modèle Watt-Strogatz commence par la construction suivante (voir Fig.\ref{SW1}): 
-   \begin{itemize}
-   	\item Placez tous les noeuds en cercle;
-   	\item Connectez chaque nœud à ses premiers $k$ voisins les plus proches;
-   	\item  Avec une probabilité $p$ en prenant chaque lien du réseau et on le reconnecte.
-   \end{itemize}
-   \begin{figure}[h!]
-   	\centering
-   	\includegraphics[scale=0.6]{./figures/SW1}
-   	\caption{Représentation schématique de l'évolution du processus de "reconnexion" dans le modèle Watts-Strogatz.}  	
-   	\label{SW1}
-   \end{figure}
-
-Ce modèle peut être justifié en disant que la plupart des gens sont amis avec leurs voisins immédiats,  par exemple les voisins de la même rue ou des collègues du même bureau. D'autre part, beaucoup des gens ont quelques amis qui se vivent loin. Les propriétés structurelles du modèle sont quantifiées par la longueur de chemin caractéristique $L(p)$ et le coefficient de regroupement $C(p)$ en tant que fonctions de la probabilité de reconnecter $p$. La longueur de chemin caractéristique $L$ est définie comme la valeur moyenne de nombre d'arêtes dans le chemin le plus court entre deux nœuds.\\
-Nous savons que le réseau ordinaire à $p=0$ est un grand monde en grappe, où $L$ se développe linéairement avec $n$, tandis que le graphe aléatoire à $p=1$ est un petit monde faiblement regroupé où $L$ ne se développe que logarithmiquement avec $n$. 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.75]{./figures/SW2}
-	\caption{Représentation de la variation de la longueur moyenne du chemin $L(p)$ et du coefficient de regroupement $C(p)$ avec la modification de la probabilité de reconnexion $p$ dans le modèle Watts-Strogatz.}  	
-	\label{SW2}
-\end{figure}
-
-
-Selon Fig.~\ref{SW2} on voit que l'introduction de quelques bords à longue distance entraîne une baisse immédiate de $L(p)$, par contre $C(p)$ reste pratiquement inchangé pour les petites $p$ même si $L(p)$ chute rapidement. L'implication importante est que, au niveau local, la mise à l'échelle du petit monde de la distance géodésique moyenne entre les nœuds peut se produire pour les mêmes valeurs de $p$ auxquelles le coefficient de regroupement local du réseau est significativement important.\\
-Le plus court chemin moyen a été montré comme \cite{Barthelemy-Amaral1999,Newman-al2000}
-\begin{equation}
-  L\sim \frac{n}{k}f(x),
-\end{equation}
-avec $x$ le nombre moyen des bords qui se reconnectent dans le réseau et $f(x)$  une fonction universelle qui a les formes asymptotiques suivantes:
-\begin{align}
-f(x)&\sim
-\begin{cases}
-\dfrac{1}{4} & \text{si } x \gg1\\
-\\
-\dfrac{\log\mathrm{2x}}{\mathrm{4x}}& \text{si } x \ll1.
-\end{cases}
-\end{align}
-
-   Le coefficient de regroupement C est défini par Eq.~\eqref{Clustering}, que nous reproduisons ici:
- \begin{equation}
- C=\frac{3\times\text{(Nombre de triangles)}}{\text{(Nombre de triples connectés)}}.
- \end{equation}  
-Pour évaluer $C$, nous devons calculer le nombre de triangles et les triplets connectés dans le réseau, alors on va trouver la valeur moyenne de $C$ comme la suite \cite{Newman2010-558}:
-\begin{equation}
-C=\frac{3(k-1)}{4(k-1)+8kp+4kp^2}.
-\end{equation}  
-
-En ce qui concerne la répartition de degré, lorsque $p=0$ est une fonction delta positionnée à $k$, alors que pour $p=1$ elle est similaire à celle d'un réseau ER. Pour les valeurs intermédiaires de $p$, la répartition du degré est donnée par \cite{Barrat-Weigt2000}:
-\begin{equation}
-P(k)=\sum_{i=0}^{\text{min}(k-m,m)}C_i^m\frac{(pm)^{k-m-i}}{(k-m-i)}e^{pm}.
-\end{equation} 
-
-   \subsection{Le modèle sans-échelle de Barabási-Albert}
-   
-Une caractéristique commune entre le graphe aléatoire ER et les modèles de petit-monde de WS est que la distribution des degrés du réseau est homogène, avec un pic à une valeur moyenne et une décroissance exponentielle, de tels réseaux s'appellent des réseaux exponentiels. Les inconvénients de ces deux modèles précédents est qu'ils ne tiennent pas compte de deux attributs importants de la plupart des réseaux réels.  Premièrement, les réseaux réels sont ouverts et ils sont dynamiquement formés par l'ajout continu de nouveaux nœuds au réseau, par exemple, la WWW génère continuellement de nouvelles pages Web et la littérature de recherche se développe constamment car les nouveaux articles sont en cours de publication. Deuxièmement, le graphique aléatoire ER et le modèle de petit-monde prennent des probabilités uniformes lors de la création de nouvelles arêtes, mais ce n'est pas réaliste non plus.
-
-Une découverte relativement récente et importante dans le domaine des réseaux complexes est l'observation qu'un certain nombre de réseaux complexes à grande échelle, y compris Internet, WWW et les réseaux métaboliques, sont sans échelle et leurs distributions de connectivité ont une forme de puissance (voir Fig.~\ref{scal-free-reels}).\\
-Nous parlons alors ici d'une classe de modèles dont l'objectif principal est de reproduire les processus de croissance qui se déroulent dans des réseaux réels. Nous nous concentrons principalement sur le modèle de croissance du réseau proposé par Barabási et Albert en 1999 \cite{BA1999}, ce modèle repose sur deux hypothèses simples concernant l'évolution du réseau:
-\begin{itemize}
-	\item \textbf{Croissance}: De nouveaux nœuds sont ajoutés au réseau, chaque nouveau nœud étant connecté à $m$ des nœuds existants.
-	\item \textbf{Attachement préférentielle}: Chaque nouveau nœud est connecté aux nœuds existants avec une probabilité proportionnelle à son degré.
-\end{itemize}
-De manière plus détaillée, considérons un réseau évoluant dans le temps, $t$, où, à chaque fois, un nouveau nœud est ajouté au réseau et connecté à $m$ des nœuds existants, où la probabilité de se connecter à un nœud existant,  $i$, $\Pi(i)$ est donné par:
-\begin{equation}
-\Pi(i)=\dfrac{k_i}{\sum_jk_j}.
-\end{equation}
-Le nombre de nœuds initial à l'instant $t=0$ est généralement supposé être connecté et doit être supérieur à $m$, mais les détails de sa structure n'ont qu'un faible effet sur le résultat final.\\
-
-Il existe plusieurs méthodes pour analyser les résultats du modèle Barabási-Albert.
-La méthode la plus simple est une analyse de champ moyen décrite initialement dans \cite{BA1999}.
-D'autres méthodes plus rigoureuse d'analyse de ce modèle utilisant des outils de la physique statistique comprennent l'approche de l'équation maîtresse \cite{Dorogovtsev-al2000} et l'approche de l'équation du taux \cite{Krapivsky-al2000}. La distribution des degrés trouvée est décrite par une loi de puissance avec l'exposant $-3$, c'est-à-dire que la probabilité de trouver un nœud avec le degré $k$ est proportionnelle à $k^{-3}$ (voir Fig.~\ref{BA-distribution}). plus précisément l'expression exacte de $P(k)$ est:
-\begin{equation}
- P(k)=\dfrac{2m(m+1)}{k(k+1)(k+2)}.
-\label{pk-1}
-\end{equation}
-
-L'Eq.~\eqref{pk-1} a d'abord été dérivée par Krapivsky et al. \cite{Krapivsky-al2000} et de manière indépendante par Dorogovtsev et al. \cite{Dorogovtsev-al2000-2}. Un traitement plus détaillé a ensuite été donné par Bollobas et al. \cite{Bollobas-Riordan2002}, qui clarifie précisément le domaine de validité de la solution et les écarts éventuels par rapport à la valeur attendue de  $P(k)$ .
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=1]{./figures/fig-barabasi}
-	\caption{La distribution des degrés du réseau BA en échelle logarithmique, où les cercles sont les simulations numériques et la ligne continue représente la formule théorique, Eq.~\eqref{pk-1}. La taille du réseau est $\mathrm{n}=10^{6}$ et $\mathrm{m}=2$ .}	
-	\label{BA-distribution}
-\end{figure} 
-
-La distance moyenne dans le modèle BA est plus petite que dans le graphe aléatoire ER. Les résultats analytiques prédisent une correction de double logarithmique qui diminue la dépendance logarithmique $ L\sim\frac{\log \mathrm{N}}{\log\log\mathrm{N} }$ \cite{Bollobas-Riordan2002}. Le coefficient de regroupement décroît avec la taille du système comme $C\sim N^{-0,75}$. Il s'agit d'une décroissance plus lente que celle observée pour les graphes aléatoires, $C\sim N^{-1}$, mais le comportement reste différent par rapport aux modèles du petit monde, où $C$ est une constante indépendante de la taille du réseau $\mathrm{N}$.
