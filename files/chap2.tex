@@ -10,9 +10,9 @@ L'objectif est double: d'abord vérifier si la distribution des degrés en loi d
 
 Au cours des dernières années, il existe un intérêt croissant à étudier l'évolution des réseaux complexes et à développer des modèles qui reflètent certaines propriétés des réseaux réels en utilisant les techniques de la mécanique statistique, la théorie des graphes et les simulations informatiques \cite{BA1999,AB2002,Dorogovtsev-Mendes2002,Newman2003}. L'une des propriétés les plus importantes étudiée en réseaux est la distribution des degrés qui est la probabilité $P(k)$ qu'un nœud ait un degré $k$.
 On peut distinguer trois lois principales de la distribution des degrés: loi de Poisson où $P(k)=e^{-\langle k\rangle}\frac{\langle k\rangle^k}{k!}$, loi de puissance avec $P(k)\approx k^{-\gamma}$ et $\gamma$ représente le degré d'exposant, et la loi exponentiel $P(k)\approx e^{-\frac{k}{c}}$ où $c$ est une constante.\\
-Il semble que, dans la nature, la plupart des réseaux suivent les deux dernières lois de distribution mentionnées ci-dessus. Barab\'{a}si-Albert (BA) a réinventé le réseau de distribution des degrés libre-échelle de Pric en introduisant un modèle simplifié basé à la fois sur la croissance et l'attachement préférentiel. Le réseau libre-échelle est largement observé dans une variété de systèmes tels que des réseaux de citation de publication, de nombreux réseaux sociaux, des réseaux de protéines et de gènes. Cependant, il existe d'autres réseaux réels qui suivent une loi exponentielle, par exemple, le Réseau mondial de transport maritime \cite{ Deng-al2009}, le réseau nord-américain Power Gridc \cite{Albert-al2004}, réseaux neuronaux des C.elegans \cite{Achacoso-Yamamoto1992} et le réseau de messagerie à l'Université de Rovira i Virgili (ENURV ) en Espagne \cite{Albert-al2004}.\\
+Il semble que, dans la nature, la plupart des réseaux suivent les deux dernières lois de distribution mentionnées ci-dessus. Barab\'{a}si-Albert (BA) a réinventé le réseau de distribution des degrés sans-échelle de Pric en introduisant un modèle simplifié basé à la fois sur la croissance et l'attachement préférentiel. Le réseau sans-échelle est largement observé dans une variété de systèmes tels que des réseaux de citation de publication, de nombreux réseaux sociaux, des réseaux de protéines et de gènes. Cependant, il existe d'autres réseaux réels qui suivent une loi exponentielle, par exemple, le Réseau mondial de transport maritime \cite{ Deng-al2009}, le réseau nord-américain Power Gridc \cite{Albert-al2004}, réseaux neuronaux des C.elegans \cite{Achacoso-Yamamoto1992} et le réseau de messagerie à l'Université de Rovira i Virgili (ENURV ) en Espagne \cite{Albert-al2004}.\\
 La loi exponentielle semble être le résultat d'un réseau croissant en ajoutant de nouveaux nœuds et liens aléatoires. D'autre part, la loi de puissance semble apparaître lorsque les nœuds sont ajoutés au réseau un à la fois et en les liant à des nœuds déjà connectés.
-De nombreuses idées sur la formation des réseaux ont été examinées. Par exemple, Barab\'{a}si, dans son modèle, a affirmé que l'attachement préférentiel et la croissance sont tous les deux nécessaires pour générer un réseau libre-échelle \cite{BA-al1999}. En réalité, il semble que la croissance n'est pas nécessaire pour un tel objectif \cite{Xie-al2008}. En outre, il est intuitif, que l'attachement préférentiel sans l'effet "rich get richer" ne génère pas un réseau libre-échelle \cite{Samalam}. Krapivsky et al \cite{Krapivsky-al2000} ont étudié la fixation préférentielle non linéaire avec $\Pi(k_i)\varpropto k^{\gamma}$ et ils ont montré que pour $\gamma<1$, le mécanisme produit une distribution des degrés de loi exponentiel.
+De nombreuses idées sur la formation des réseaux ont été examinées. Par exemple, Barab\'{a}si, dans son modèle, a affirmé que l'attachement préférentiel et la croissance sont tous les deux nécessaires pour générer un réseau sans-échelle \cite{BA-al1999}. En réalité, il semble que la croissance n'est pas nécessaire pour un tel objectif \cite{Xie-al2008}. En outre, il est intuitif, que l'attachement préférentiel sans l'effet "rich get richer" ne génère pas un réseau sans-échelle \cite{Samalam}. Krapivsky et al \cite{Krapivsky-al2000} ont étudié la fixation préférentielle non linéaire avec $\Pi(k_i)\varpropto k^{\gamma}$ et ils ont montré que pour $\gamma<1$, le mécanisme produit une distribution des degrés de loi exponentiel.
 
 \section{Les processus dynamiques: théorie et simulation}
 
@@ -29,7 +29,7 @@ Le but de ces différentes méthodes théoriques est de fournir un cadre génér
 Le nom "équation maîtresse" a été inventé à l'origine par Nordsieck, Lamb et Uhlenbeck \cite{Nordsieck-al1940} dans leur étude du modèle Furry des averses de pluie cosmiques \cite{Furry1937}. Peu de temps auparavant, Feller a appliqué une équation de la même structure à la croissance des populations \cite{Feller1939} et Delbrück à des réactions chimiques auto-catalytiques bien mélangées \cite{Delbruck1940}. Pour plus de détailles vous pouvez voire ces références \cite{Kampen2007,Gardiner2009,Weber-Frey2017}.\\
 Deux schémas de modélisation principaux sont adoptés pour traiter les processus dynamiques sur les réseaux. Dans le premier, nous identifions chaque nœud du réseau avec un seul individu ou élément du système. Dans le second cas, nous considérons les entités dynamiques telles que les personnes, les paquets d'information, l'énergie ou la matière circulant dans un réseau dont les nœuds identifient les endroits où transitent les entités dynamiques. Cependant, dans les deux cas, la description dynamique du système peut être obtenue en introduisant pour chaque nœud $i$ la notion de variable correspondante $\sigma_i$ caractérisant son état dynamique. Si chaque nœud représente un seul individu, la variable $\sigma_i$ peut décrire un attribut particulier de l'individu.
 Sans perdre de généralité, nous pouvons énumérer tous les états possibles $\sigma_i=1, 2,. . ., m$ pour chaque nœud, et la connaissance de la variable d'état de tous les nœuds du réseau définit donc l'état microscopique de l'ensemble du système. Alors on peut désigner une configuration particulière du réseau à l'instant $t$ par l'ensemble $\sigma(t)=[\sigma_1(t),\sigma_2(t),\sigma_3(t), ...,\sigma_N(t)]$, où l'indice $i = 1,. . ., N$ parcourt tous les nœuds du réseau de taille $N$.\\
-L'évolution dynamique du système est simplement donnée par la dynamique de la configuration $\sigma(t)$ dans l'espace des phases du système, définie par toutes les configurations possibles. Le processus dynamique est décrit par les transitions d'un état $\sigma^a$ vers uu autre état $\sigma^b$. En général, il est impossible de suivre la dynamique microscopique des systèmes à grande échelle en raison du grand nombre de variables et de la nature stochastique de la plupart des phénomènes. Pour cette raison, la description dynamique de base du système repose sur l'approche de l'équation maîtresse (EM) que nous allons brièvement introduire.\\
+L'évolution dynamique du système est simplement donnée par la dynamique de la configuration $\sigma(t)$ dans l'espace des phases du système, définie par toutes les configurations possibles. Le processus dynamique est décrit par les transitions d'un état $\sigma^a$ vers un autre état $\sigma^b$. En général, il est impossible de suivre la dynamique microscopique des systèmes à grande échelle en raison du grand nombre de variables et de la nature stochastique de la plupart des phénomènes. Pour cette raison, la description dynamique de base du système repose sur l'approche de l'équation maîtresse (EM) que nous allons brièvement introduire.\\
 L'approche EM se concentre sur l'étude de la probabilité $P(\sigma,t)$ de trouver le système à l'instant t dans une configuration donnée $\sigma$. Cette probabilité doit être normalisée, $\sum_{\sigma}P(\sigma,t)=1$, et fournit une description probabiliste du système qui donne les informations les plus pertinentes
 \begin{equation}
 \frac{\partial P(\sigma,t)}{\partial t}=\sum_{\sigma'}[P(\sigma',t)W(\sigma'\rightarrow \sigma)-P(\sigma,t)W(\sigma\rightarrow \sigma')],
@@ -44,7 +44,7 @@ Dans ces approches, chaque nœud individuel est supposé être dans l'un des ét
 \begin{sloppypar}
 \section{L'évolution dynamique et l'attachement préférentiel  dans les réseaux réels}
 \end{sloppypar}
-Nous commençons ce paragraphe en se demandant: Pourquoi les hubs et la loi libre-échelle sont-elles absentes dans les réseaux aléatoires? La réponse a émergé en $1999$, mettant en évidence deux hypothèses qui sont apparues dans les réseaux réels \cite{BA1999}. Nous discutons ensuite de ces hypothèses séparément.
+Nous commençons ce paragraphe en se demandant: Pourquoi les hubs et la loi sans-échelle sont-elles absentes dans les réseaux aléatoires? La réponse a émergé en $1999$, mettant en évidence deux hypothèses qui sont apparues dans les réseaux réels \cite{BA1999}. Nous discutons ensuite de ces hypothèses séparément.
 
 \subsection{L'évolution dynamique}
 Le modèle de réseau aléatoire suppose qu'on a un nombre fixe de nœuds, $N$. Pourtant, dans les réseaux réels, le nombre de nœuds ne cesse de croître grâce à l'ajout de nouveaux nœuds, par exemple, En $1991$, le WWW avait un seul nœud, la première page Web construite par Tim Berners-Lee, le créateur du Web. Aujourd'hui, le Web a plus d'un trillion ($10^{12}$) de documents, un nombre extraordinaire qui a été atteint grâce à l'ajout continu de nouveaux documents par des millions d'individus et d'institutions (voir Fig.~\ref{hosts}). Ainsi que le réseau d'acteurs qui continue de se développer \cite{Barabasi2015}.
@@ -59,7 +59,7 @@ Par conséquent, si nous souhaitons modéliser ces réseaux, nous ne pouvons pas
 \subsection{L'attachement préférentielle et le mécanisme "rich get richer"}
 \end{sloppypar}
 Le modèle des réseaux aléatoires suppose que nous choisissons au hasard les partenaires d'interaction d'un nœud. Pourtant, la plupart des réseaux réels les nouveaux nœuds préfèrent se lier aux nœuds les plus connectés, ce processus appelé attachement préférentiel. Par exemple, nous ne connaissons qu'une infime fraction du trillion ou plus de documents disponibles sur le WWW. Les nœuds que nous connaissons ne sont pas entièrement aléatoires: nous avons tous entendu parler de Google et de YouTube, mais nous rencontrons rarement les milliards de nœuds moins importants qui sont dans le Web. Comme nos connaissances sont biaisées vers les documents Web les plus populaires, nous sommes plus susceptibles de se lier à un nœud de haut niveau qu'à un nœud avec seulement quelques liens \cite{Barabasi2002}.\\
-L'ancienneté, cependant, n'est pas suffisante pour expliquer la loi libre-échelle. Les Hubs nécessitent l'aide de la deuxième loi, l'attachement préférentiel. Parce que les nouveaux nœuds préfèrent se lier aux nœuds les plus connectés, les premiers nœuds avec plus de liens seront sélectionnés plus souvent et croîtront plus rapidement que les autres qui sont plus jeunes et moins connectés. Comme de plus en plus de nœuds arrivent et continuent de choisir les nœuds les plus connectés, les premiers nœuds vont inévitablement se détacher du paquet, acquérant un très grand nombre de liens. Ils vont se transformer en hubs. Ainsi, l'attachement préférentiel induit un phénomène "rich get richer" qui aide les nœuds les plus connectés à devenir plus connectés. Alors ce phénomène "rich get richer" mène naturellement aux lois libre-échelle observées dans les réseaux réels, nous allons confirmer cette idée dans la section suivante par notre propre travail et par une façons plus rigoureuse.
+L'ancienneté, cependant, n'est pas suffisante pour expliquer la loi sans-échelle. Les Hubs nécessitent l'aide de la deuxième loi, l'attachement préférentiel. Parce que les nouveaux nœuds préfèrent se lier aux nœuds les plus connectés, les premiers nœuds avec plus de liens seront sélectionnés plus souvent et croîtront plus rapidement que les autres qui sont plus jeunes et moins connectés. Comme de plus en plus de nœuds arrivent et continuent de choisir les nœuds les plus connectés, les premiers nœuds vont inévitablement se détacher du paquet, acquérant un très grand nombre de liens. Ils vont se transformer en hubs. Ainsi, l'attachement préférentiel induit un phénomène "rich get richer" qui aide les nœuds les plus connectés à devenir plus connectés. Alors ce phénomène "rich get richer" mène naturellement aux lois sans-échelle observées dans les réseaux réels, nous allons confirmer cette idée dans la section suivante par notre propre travail et par une façons plus rigoureuse.
 \begin{sloppypar}
 \section{Attachement préférentiel sans l'effet "rich get richer"}
 \end{sloppypar}
@@ -120,7 +120,7 @@ P(k)&=
 \end{cases}
 \label{eq4-2}
 \end{align}
-Bien que cette équation ne soit pas fermée, l'estimation numérique de $ P (k) $ est simple comme le montre la figure ~\ref{fig1-2}. \\
+Bien que cette équation ne soit pas fermée, l'estimation numérique de $ P (k) $ est simple comme le montre Fig.~\ref{fig1-2}. \\
 Nous simulons également le réseau avec des tailles allant jusqu'à $n=2\times10^6$, le nombre initial des nœuds est $m_0=3$ et $m=2$. 
 Les résultats de la simulation confirment fortement les résultats analytiques (voir Fig.~\ref{fig1-2}). 
 
@@ -130,7 +130,7 @@ Les résultats de la simulation confirment fortement les résultats analytiques 
 	\caption{les résultats de la simulation (cercles)  pour $n=2.10^6$, $m=2$, $m_0=3$, et la solution numérique (	ligne continue) pour Eq.~\eqref{eq4-2}. Dans l'encart, nous tracerons les mêmes données dans l'échelle log-linéaire.}
 	\label{fig1-2}
  \end{figure} 
-Nous avons observé dans les simulations que $k$ reste inférieur à $40$ pour $t=2.10^6$, nous prenons alors $t\gg j $ dans Eq.~\ref{eq4-2} et nous obtenons
+Nous avons observé dans les simulations que $k$ reste inférieur à $40$ pour $t=2.10^6$, nous prenons alors $t\gg j $ dans Eq.~\eqref{eq4-2} et nous obtenons
 \begin{align}
 P(k)&\approx 
 \begin{cases}
@@ -142,10 +142,10 @@ P(k)&\approx
 \end{align}
 Après la normalisation, nous obtenons la distribution des degrés exponentielle $P(k)=Ae^{-A(k-m)}$, avec $A=\log(\dfrac{m+1}{m})$.
 L'encart de la figure Fig.~\ref{fig1-2} montre la forme exponentielle de $ P(k)$ et l'excellent accord entre les simulations et les résultats théoriques.
-Ceci confirme clairement que l'attachement préférentiel seul n'est pas suffisant pour produire des réseaux libre-échelle.
+Ceci confirme clairement que l'attachement préférentiel seul n'est pas suffisant pour produire des réseaux sans-échelle.
 
 \subsection{Comparaison au niveau microscopique avec le modèle de BA}
- Nous recherchons les différences entre réseaux hétérogènes et homogènes en comparant notre modèle au modèle BA. La distribution des degrés ne suffit pas à elle seule à caractériser les réseaux. Le calcul d'autres quantités microscopiques peut aider à mieux comprendre leur évolution et leur formation. Il s'avère que le réseau libre-échelle a des nœuds avec un degré important (hubs), tandis que le réseau aléatoire n'a pas de structure apparente. L'évaluation du degré moyen instantané du nœud cible $\kms$ et de ses fluctuations peut fournir des informations quantitatives sur les nœuds du réseau. En fait, $\kms$ est en quelque sorte lié au degré moyen instantané des hubs, car lors du choix aléatoire des nœuds, les hubs ont plus de chance d'être sélectionnés. \\  
+ Nous recherchons les différences entre réseaux hétérogènes et homogènes en comparant notre modèle au modèle BA. La distribution des degrés ne suffit pas à elle seule à caractériser les réseaux. Le calcul d'autres quantités microscopiques peut aider à mieux comprendre leur évolution et leur formation. Il s'avère que le réseau sans-échelle a des nœuds avec un degré important (hubs), tandis que le réseau aléatoire n'a pas de structure apparente. L'évaluation du degré moyen instantané du nœud cible $\kms$ et de ses fluctuations peut fournir des informations quantitatives sur les nœuds du réseau. En fait, $\kms$ est en quelque sorte lié au degré moyen instantané des hubs, car lors du choix aléatoire des nœuds, les hubs ont plus de chance d'être sélectionnés. \\  
  Dans un premier temps, nous analysons $\kms$ et $\kmss$ dans le réseau BA
  \begin{eqnarray}
  \kms=\sum_{t_i=1}^t\Pi(k_i)k_i(t)+m_0\Pi(k_0)k_0(t),
@@ -154,20 +154,20 @@ Ceci confirme clairement que l'attachement préférentiel seul n'est pas suffisa
  où  $\Pi(k_i)=\frac{k_i(t)}{2mt+mm_0}$, $t_i$ est l'instant auquel le nœud $ i $ a été créé et $ k_0 (t) $ est le degré des nœuds initiaux à l'instant $t$.\\
  $k_i (t)$ est facilement calculé à partir de l'équation d'évolution du degré de champ moyen:
  $\dfrac{\partial k_i(t)}{\partial t}=~ m\Pi(k_i)$, qui donne $k_i(t)=m\Big(\frac{2t+m_0}{2t_i+m_0}\Big)^{\frac{1}{2}}$.\\
- En insérant la dernière expression dans l'Eq.~\ref{eq6-2}, on obtient
+ En insérant la dernière expression dans l'Eq.~\eqref{eq6-2}, on obtient
  \begin{eqnarray}
  \kms&=&m\Big(\sum_{t_i=1}^{t}\dfrac{1}{2t_i+m_0}+1\Big) \\
  &=&m \Big(\ln (2t+m_0)+\gamma-a+\frac{1}{2(2t+m_0)}+O(\frac{1}{t^2})\Big),
  \label{eq7-2}
  \end{eqnarray}
  où $\gamma$ est la constante d'Euler, et $a=\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{1+m_0}$.\\
- Un bon accord est obtenu comme le montre la figure Fig.~\ref{fig2a-2} entre Eq.~\ref{eq7-2} et les résultats de la simulation même pour les premiers instants de l'évolution. $\kms$ croît indéfiniment avec le temps et diverge pour un réseau infini (oo $t\to\infty$) du fait que, dans les réseaux hétérogènes, les hubs sont plus susceptibles d'être sélectionnés et liés aux nouveaux nœuds. \\
+ Un bon accord est obtenu comme le montre la figure Fig.~\ref{fig2a-2} entre Eq.~\eqref{eq7-2} et les résultats de la simulation même pour les premiers instants de l'évolution. $\kms$ croît indéfiniment avec le temps et diverge pour un réseau infini (oo $t\to\infty$) du fait que, dans les réseaux hétérogènes, les hubs sont plus susceptibles d'être sélectionnés et liés aux nouveaux nœuds. \\
  De l'autre côté, le degré moyen du réseau reste fini \cite{Barrat-a2008l,Cohen-Havlinl2010} puisque la majorité des nœuds ont un faible degré et le poids des hubs est faible.\\
  \begin{figure}[h]
  	\centering
   	\includegraphics[scale=0.85]{./figures/nfig2}
- 	\caption{(a) Évolution de $\kms$ dans le modèle BA, la ligne continue représente Eq.~\ref{eq7-2}.
- 	(b) Évolution des fluctuations de $\kms$, la ligne continue représente Eq.~\ref{eq10-2}. Les cercles joints par des lignes pointillées dans les deux cas sont des données de simulation moyennées sur 20 réalisations pour $m =2$, $m_0=3$.}
+ 	\caption{(a) Évolution de $\kms$ dans le modèle BA, la ligne continue représente Eq.~\eqref{eq7-2}.
+ 	(b) Évolution des fluctuations de $\kms$, la ligne continue représente Eq.~\eqref{eq10-2}. Les cercles joints par des lignes pointillées dans les deux cas sont des données de simulation moyennées sur 20 réalisations pour $m =2$, $m_0=3$.}
  	\label{fig2a-2}
  \end{figure}
  
@@ -190,8 +190,8 @@ Fluctuations de $\kms$ sont donnés par
 \label{eq10-2}
 \end{align}
 qui deviennent arbitrairement large lorsque le temps augmente suffisamment. \\
-Les données de simulation selon Eq.~\ref{eq10-2} ( voir Fig.~\ref{fig2a-2}(b)) montrent la tendance croissante des fluctuations de $\kms$.
-Cela peut s'expliquer par le fait que le degré maximum dans le réseau $k_{max}\sim \sqrt{t}$ \cite{Cohen-Havlinl2010} augmente plus vite que $\kms\sim \ln(t)$ (Eq.~\ref{eq7-2}) et la différence entre les deux quantités devient plus grande avec le temps. \\
+Les données de simulation selon Eq.~\eqref{eq10-2} ( voir Fig.~\ref{fig2a-2}(b)) montrent la tendance croissante des fluctuations de $\kms$.
+Cela peut s'expliquer par le fait que le degré maximum dans le réseau $k_{max}\sim \sqrt{t}$ \cite{Cohen-Havlinl2010} augmente plus vite que $\kms\sim \ln(t)$ (Eq.~\eqref{eq7-2}) et la différence entre les deux quantités devient plus grande avec le temps. \\
 Nous passons maintenant à la même analyse dans notre modèle,  L'équation d'évolution du champ moyen pour $k_i(t)$ est donnée par
 \begin{eqnarray}
 \dfrac{\partial k_i(t)}{\partial t}=m\Big(1-\dfrac{k_i(t)}{2mt+mm_0}\Big)\dfrac{1}{t+m_0-1},
@@ -208,7 +208,7 @@ On sait que la valeur moyenne du nœud sélectionné $\kms$ est sous la forme
 \kms=\sum_{t_i=1}^t\Pi(k_i)k_i(t)+m_0\Pi(k_0)k_0(t),
 \label{kms-2}
 \end{eqnarray}
- en remplaçant Eq.~\ref{kit} dans cette dernière équation on obtient immédiatement pour tout temps $ t $ l'expression de $\kms$, L'équation résultante est résolue numériquement comme le montre Fig.~\ref{fig2b-2}. \\
+ en remplaçant Eq.~\eqref{kit} dans cette dernière équation on obtient immédiatement pour tout temps $ t $ l'expression de $\kms$, L'équation résultante est résolue numériquement comme le montre Fig.~\ref{fig2b-2}. \\
 Pour les temps très grands et en prenant $t \gg m_0$, nous trouvons 
 $A(t)\approx 2^{\frac{1}{m_0-2}} \ln(t)$, $k_i(t)\approx m\Big(1+\ln \dfrac{t}{t_i}\Big)$, d'où
 \begin{align}
@@ -219,7 +219,7 @@ $A(t)\approx 2^{\frac{1}{m_0-2}} \ln(t)$, $k_i(t)\approx m\Big(1+\ln \dfrac{t}{t
 &\approx2m. \nonumber
 \end{align}
 
-Le second moment est obtenu en substituant les expressions correspondantes de $\Pi(k_i)$ et $k_i(t)$ dans Eq.~\ref {eq8-2}, nous obtenons pour les temps très grands
+Le second moment est obtenu en substituant les expressions correspondantes de $\Pi(k_i)$ et $k_i(t)$ dans Eq.~\eqref {eq8-2}, nous obtenons pour les temps très grands
  \begin{eqnarray}
 \begin{split}
 \kmss\approx \frac{m^2}{t}\Big(\sum_{t_i=1}^t (\ln(\frac{t}{t_i})+1)^2\Big).
@@ -235,8 +235,8 @@ $\sum_{t_i=1}^t \ln(t_i)^2\approx t\ln(t)^2-2t\ln(t)+2t-2$, on obtient $\kmss\ap
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=1]{./figures/nfig3}
-	\caption{(a) Évolution de $\kms$ dans notre modèle, la ligne continue représente Eq.~\ref{kms-2}.
-	(b) Évolution des fluctuations de $\kms$, la ligne continue représente la solution numérique de Eq.~\ref{kms-2} et Eq.~\ref{k2om}. Les cercles joints par des lignes pointillées dans les deux cas sont des données de simulation moyennées sur $20$ réalisations pour $m=2$, $m_0=3$.}
+	\caption{(a) Évolution de $\kms$ dans notre modèle, la ligne continue représente Eq.~\eqref{kms-2}.
+	(b) Évolution des fluctuations de $\kms$, la ligne continue représente la solution numérique de Eq.~\eqref{kms-2} et Eq.~\eqref{k2om}. Les cercles joints par des lignes pointillées dans les deux cas sont des données de simulation moyennées sur $20$ réalisations pour $m=2$, $m_0=3$.}
 	\label{fig2b-2}
 \end{figure}
  \vspace{4cm}
