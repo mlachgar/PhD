@@ -489,5 +489,33 @@ Dans ce cas le regroupement des nœuds en clusters permet de générer des table
 La détection communautaire est également importante pour d'autres raisons. L'identification des modules et de leurs limites permet une classification des nœuds, en fonction de leur position structurelle dans les modules. Donc, les nœuds avec une position centrale dans leurs grappes partagent un grand nombre de bords avec les autres partenaires du groupe, ce qui est une caractéristique importante de contrôle et de stabilité au sein du groupe, en outre, Les nœuds situés aux frontières entre les modules jouent un rôle important de médiation et mènent les relations et les échanges entre les différentes communautés \cite{Csermely2008}.
 
 \section{Les modèles théoriques les plus connus} 
+Dans cette section, nous citons les modèles théoriques les plus connus et les plus étudiés, en se limitant principalement à des réseaux non pondérés et non orientés, cependant, la plupart des réseaux présentés peuvent être généralisés facilement. Ces modèles se caractérisent chacun par la manière dont les réseaux sont crées et par plusieurs statistiques résultantes, telles que la distribution des degrés, le plus court chemin entre les nœuds et le coefficient de Clustering.
 
-De façon générale on peut distinguer trois modèles des réseaux: aléatoire, de petit monde et le modèle sans-échelle. Ces modèles se caractérisent chacun par la manière dont les réseaux sont créés et par plusieurs statistiques résultantes, telles que la distribution des degrés, la longueur moyenne entre les paires de nœuds et le coefficient de Clustering.
+\subsubsection{Réseaux simples}
+Un réseau simple consiste des connexions régulières entre les nœuds. L'un des exemples les plus exceptionnel est le réseau à deux dimensions, comme le montre la Fig.~\ref{Ising2}. Ici, chaque nœud est connecté à ses voisins les plus proches. Malgré sa simplicité, de tels réseaux ont été largement utilisés, par exemple en physique, pour étudier des phénomènes tels que le ferromagnétisme avec le modèle d'Ising \cite{Chowdhury-Stauffer2000}. D'autres exemples de cette classe sont des chaînes linéaires ou des réseaux non rectangulaires tels qu'utilisés, par exemple, dans le contexte de la prédiction de la structure des protéines pour modéliser le repliement des protéines \cite{Hsu-al2003,Dehmer2011}.
+\begin{figure}[h!]
+	\centering
+\begin{tikzpicture}
+\clip (-1,-1) rectangle (6cm,5cm); 
+\draw[style=help lines,thick] (0,0) grid[step=.5cm] (5,4);
+
+\foreach \x in {0,1,...,10}
+{
+	\foreach \y in {0,1,...,8}
+	{
+		\node[draw,circle,inner sep=2pt,fill] at (.5*\x,.5*\y) {};
+	}
+}
+\end{tikzpicture}
+\caption{Simple réseau régulier de deux dimensions}
+\label{Ising2}
+\end{figure}
+\subsubsection{Réseaux aléatoires}
+Les réseaux aléatoires ont été largement étudiés par Erdös et Rényi (ER) \cite{Erdos-Renyi1959,Erdos-Renyi1960,Erdos-Renyi1961}.
+Un graphe aléatoire avec $n$ nœuds est obtenu en connectant chaque paire de nœuds avec la probabilité $p$. Le nombre attendu d'arêtes pour un réseau (non orienté) construit
+de cette façon est $E=p\frac{n(n-1)}{2}$.
+\subsubsection{Réseaux petit-monde}
+Mathématiquement, l'effet de petit-monde décrit les graphes dont le diamètre et la longueur moyenne de la trajectoire croissent beaucoup plus lentement que le nombre de nœuds $n$, typiquement en tant que $\ln n$, comme dans un graphe aléatoire ER. Pourtant, un graphe aléatoire a une très faible interconnexion locale, coefficient de regroupement. Watts et Strogatz \cite{Watss-Strogatz1998} ont réalisé un modèle qui rejoindre la propriété petit-monde et un coefficient de regroupement fort. Le modèle commence par placer tous les nœuds en cercle, puis connecter chaque nœud à ses premiers $k$ voisins les plus proches et en fin avec une probabilité $p$ en prenant chaque lien du réseau et on le reconnecte aléatoirement entre deux autres nœuds.
+\subsubsection{Réseaux sans-échelle}
+Ni les réseaux aléatoires ni les réseaux petit-monde ont la propriété sans-échelle des degrés, qui est fréquemment observée dans les réseaux du monde réel.\\
+Pour expliquer cette caractéristique, Barab\'{a}si et Albert ont introduit un modèle maintenant connu sous le nom de Barab\'{a}si-Albert (BA) \cite{BA1999} ou modèle d'attachement préférentiel qui aboutit à des réseaux sans-échelle qui ont une distribution des degrés suivant une loi de puissance, $P(k)\sim k^{-\gamma}$. La différence majeure entre le modèle d'attachement préférentiel et les autres algorithmes décrits ci-dessus pour générer des réseaux aléatoires ou de petit-monde, est que le modèle d'attachement préférentiel ne suppose pas un nombre fixe de nœuds $n$ et commence alors à les rebrancher avec une probabilité fixe avec d'autres nœuds.

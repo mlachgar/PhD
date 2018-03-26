@@ -3,14 +3,13 @@
 
 \chapter{Les réseaux en croissance et l'attachement préférentielle}
 
-Malgré de nombreux efforts, la théorie cohérente des réseaux en croissance manque encore un principe général prédisant la topologie d'un réseau formé. Dans le but de comprendre la formation et l'évolution des réseaux complexes, de nombreux modèles ont été introduits pour étudier les processus microscopiques impliqués dans la structure du réseau qui en résulte. Dans ce contexte, on introduit ici un modèle de réseau simple et complexe qui augmente avec un mécanisme linéaire d'attachement préférentiel et sans le mécanisme "rich get richer".
-L'objectif est double: d'abord vérifier si la distribution des degrés en loi de puissance reste en l'absence du mécanisme "rich get richer" et, d'autre part, voir pour éventuellement les différences microscopiques entre les réseaux sans échelle et homogènes. 
+Malgré de nombreux efforts, la théorie cohérente des réseaux en croissance manque encore un principe général prédisant la topologie d'un réseau formé. Dans le but de comprendre la formation et l'évolution des réseaux complexes, de nombreux modèles ont été introduits pour étudier les processus microscopiques impliqués dans la structure du réseau qui en résulte. Dans ce contexte, on introduit ici un modèle de réseau simple et complexe qui augmente avec un mécanisme linéaire d'attachement préférentiel et sans le mécanisme "rich get richer". L'objectif est double: d'abord vérifier si la distribution des degrés en loi de puissance reste en l'absence du mécanisme "rich get richer" et, d'autre part, voir pour éventuellement les différences microscopiques entre les réseaux sans échelle et homogènes. 
 
 \section{Introduction}
 
 Au cours des dernières années, il existe un intérêt croissant à étudier l'évolution des réseaux complexes et à développer des modèles qui reflètent certaines propriétés des réseaux réels en utilisant les techniques de la mécanique statistique, la théorie des graphes et les simulations informatiques \cite{BA1999,AB2002,Dorogovtsev-Mendes2002,Newman2003}. L'une des propriétés les plus importantes étudiée en réseaux est la distribution des degrés qui est la probabilité $P(k)$ qu'un nœud ait un degré $k$.
-On peut distinguer trois lois principales de la distribution des degrés: loi de Poisson où $P(k)=e^{-\langle k\rangle}\frac{\langle k\rangle^k}{k!}$, loi de puissance avec $P(k)\approx k^{-\gamma}$ et $\gamma$ représente le degré d'exposant, et la loi exponentiel $P(k)\approx e^{-\frac{k}{c}}$ où $c$ est une constante.\\
-Il semble que, dans la nature, la plupart des réseaux suivent les deux dernières lois de distribution mentionnées ci-dessus. Barab\'{a}si-Albert (BA) a réinventé le réseau de distribution des degrés sans-échelle de Pric en introduisant un modèle simplifié basé à la fois sur la croissance et l'attachement préférentiel. Le réseau sans-échelle est largement observé dans une variété de systèmes tels que des réseaux de citation de publication, de nombreux réseaux sociaux, des réseaux de protéines et de gènes. Cependant, il existe d'autres réseaux réels qui suivent une loi exponentielle, par exemple, le Réseau mondial de transport maritime \cite{ Deng-al2009}, le réseau nord-américain Power Gridc \cite{Albert-al2004}, réseaux neuronaux des C.elegans \cite{Achacoso-Yamamoto1992} et le réseau de messagerie à l'Université de Rovira i Virgili (ENURV ) en Espagne \cite{Albert-al2004}.\\
+On peut distinguer trois lois principales de la distribution des degrés: loi de Poisson où $P(k)=e^{-\langle k\rangle}\frac{\langle k\rangle^k}{k!}$, loi de puissance $P(k)\approx k^{-\gamma}$ avec $\gamma$ représente le degré d'exposant, et la loi exponentiel $P(k)\approx e^{-\frac{k}{c}}$ où $c$ est une constante.\\
+Il semble que, dans la nature, la plupart des réseaux suivent les deux dernières lois de distribution mentionnées ci-dessus. Barab\'{a}si-Albert (BA) a réinventé le réseau de distribution des degrés sans-échelle de Pric en introduisant un modèle simplifié basé à la fois sur la croissance et l'attachement préférentiel. Comme nous avons déjà signalé les réseaux sans-échelle sont largement observés dans une variété de systèmes tels que des réseaux de citation de publication, de nombreux réseaux sociaux, des réseaux de protéines et de gènes. Cependant, il existe d'autres réseaux réels qui suivent une loi exponentielle, par exemple, le Réseau mondial de transport maritime \cite{ Deng-al2009}, le réseau nord-américain Power Gridc \cite{Albert-al2004}, réseaux neuronaux des C.elegans \cite{Achacoso-Yamamoto1992} et le réseau de messagerie à l'Université de Rovira i Virgili (ENURV ) en Espagne \cite{Albert-al2004}.\\
 La loi exponentielle semble être le résultat d'un réseau croissant en ajoutant de nouveaux nœuds et liens aléatoires. D'autre part, la loi de puissance semble apparaître lorsque les nœuds sont ajoutés au réseau un à la fois et en les liant à des nœuds déjà connectés.
 De nombreuses idées sur la formation des réseaux ont été examinées. Par exemple, Barab\'{a}si, dans son modèle, a affirmé que l'attachement préférentiel et la croissance sont tous les deux nécessaires pour générer un réseau sans-échelle \cite{BA-al1999}. En réalité, il semble que la croissance n'est pas nécessaire pour un tel objectif \cite{Xie-al2008}. En outre, il est intuitif, que l'attachement préférentiel sans l'effet "rich get richer" ne génère pas un réseau sans-échelle \cite{Samalam}. Krapivsky et al \cite{Krapivsky-al2000} ont étudié la fixation préférentielle non linéaire avec $\Pi(k_i)\varpropto k^{\gamma}$ et ils ont montré que pour $\gamma<1$, le mécanisme produit une distribution des degrés de loi exponentiel.
 
@@ -65,28 +64,63 @@ Nous parlons alors ici d'une classe de modèles dont l'objectif principal est de
 	\item \textbf{Croissance}: De nouveaux nœuds sont ajoutés au réseau, chaque nouveau nœud étant connecté à $m$ des nœuds existants.
 	\item \textbf{Attachement préférentielle}: Chaque nouveau nœud est connecté aux nœuds existants avec une probabilité proportionnelle à son degré.
 \end{itemize}
-De manière plus détaillée, considérons un réseau évoluant dans le temps, $t$, où, à chaque fois, un nouveau nœud est ajouté au réseau et connecté à $m$ des nœuds existants, où la probabilité de se connecter à un nœud existant,  $i$, $\Pi(i)$ est donné par:
+De manière plus détaillée, considérons un réseau évoluant dans le temps, $t$, où, à chaque fois, un nouveau nœud est ajouté au réseau et connecté à $m$ des nœuds existants, où la probabilité de se connecter à un nœud existant $i$ de degré $k_i$, est donné par:
 \begin{equation}
 \Pi(i)=\dfrac{k_i}{\sum_jk_j}.
+\label{2-2}
 \end{equation}
 Le nombre de nœuds initial à l'instant $t=0$ est généralement supposé être connecté et doit être supérieur à $m$, mais les détails de sa structure n'ont qu'un faible effet sur le résultat final.\\
 
 Il existe plusieurs méthodes pour analyser les résultats du modèle Barabási-Albert.
-La méthode la plus simple est une analyse de champ moyen décrite initialement dans \cite{BA1999}.
-D'autres méthodes plus rigoureuse d'analyse de ce modèle utilisant des outils de la physique statistique comprennent l'approche de l'équation maîtresse \cite{Dorogovtsev-al2000} et l'approche de l'équation du taux \cite{Krapivsky-al2000}. La distribution des degrés trouvée est décrite par une loi de puissance avec l'exposant $-3$, c'est-à-dire que la probabilité de trouver un nœud avec le degré $k$ est proportionnelle à $k^{-3}$ (voir Fig.~\ref{BA-distribution}). plus précisément l'expression exacte de $P(k)$ est:
+La méthode la plus simple est une analyse de champ moyen décrite premièrement  dans \cite{BA1999}.
+D'autres méthodes plus rigoureuse d'analyse de ce modèle utilisant des outils de la physique statistique comprennent l'approche de l'équation maîtresse \cite{Dorogovtsev-al2000-2} et l'approche de l'équation du taux \cite{Krapivsky-al2000}. La distribution des degrés trouvée est décrite par une loi de puissance avec l'exposant $-3$, c'est-à-dire que la probabilité de trouver un nœud avec le degré $k$ est proportionnelle à $k^{-3}$ (voir Fig.~\ref{BA-distribution}). Afin de trouver l'expression exacte de $P(k)$, nous utilisons l'approche de l'équation maîtresse.\\
+Soit $N(k,t)$ le nombre de nœuds de degré $k$ à l'instant $t$. La distribution des degrés $P(k,t)$ se rapporte à cette quantité via la relation $P(k,t)=\frac{N(k,t)}{N(t)}$. Puisque à chaque pas de temps nous ajoutons un nouveau nœud au réseau, nous avons $N=t$. C'est-à-dire qu'à tout moment le nombre total de nœuds est égal au nombre de pas de temps.\\
+L'attachement préférentiel d'un nouveau nœud avec un ancien nœud dans le réseau de degré $k$ est selon Eq.~\eqref{2-2}  comme
+\begin{equation}
+\Pi(k)=\frac{k}{\sum_{j}k_j}=\frac{k}{2mt},
+\end{equation}
+où le terme $2m$ représente le fait que dans un réseau, non orienté, chaque lien ajoute deux degrés au réseau. Notre objectif est de calculer les changements dans le nombre de nœuds de degré $k$ après l'ajout d'un nouveau nœud au réseau. Pour cela nous inspectons les deux événements qui modifient $N(k,t)$ et $P(k,t)$ suite à l'arrivée d'un nouveau nœud: le premier est lorsque le nouveau nœud lie à un nœud  de degré $k$ et il le transforme en un nœud de degré $(k+1)$, ce qui diminue $N(k,t)$, le second lorsque le nouveau nœud lie à un nœud de degré $(k-1)$ et il le transforme en un nœud de degré $k$, augmentant ainsi $N(k,t)$.\\
+Le nombre de liens attendus pour se connecter aux nœuds de degré $k$ après l'arrivée d'un nouveau nœud est $\frac{k}{2mt}\times NP(k,t)\times m=\frac{k}{2}P(k,t)$, autrement dit cette formule représente le nombre des nœuds de degrés $k$ qui acquièrent un nouveau lien et augmente leur degré à $k+1$. De même logique, le nombre des nœuds de degrés $(k-1)$ qui acquièrent un nouveau lien et augmente leur degré à $k$ est $\frac{k-1}{2}P(k-1,t)$.
+En combinant ces deux formules présidentes on obtient le nombre attendu de nœuds de degré $k$ après l'ajout d'un nouveau nœud
+\begin{equation}
+(N+1)P(k,t+1)=NP(k,t)+\frac{k-1}{2}P(k-1,t)-\frac{k}{2}P(k,t).
+\label{2-4}
+\end{equation}
+Cette équation s'applique à tous les nœuds de degré $k>m$. Le fait que nous manquons les nœuds de degré $k<m$ dans le réseau ( car chaque nouveau nœud arrive avec un degré $m$), nous avons alors besoin d'une équation séparée pour le cas de degré $m$. En suivant les mêmes arguments que nous avions suivi pour Eq.~\eqref{2-4}, nous obtenons
+\begin{equation}
+(N+1)P(m,t+1)=NP(m,t)+1-\frac{m}{2}P(m,t).
+\label{2-5}
+\end{equation}
+Notre but est de trouver une distribution stationnaire des degrés. Cela nous pousse à supposer que dans la limite $N=t\longrightarrow \infty$,$P(k,\infty)=P(k)$. En utilisant cela nous pouvons écrire à partir de Eq.~\eqref{2-4} et Eq.~\eqref{2-5} que
+\begin{equation}
+P(k)=\frac{k-1}{k+2}P(k-1) \quad \text{si}\quad k>m,
+\label{2-6}
+\end{equation}
+et pour $k=m$ on obtient
+\begin{equation}
+P(m)=\frac{2}{m+2}.
+\end{equation}
+Nous utilisons une approche récursive pour obtenir la distribution des degrés. De Eq.~\eqref{2-6} on peut écrire
+\begin{align}
+P(k)&=\frac{k-1}{k+2}P(k-1)\nonumber\\
+&=\frac{(k-1)(k-2)}{(k+2)(k+1)}P(k-2)\nonumber\\
+\colon\nonumber\\
+&=\frac{(k-1)(k-2)...(m+1)m}{(k+2)(k+1)...(m+4)(m+3)}P(m)\nonumber\\
+&=\frac{(m+2)(m+1)m}{(k+2)(k+1)k}P(m),
+\end{align}
+de l'équation précédent et sachant que $P(m)=\frac{2}{m+2}$ on obtient l'expression finale de la distribution des degrés dans le modèle BA
 \begin{equation}
 P(k)=\dfrac{2m(m+1)}{k(k+1)(k+2)}.
 \label{pk-1}
 \end{equation}
-
-L'Eq.~\eqref{pk-1} a d'abord été dérivée par Krapivsky et al. \cite{Krapivsky-al2000} et de manière indépendante par Dorogovtsev et al. \cite{Dorogovtsev-al2000-2}. Un traitement plus détaillé a ensuite été donné par Bollobas et al. \cite{Bollobas-Riordan2002}, qui clarifie précisément le domaine de validité de la solution et les écarts éventuels par rapport à la valeur attendue de  $P(k)$ .
-
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=1]{./figures/fig-barabasi}
 	\caption{La distribution des degrés du réseau BA en échelle logarithmique, où les cercles sont les simulations numériques et la ligne continue représente la formule théorique, Eq.~\eqref{pk-1}. La taille du réseau est $\mathrm{n}=10^{6}$ et $\mathrm{m}=2$ .}	
 	\label{BA-distribution}
-\end{figure} 
+\end{figure}
+
+L'Eq.~\eqref{pk-1} a d'abord été dérivée par Krapivsky et al. \cite{Krapivsky-al2000} et de manière indépendante par Dorogovtsev et al. \cite{Dorogovtsev-al2000-2}. Un traitement plus détaillé a ensuite été donné par Bollobas et al. \cite{Bollobas-Riordan2002}, qui clarifie précisément le domaine de validité de la solution et les écarts éventuels par rapport à la valeur attendue de  $P(k)$.\\ 
 
 La distance moyenne dans le modèle BA est plus petite que dans le graphe aléatoire ER. Les résultats analytiques prédisent une correction de double logarithmique qui diminue la dépendance logarithmique $ L\sim\frac{\log \mathrm{N}}{\log\log\mathrm{N} }$ \cite{Bollobas-Riordan2002}. Le coefficient de regroupement décroît avec la taille du système comme $C\sim N^{-0,75}$. Il s'agit d'une décroissance plus lente que celle observée pour les graphes aléatoires, $C\sim N^{-1}$, mais le comportement reste différent par rapport aux modèles du petit monde, où $C$ est une constante indépendante de la taille du réseau $\mathrm{N}$.
 
