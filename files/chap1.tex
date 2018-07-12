@@ -1,7 +1,7 @@
 % contenu du fichier : chap1.tex
 %
 \chapter{Notions et préliminaire}
-Dans le présent chapitre, nous présentons l'importance de notre domaine de recherche de façon très générale puis on introduit des termes et des concepts qui seront utilisés tout au long de cette thèse: réseaux complexe, théorie des graphes, distribution des degrés, etc.
+Dans le présent chapitre, nous présentons l'importance de notre domaine de recherche de façon très générale, puis on introduit des termes et des concepts qui seront utilisés tout au long de cette thèse: réseaux complexe, théorie des graphes, distribution des degrés, etc.
  \section{Les réseaux complexes}
   \subsection{Définition}
   Un \textsf{réseau} est tous simplement une collection de points réunis sous forme de paires, les points sont appelés nœuds ou sommets et les lignes sont appelées liens ou bords. Le mots \textsf{complexe} est en général le résultat de  l'évolution décentralisée et non planifiée dans ces réseaux (Fig.~\ref{exemples-reseaux}). De nombreux objets d'intérêt dans les sciences physiques, biologiques et sociales peuvent être considérés comme des réseaux complexes, cette nouvelle façons de penser conduit souvent à de nouvelles et utiles idées. Alors un réseau est une représentation simplifiée qui réduit un système à une structure abstraite capturant uniquement les bases des modèles de connexion, les nœuds et les liens d'un réseau peuvent être accompagnés d' informations supplémentaires pour capturer plus de détails sur le système, même s'il y a un inconvénient de perte d'informations dans le processus de réduction d'un système complet à une représentation par réseau, mais il présente également des grands avantages.
@@ -9,7 +9,7 @@ Dans le présent chapitre, nous présentons l'importance de notre domaine de rec
   \begin{figure}[h!]
   	\centering
   	\includegraphics[scale=0.55]{./figures/types-networks2}
-  	\caption{Représentation de quelques types de réseaux composés par des nœuds et des arêtes. }
+  	\caption{Représentation de quelques types de réseaux composés par des nœuds et des liens. }
   	\label{exemples-reseaux}
   \end{figure}
   \subsection{Différents types des Réseaux complexes}
@@ -38,7 +38,7 @@ Dans le présent chapitre, nous présentons l'importance de notre domaine de rec
 \caption{Un réseau modulaire est illustré au moyen du protéome humain (données obtenues à partir de la base de données DIP: http://dip-doe-mbi.ucla.edu). Les nœuds sont des protéines et des liens indiquent leur interaction physique (protéine-protéine).}
 \label{PPI}
 \end{figure}
- La structure de ces réseaux se diffère selon chaque cas. Par exemple, les réseaux métaboliques sont des réseaux de protéines interagissant les uns avec les autres à l'intérieur de la cellule Fig.~\ref{PPI}, il s'agit d'un réseau dirigé, car chaque protéine peut catalyser ou réprimer la création d'autres protéines, ce qui n'implique pas nécessairement le processus inverse. La structure à grande échelle des réseaux métaboliques a été étudiée pour de nombreuses espèces, il a été trouvé que ces réseaux ont une distribution des degrés sans-échelle \cite{Je-al2000}. De plus, il a été observé que le diamètre du réseau est très petit et presque indépendant de la taille du réseau, cette indépendance s'explique par que certain classe de réseaux sans-échelle est Ultra-small \cite{Cohen-Havlin2003,Do-al2003,ChL2003}, d'une autre coté notre résultats du troisième chapitre renforcent cette explication et indiquent que la dépendance du diamètre avec la taille $N$ est très faible.\\ Dans les réseaux génétiques, les nœuds représentent des gènes, et les liens sont dirigés  et représentent l'influence d'un gène sur un autre, le réseau E. coli est un des réseaux génétiques qui est bien étudiés dans la littérature \cite{Mi-al2002}.
+ La structure de ces réseaux se diffère selon chaque cas. Par exemple, les réseaux métaboliques sont des réseaux de protéines interagissant les uns avec les autres à l'intérieur de la cellule Fig.~\ref{PPI}, il s'agit d'un réseau dirigé, car chaque protéine peut catalyser ou réprimer la création d'autres protéines, ce qui n'implique pas nécessairement le processus inverse. La structure à grande échelle des réseaux métaboliques a été étudiée pour de nombreuses espèces, il a été trouvé que ces réseaux ont une distribution des degrés sans-échelle \cite{Je-al2000}. De plus, il a été observé que le diamètre du réseau est très petit et presque indépendant de la taille du réseau, cette indépendance s'explique par que certain classe de réseaux sans-échelle est Ultra-small \cite{Cohen-Havlin2003,Do-al2003,ChL2003}, ainsi que notre résultats du troisième chapitre renforcent cette explication et indiquent que la dépendance du diamètre avec la taille $N$ est très faible.\\ Dans les réseaux génétiques, les nœuds représentent des gènes, et les liens sont dirigés  et représentent l'influence d'un gène sur un autre, le réseau E. coli\footnote{Escherichia coli (en abrégé E. coli) sont des bactéries présentes dans l'environnement, les aliments et les intestins des humains et des animaux. E. coli est un groupe important et diversifié de bactéries.} est un des réseaux génétiques qui est bien étudiés dans la littérature \cite{Mi-al2002}.
 
 
   \subsubsection{Réseaux Sociales}
@@ -48,36 +48,33 @@ Dans le présent chapitre, nous présentons l'importance de notre domaine de rec
 \begin{figure}[h!]
 \centering
 \includegraphics[width=9cm,height=5cm]{./figures/facebook}
-\caption{Le 'Social Graph' derrière Facebook, graphe des relation d'amis de $500$ million personnes, image par Paul Butley, $2010$.}
+\caption{Le graphe social derrière Facebook, graphe des relations d'amis de $500$ million personnes, image par Paul Butley, $2010$.}
 \label{Facebook}
 \end{figure}
 Bien avant que l'Internet commence à jouer un rôle important dans la vie de beaucoup de personnes, les sociologues et d'autres chercheurs des sciences humaines ont examiné la structure des groupes de personnes. Dans la plupart des cas, des groupes relativement petits ont été considérés, nécessairement parce que l'analyse de grands groupes n'était pas souvent possible.\\
-Une contribution importante à l'analyse des réseaux sociaux est venue de Jacob Moreno qui a introduit des sociogrammes dans les années 1930. Un sociogramme peut être considéré comme une représentation graphique d'un réseau: les personnes sont représentées par des points (appelés nœuds) et leurs relations par des lignes reliant ces points (appelés arêtes).\\
+Une contribution importante à l'analyse des réseaux sociaux est venue de Jacob Moreno qui a introduit des sociogrammes dans les années $1930$. Un sociogramme peut être considéré comme une représentation graphique d'un réseau: les personnes sont représentées par des points (appelés nœuds) et leurs relations par des lignes reliant ces points (appelés liens).\\
 L'analyse des réseaux sociaux a été importante pour le développement ultérieur de la théorie des graphes, par exemple en ce qui concerne l'introduction de mesures pour identifier l'importance des personnes ou des groupes. Par exemple, une personne ayant de nombreuses connexions avec d'autres personnes peut être considérée comme relativement importante. De même, une personne au centre d'un réseau semble être plus influente que quelqu'un au bord. Ce que la théorie des graphes nous fournit, ce sont les outils pour décrire formellement l'importance et l'influence des nœuds. En outre, en utilisant la théorie des graphes, nous pouvons facilement proposer des solutions alternatives pour décrire l'importance des personnes. L'existence de ces outils a également améliorer la précision des déclarations concernant le poste ou le rôle de ces personnes au sein d'une communauté.
   \subsubsection{Réseaux d'informations}        
  Les  réseaux de citation et le World Wide Web (WWW), comme dans Fig.~\ref{WWW}, sont un bon exemple des réseaux d'informations, car leur contenu d'informations étant stockée dans des nœuds, c’est pour cette raison que l’on utilise le terme réseau d’informations. Parfois on rencontre une certaine confusion à propos de réseau  WWW  et le réseau d'Internet. Dans la WWW, les nœuds sont les pages HTML, et les bords représentent les liens entre les pages, par contre  dans l'Internet, les liens correspondent aux câbles physiques entre les ordinateurs. Alors  le WWW est virtuelle et Internet est physique.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.3]{./figures/www2}
+	\includegraphics[scale=0.4]{./figures/www2}
 	\caption{La structure de l'Internet au niveau des systèmes autonomes. Les nœuds de cette représentation sont des systèmes autonomes et les bords montrent les itinéraires empruntés par les données qui circulent entre eux. La photo a été créée par Hal Burch et Bill Cheswick en 2009.}
 	\label{WWW}
 \end{figure}
 
 \section{Les réseaux complexes, la physique moderne et l'unification}
 La physique explique les phénomènes de la nature en les réduisant à une interaction de lois fondamentales simples. Cette méthode plutôt réussie semble rencontrer certaines difficultés lorsqu'il s'agit des systèmes complexes en général et des réseaux complexes en particulier. Dans ces derniers il reste peu clair s'il existe des lois universelles uniques expliquant une variété de similitudes structurelles et dynamiques trouvées dans de nombreux réseaux réels différents  \cite{K-al2012,BS2009,La-al2009,Li-al2011}. En revanche, l'\textsf{unification} des lois universelles qui paraissaient jusqu'alors complètement séparées sont-elles d'une  origine commune ? c'est ce que les physiciens théoriques rêvent de découvrir. Une telle  \textsf{unification}
-va \^{e}tre, sans doute, un grand pas dans notre compréhension de la nature. En outre, l'existence de cette belle idée au cœur de l'unification montre le pouvoir mystérieux que les êtres humains peuvent découvrir derrière les apparences de la nature \cite{Sm1997}.
+va \^{e}tre, sans doute, un grand pas dans notre compréhension de la nature. En outre, l'existence de cette belle idée au cœur de l'unification montre le pouvoir mystérieux que les êtres humains peuvent découvrir derrière les apparences de la nature \cite{Sm1997}.\\
 
-Le réseau causal représentant la structure à grande échelle de l'espace-temps dans notre univers accéléré est un graphe de loi de puissance avec un regroupement fort, similaire à de nombreux réseaux complexes tels que les réseaux Internet, sociaux ou biologiques \cite{K-al2012}. Cette similitude structurelle est une conséquence de l'équivalence asymptotique entre la dynamique
-de croissance à grande échelle des réseaux complexes et des réseaux causaux. Par conséquent, un intérêt croissant est adressé à l'étude de la gravité quantique à partir de la théorie de l'information et de la perspective des réseaux complexes \cite{Tr2015,Bi-al2015}.
-
-Récemment, des relations intrigantes entre les propriétés des réseaux de communication quantique avec des topologies de réseau et la physique statistique ont été rapportées. Sur la base des concepts classiques de percolation \cite{BR2006}, il a été montré que ces réseaux quantiques peuvent présenter une transition de phase de percolation d'enchevêtrement \cite{Ac-al2007,Sa1999}.
+Le réseau causal représentant la structure à grande échelle de l'espace-temps dans notre univers accéléré est un graphe de loi de puissance avec un regroupement fort, similaire à de nombreux réseaux complexes tels que les réseaux Internet, sociaux ou biologiques \cite{K-al2012}. Cette similitude structurelle est une conséquence de l'équivalence asymptotique entre la dynamique de croissance à grande échelle des réseaux complexes et des réseaux causaux. Par conséquent, un intérêt croissant est adressé à l'étude de la gravité quantique à partir de la théorie de l'information et de la perspective des réseaux complexes \cite{Tr2015,Bi-al2015}. Récemment, des relations intrigantes entre les propriétés des réseaux de communication quantique avec des topologies du réseau et la physique statistique ont été rapportées. Sur la base des concepts classiques de percolation \cite{BR2006}, il a été montré que ces réseaux quantiques peuvent présenter une transition de phase de percolation d'enchevêtrement \cite{Ac-al2007,Sa1999}.
 L'avancement rapide de la technologie de l'information quantique a suscité un intérêt considérable pour les propriétés dynamiques des réseaux quantiques formés par les systèmes élémentaires, tels que les qubits, en raison de leur rôle privilégié dans la communication et le calcul quantiques \cite{J-al2015,BG2007,MC2000}.\\
 
 Une autre domaine de recherche en relation avec les sciences des réseaux et notamment aux réseaux complexes. La science générale des réseaux et de ses diverses applications a une pertinence significative pour les praticiens de l'intelligence artificiel (IA). Par exemple, la compréhension de la structure d'Internet et du World Wide Web sera importante pour l'orientation de la direction de l'intelligent, l'équilibrage de charge, la recherche de toutes sortes et le déploiement d'agents\footnote{Un agent est un terme important en IA qui désigne une entité capable d’interagir avec
 	son environnement.} intelligents qui assistent les utilisateurs dans leurs tâches réseau. La réflexion en réseau sera également fondamentale pour développer des algorithmes décentralisés efficaces pour les réseaux de calcul, de communication et de détection de plus en plus distribués et liés, ainsi que des méthodes de sécurité efficaces pour ces systèmes de plus en plus vulnérables. Ce sont tous des domaines dans lesquels la recherche sur l'IA et l'apprentissage automatique ont joué et joueront un rôle majeur \cite{Mitchell2006,Basheer-Hajmeerb2000,Passerini-al2017}.
 
 \section{La théorie des graphes}
-En terme générale, un réseau se décrit comme un graphique dont les nœuds (sommets) identifient les éléments du
+En terme générale, un réseau se décrit comme un graphe dont les nœuds (sommets) identifient les éléments du
 système et les liens de connexion (arêtes) représente la présence d'une relation ou d'une interaction entre ces
 éléments. Avec un tel niveau de généralité, il est facile de percevoir qu'un large éventail de systèmes peuvent être abordés
 dans le cadre de la théorie du graphe. Alors nous fournissons ici un bref historique et quelques notations de base nécessaires
@@ -104,14 +101,14 @@ est insoluble et que le graphe de cette ville ne peut pas être parcouru d'une c
 En $1847$ Kirchhoff a développé la théorie des arbres afin de résoudre le système d'équations linéaires simultanées qui 
 donnent le courant dans chaque branche et autour de chaque circuit d'un réseau électrique. Bien qu'un physicien, il a pensé comme un mathématicien lorsqu'il a remplacé un réseau électrique par sa structure combinatoire  correspondante constituée uniquement de points et de lignes sans indication du type d'élément électrique représenté par des lignes individuelles.
 Dans les années $1960$, deux mathématiciens, Paul Erd\H{o}s et Alfred Rényi (ER), ont introduit une nouvelle idée ingénieuse, ils ont 
-combiné les concepts de la théorie graphique avec les outils de la théorie des probabilités, cela permettant d'envisager des
+combiné les concepts de la théorie des graphes avec les outils de la théorie des probabilités, cela permettant d'envisager des
 familles de graphes plutôt que des graphes spécifiques.
 
   \subsection{L’expérience de Milgram}
  \label{Milgram} 
 En $1967$, Stanley Milgram a effectué une expérience intéressante.  Dans sa première expérience, Milgram a demandé à des personnes choisies au hasard au Nebraska d'envoyer des lettres à une personne cible éloignée à Boston.
 Les participants ne pouvaient passer que les lettres (à la main) aux connaissances personnelles qu'ils pensaient pouvoir 
-atteindre la cible, soit directement, soit via un % «ami d'un ami».  dans sa première experience seules trois lettres ont
+atteindre la cible, soit directement, soit via un  "ami d'un ami".  dans sa première experience seules trois lettres ont
 finalement atteint leur destination. Mais dans les expériences ultérieures, Milgram a réussi à augmenter
 le taux de réussite à $95\%$, pour plus de détails (voir \cite{Mi1967,TM1969}). La conclusion principale du cette expérience
 de Milgram était que la plupart des gens sur notre planète n'est séparé que par six autres personnes en moyen. Cette idée de
@@ -121,9 +118,9 @@ voir Dodds et al \cite{D-al2003}.
 
   \subsection{Représentation d'un graphe}
   Comme dans toute abstraction mathématique, lorsque nous décrivons un système en tant que graphe, nous décidons de rejeter  plusieurs des particularités particulières des phénomènes réels et de nous concentrer uniquement sur quelques caractéristiques  d'intérêt. En particulier, un graphe est essentiellement un moyen de coder une relation, liens physiques, interactions,
-  etc, entre les éléments d'un système. Les éléments du système identifient l'ensemble $V$ (ensemble des nœuds) et les relations entre ceux de l'ensemble $E$ (ensemble des arêtes). Le graphe indiqué comme $G(V, E)$ peut être présenté en traçant les  nœuds en tant que points et les bords comme lignes entre eux.\\ 
+  etc, entre les éléments d'un système. Les éléments du système identifient l'ensemble $V$ (ensemble des nœuds) et les relations entre ceux de l'ensemble $E$ (ensemble des liens). Le graphe indiqué comme $G(V, E)$ peut être présenté en traçant les  nœuds en tant que points et les bords comme lignes entre eux.\\ 
  
-   Parmi les façons de présentation basées sur cette définition on peut citer la matrice d'adjacence et la liste adjacence:
+   Parmi les façons de présentation basées sur cette définition on peut citer la matrice d'adjacence et la liste d'adjacence:
   \subsubsection{La matrice d’adjacence}
  Un graphe est représenté fréquemment par une matrice d'adjacence, $M_{i,j}$, dans laquelle chaque ligne et
  chaque colonne représente un nœud du graphe. Dans un graphe non-dirigé l'élément $M_{i,j}=1$ si un lien existe entre le $i^{eme}$ et $j^{eme}$
@@ -166,7 +163,7 @@ voir Dodds et al \cite{D-al2003}.
  			\null% last null hbox, which sets the baseline of the \vbox
  		} % end of vbox
  	} % end of subfloat
- 	\caption{Exemple d'un graphe non-orienté et sa matrice d'adjacence $M_G$ avec 5 nœuds et 6 arêtes.}
+ 	\caption{Exemple d'un graphe non-orienté et sa matrice d'adjacence $M_G$ avec 5 nœuds et 6 liens.}
  	\label{matrice d'adjacence}
  \end{figure}  
  
@@ -210,7 +207,7 @@ voir Dodds et al \cite{D-al2003}.
 			\null% last null hbox, which sets the baseline of the \vbox
 		} % end of vbox
 	} % end of subfloat
-	\caption{Exemple d'un graphe orienté et sa matrice d'adjacence $M_G$ avec 5 nœuds et 6 arêtes.}
+	\caption{Exemple d'un graphe orienté et sa matrice d'adjacence $M_G$ avec 5 nœuds et 6 liens.}
 	\label{matrice d'adjacence2}
 \end{figure}
 
@@ -251,7 +248,7 @@ cible.\\
 			\null% last null hbox, which sets the baseline of the \vbox
 		} % end of vbox
 	} % end of subfloat
-	\caption{Exemple d'un graphe non-orienté et sa liste d'adjacence avec 5 nœuds et 6 arêtes.}
+	\caption{Exemple d'un graphe non-orienté et sa liste d'adjacence avec 5 nœuds et 6 liens.}
 	\label{matrice d'adjacence1}
 \end{figure}
 
@@ -369,7 +366,7 @@ aucune théorie propre qui sépare les contributions indépendantes des différe
    \subsection{Distribution des degrés}
    La propriété la plus importante qui caractérise une structure de réseau est la distribution des degrés $P(k)$,
    définie comme la probabilité qu'un nœud choisi uniformément au hasard ait un degré $k$ ou, de manière équivalente, la
-   fraction de nœuds dans le graphie ait le degré $k$.
+   fraction de nœuds dans le graphe ait le degré $k$.
    Si le graphe est dirigé, le degré du nœud comporte deux composantes: le nombre de liens sortants $k^{out}$ (appelé
    "out-degree") et le nombre de liens entrants $k^{in}$ (appelé "in-degree"). Le degré total est alors défini comme 
    $k=k^{out}+k^{in}$.\\
@@ -389,9 +386,7 @@ En particulier, pour un certain nombre de réseaux, la distribution des degrés 
 Un grand nombre de réseaux réels sont corrélés en sens que la probabilité qu'un nœud de degré $k$ soit connecté à un autre
 nœud de degré, disons $k'$, dépend de $k$. Dans ces cas, il est nécessaire d'introduire la probabilité conditionnelle 
 $P(k'\backslash k)$, étant défini comme la probabilité qu'un lien d'un nœud de degré $k$ soit connecté à un nœud de degré 
-$k'$ \cite{BP2002}. Bien que les corrélations de degré soient formellement caractérisées par $P(k'\backslash k)$, l'évaluation
-directe de la probabilité conditionnelle donne des résultats extrêmement bruyants pour la plupart des réseaux réels en raison
-de leur taille finie $N$. Ce problème peut êtr e surmonté en définissant le degré moyen des voisins les plus proches d'un nœud $i$
+$k'$ \cite{BP2002}. Bien que les corrélations de degré soient formellement caractérisées par $P(k'\backslash k)$, l'évaluation directe de la probabilité conditionnelle donne des résultats extrêmement bruyants pour la plupart des réseaux réels en raison de leur taille finie $N$. Ce problème peut être surmonté en définissant le degré moyen des voisins les plus proches d'un nœud $i$
 comme
 \begin{equation}
  k_{nn,i}=\frac{1}{k_i}\sum_{j\in N_i}k_j,
@@ -423,7 +418,7 @@ L'identification des nœuds importants dans les réseaux est un problème intér
 %\subsubsection{Centralité d'intermédiarité (Betweenness)}
 \begin{itemize}
  \item[i)] Centralité d'intermédiarité (Betweenness):\\
-  L'importance d'un nœud dans un réseau dépend de nombreux facteurs. Un site Web peut être important en raison de son contenu, d'un routeur pour sa capacité, d'un métabolite dû à sa fonction biochimique, etc. Bien sûr, toutes ces propriétés dépendent de la nature du réseau étudié et peuvent avoir très peu à faire avec la structure graphique du réseau. L'une des définitions les plus acceptées de centralité est basée sur les chemins de comptage traversant un nœud pour chaque nœud, $i$, dans le réseau, on compte le nombre de chemins de "routage" vers tous les autres nœuds passant par $i$ est compté, et ce nombre détermine la centralité $i$. La sélection la plus courante ne prend que les chemins les plus courts en tant que chemins de routage. Cela conduit à la définition suivante: la centralité de l'interférence d'un nœud, $i$, équivaut au nombre de chemins les plus courts entre toutes les paires de nœuds dans le réseau qui l'entoure, c'est-à-dire,
+  L'importance d'un nœud dans un réseau dépend de nombreux facteurs. Un site Web peut être important en raison de son contenu, d'un routeur pour sa capacité, d'un métabolite dû à sa fonction biochimique, etc. Bien sûr, toutes ces propriétés dépendent de la nature du réseau étudié et peuvent avoir très peu à faire avec la structure graphique du réseau. L'une des définitions les plus acceptées de centralité est basée sur les chemins de comptage traversant un nœud $i$ dans le réseau, on compte le nombre de chemins de "routage" vers tous les autres nœuds passant par $i$, et ce nombre détermine la centralité $i$. La sélection la plus courante ne prend que les chemins les plus courts en tant que chemins de routage. Cela conduit à la définition suivante: la centralité de l'intermédiarité d'un nœud $i$ équivaut au nombre de chemins les plus courts entre toutes les paires de nœuds dans le réseau qui l'entoure, c'est-à-dire,
  \begin{equation}
  C_B(i)=\sum_{l\neq j}\dfrac{\sigma_{lj}(i)}{\sigma_{lj}},
  \end{equation}
@@ -478,21 +473,21 @@ La société offre une grande variété d'organisations de groupes possibles: le
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.2]{./figures/community-network2}
-	\caption{Exemples d'un réseau communautaire, chaque couleur représente un groupe plus connecté par rapport au reste du réseau.}
+	\includegraphics[scale=0.25]{./figures/Network-Community-structure2}
+	\caption{Exemples d'un réseau communautaire, on voit trois groupes où chacun est plus connecté par rapport au reste du réseau.}
 	\label{community-network}
 \end{figure}
 
 Les communautés peuvent avoir des applications concrètes. Le Clustering des clients Web qui ont des intérêts similaires et qui sont géographiquement proches les uns des autres peut améliorer la performance des services fournis sur le WWW, en ce sens chaque groupe de clients pourrait être servi par un serveur miroir dédié \cite{KriW2000}.
-Les réseaux auto-configurés formés par des nœuds de communication agissant dans la même région et changeant rapidement n'ont généralement pas de tables de routage centralisées qui spécifient comment les nœuds doivent communiquer entre eux.
+Les réseaux auto-configurés formés par des nœuds de communication agissant dans la même région et changeant rapidement, ils n'ont généralement pas de tables de routage centralisées qui spécifient comment les nœuds doivent communiquer entre eux.
 Dans ce cas le regroupement des nœuds en clusters permet de générer des tables de routage compactes et rend le choix des chemins de communication plus efficace \cite{Steen2001}.\\
-La détection communautaire est également importante pour d'autres raisons. L'identification des modules et de leurs limites permet une classification des nœuds, en fonction de leur position structurelle dans les modules. Donc, les nœuds avec une position centrale dans leurs grappes partagent un grand nombre de bords avec les autres partenaires du groupe, ce qui est une caractéristique importante de contrôle et de stabilité au sein du groupe, en outre, Les nœuds situés aux frontières entre les modules jouent un rôle important de médiation et mènent les relations et les échanges entre les différentes communautés \cite{Csermely2008}.
+La détection communautaire est également importante pour d'autres raisons. L'identification des modules et de leurs limites permet une classification des nœuds, en fonction de leur position structurelle dans les modules. Donc, les nœuds avec une position centrale dans leurs grappes partagent un grand nombre des liens avec les autres partenaires du groupe, ce qui est une caractéristique importante de contrôle et de stabilité au sein du groupe, en outre, Les nœuds situés aux frontières entre les modules jouent un rôle important de médiation et mènent les relations et les échanges entre les différentes communautés \cite{Csermely2008}.
 
 \section{Les modèles théoriques les plus connus} 
 Dans cette section, nous citons les modèles théoriques les plus connus et les plus étudiés, en se limitant principalement à des réseaux non pondérés et non orientés, cependant, la plupart des réseaux présentés peuvent être généralisés facilement. Ces modèles se caractérisent chacun par la manière dont les réseaux sont crées et par plusieurs statistiques résultantes, telles que la distribution des degrés, le plus court chemin entre les nœuds et le coefficient de Clustering.
 
 \subsubsection{Réseaux simples}
-Un réseau simple consiste des connexions régulières entre les nœuds. L'un des exemples les plus exceptionnel est le réseau à deux dimensions, comme le montre la Fig.~\ref{Ising2}. Ici, chaque nœud est connecté à ses voisins les plus proches. Malgré sa simplicité, de tels réseaux ont été largement utilisés, par exemple en physique, pour étudier des phénomènes tels que le ferromagnétisme avec le modèle d'Ising \cite{Chowdhury-Stauffer2000}. D'autres exemples de cette classe sont des chaînes linéaires ou des réseaux non rectangulaires tels qu'utilisés, par exemple, dans le contexte de la prédiction de la structure des protéines pour modéliser le repliement des protéines \cite{Hsu-al2003,Dehmer2011}.
+Un réseau simple consiste des connexions régulières entre les nœuds. L'un des exemples les plus exceptionnel est le réseau à deux dimensions, comme le montre la Fig.~\ref{Ising2}. Ici, chaque nœud est connecté à ses voisins les plus proches. Malgré sa simplicité, de tels réseaux ont été largement utilisés, par exemple en physique, pour étudier des phénomènes tels que le ferromagnétisme avec le modèle d'Ising \cite{Chowdhury-Stauffer2000}. D'autres exemples de cette classe sont les chaînes linéaires ou les réseaux non rectangulaires tels qu'utilisés, par exemple, dans le contexte de la prédiction de la structure des protéines pour modéliser le repliement des protéines \cite{Hsu-al2003,Dehmer2011}.
 \begin{figure}[h!]
 	\centering
 \begin{tikzpicture}
@@ -517,5 +512,4 @@ de cette façon est $E=p\frac{n(n-1)}{2}$.
 \subsubsection{Réseaux petit-monde}
 Mathématiquement, l'effet de petit-monde décrit les graphes dont le diamètre et la longueur moyenne de la trajectoire croissent beaucoup plus lentement que le nombre de nœuds $n$, typiquement en tant que $\ln n$, comme dans un graphe aléatoire ER. Pourtant, un graphe aléatoire a une très faible interconnexion locale, coefficient de regroupement. Watts et Strogatz \cite{Watss-Strogatz1998} ont réalisé un modèle qui rejoindre la propriété petit-monde et un coefficient de regroupement fort. Le modèle commence par placer tous les nœuds en cercle, puis connecter chaque nœud à ses premiers $k$ voisins les plus proches et en fin avec une probabilité $p$ en prenant chaque lien du réseau et on le reconnecte aléatoirement entre deux autres nœuds.
 \subsubsection{Réseaux sans-échelle}
-Ni les réseaux aléatoires ni les réseaux petit-monde ont la propriété sans-échelle des degrés, qui est fréquemment observée dans les réseaux du monde réel.\\
-Pour expliquer cette caractéristique, Barab\'{a}si et Albert ont introduit un modèle maintenant connu sous le nom de Barab\'{a}si-Albert (BA) \cite{BA1999} ou modèle d'attachement préférentiel qui aboutit à des réseaux sans-échelle qui ont une distribution des degrés suivant une loi de puissance, $P(k)\sim k^{-\gamma}$. La différence majeure entre le modèle d'attachement préférentiel et les autres algorithmes décrits ci-dessus pour générer des réseaux aléatoires ou de petit-monde, est que le modèle d'attachement préférentiel ne suppose pas un nombre fixe de nœuds $n$ et commence alors à les rebrancher avec une probabilité fixe avec d'autres nœuds.
+Ni les réseaux aléatoires ni les réseaux petit-monde ont la propriété sans-échelle des degrés, qui est fréquemment observée dans les réseaux du monde réel. Pour expliquer cette caractéristique, Barab\'{a}si et Albert ont introduit un modèle maintenant connu sous le nom de Barab\'{a}si-Albert (BA) \cite{BA1999} ou modèle d'attachement préférentiel qui aboutit à des réseaux sans-échelle qui ont une distribution des degrés suivant une loi de puissance, $P(k)\sim k^{-\gamma}$. La différence majeure entre le modèle d'attachement préférentiel et les autres algorithmes décrits ci-dessus pour générer des réseaux aléatoires ou de petit-monde, est que le modèle d'attachement préférentiel ne suppose pas un nombre fixe de nœuds $n$ et commence alors à les rebrancher avec une probabilité fixe avec d'autres nœuds.
