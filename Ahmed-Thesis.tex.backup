@@ -1,0 +1,690 @@
+% A LaTeX (non-official) template for ISAE projects reports
+% Copyright (C) 2014 Damien Roque
+% Modified by Mohamed ESSOUIFI
+% This program is free software; you can redistribute it and/or
+% modify it under the terms of the GNU General Public License
+% as published by the Free Software Foundation; either version 2
+% of the License, or (at your option) any later version.
+
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+% GNU General Public License for more details.
+
+% You should have received a copy of the GNU General Public License
+% along with this program; if not, write to the Free Software
+% Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+% Version: 0.2
+% Author: Damien Roque <damien.roque_AT_isae.fr>
+
+\documentclass[a4paper,12pt]{book}
+\usepackage{booktabs}
+\usepackage{calc}
+\usepackage[vmargin=2.2cm,right=2.cm,left=2.cm]{geometry}
+\usepackage[skins]{tcolorbox}
+%\usepackage[top=1.5in,bottom=1in,right=1in,left=1in,headheight=65pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{lmodern}
+\usepackage[frenchb]{babel} % If you write in French
+%\usepackage[english]{babel} % If you write in English
+\usepackage{frcursive}
+\usepackage[Bjornstrup]{fncychap}
+\usepackage{lipsum}% for resize the abstract
+%%%%%%%%%%%%%  code de format de chapitre %%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{mwe} % loads »blindtext« and »graphicx«
+% \usepackage{subfig}% not needed with `subcaption'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{resizegather} % minimizing eqautions size
+%\usepackage{a4wide}
+\usepackage{url}%to cite URL 
+\usepackage{graphicx}
+
+%\usepackage{subfig}
+%\usepackage{subfigure}
+%\usepackage{float}
+%\usepackage{subfloat}
+\usepackage[caption = false]{subfig}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[tight,footnotesize]{subfigure}
+%\usepackage{subfig}
+%\usepackage{caption}
+%\captionsetup[subfigure]{labelformat=parens,labelsep=space,font=small}
+%\usepackage{subfig}}
+%\captionsetup{compatibility=false}
+
+\graphicspath{{images/}}
+%\usepackage{movie15}% include images .gif
+\usepackage{smartdiagram}
+\usepackage{booktabs}
+\usepackage{tkz-tab}
+\usepackage{tikz}
+%\usepackage{subfig}
+%\usepackage[nottoc, notlot]{tocbibind}
+%\usetikzlibrary{shapes,arrows}
+%\usetikzlibrary{positioning}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\pgfplotsset{plot coordinates/math parser=false}
+\newlength\figureheight
+\newlength\figurewidth
+\pgfkeys{/pgf/number format/.cd,
+set decimal separator={,\!},
+1000 sep={\,},
+}
+\usepackage{ifthen}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex]{hyperref}
+\else
+\usepackage{hyperref}
+\fi
+\usepackage{color}
+\hypersetup{%
+colorlinks=true,
+linkcolor=blue,
+citecolor=red,
+urlcolor=blue}
+
+\usepackage{pdfpages}%makes it easy to insert pages of external PDF documents
+%without worrying about the print space.
+%\bibliographystyle{unsrt}
+%\usepackage{fontspec}   % writing symbols as &
+%\setmainfont{Linux Libertine O}
+
+%frame the title of the thesis in the cover page
+%%%%% writing beside logo
+\newtcolorbox{imagetextbox}[3][]{%
+  before=\par\bigskip\noindent,after=\par\medskip,
+  blank,sidebyside,center lower,
+  fontlower=\fontsize{10pt}{15pt}\selectfont\bfseries,
+  width=\textwidth-#2-#3,
+  lefthand width=#2,
+  sidebyside gap=#3,#1}
+
+\newcommand{\imagetext}[3][0.15]{%
+\begin{imagetextbox}[]{#1\textwidth}{3mm}%
+  \includegraphics[width=\linewidth]{#2}%
+  \tcblower%
+   #3%
+\end{imagetextbox}}
+%%%%%
+\newcommand{\titlebox}[2]{%
+\tikzstyle{titlebox}=[frame,thick,rounded corners,inner sep=10pt,inner ysep=10pt,draw]%
+\tikzstyle{title}=[fill=white]%
+%
+\bigskip\noindent\begin{tikzpicture}
+\node[titlebox] (box){%
+    \begin{minipage}{0.94\textwidth}
+#2
+    \end{minipage}
+};
+%\draw (box.north west)--(box.north east);
+\node[title] at (box.north) {#1};
+\end{tikzpicture}\bigskip%
+}
+
+% Mini table of content and acronyms
+%\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage[french]{minitoc}
+\setcounter{minitocdepth}{2}
+\mtcindent=15pt
+\setlength{\parskip}{10pt}
+
+\let\minitocORIG\minitoc
+\renewcommand{\minitoc}{\minitocORIG \vspace{1.2em}}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\usepackage{silence}
+\WarningFilter{minitoc(hints)}{W0023}
+\WarningFilter{minitoc(hints)}{W0024}
+\WarningFilter{minitoc(hints)}{W0028}
+\WarningFilter{minitoc(hints)}{W0030}
+
+\renewcommand{\baselinestretch}{1.5}% spacing between lines
+%\usepackage{setspace}
+%\setstretch{1.5}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{\bfseries\small\thepage}
+\fancyhead[LE,RO]{}
+\fancyhead[RE]{\bfseries\footnotesize\nouppercase{\leftmark}}
+\fancyhead[LO]{\bfseries\small\nouppercase{\rightmark}}
+\setlength{\headheight}{22.6pt} % spacing between body text and headline
+
+\let\headruleORIG\headrule
+\renewcommand{\headrule}{\color{black} \headruleORIG}
+\renewcommand{\headrulewidth}{0.5pt}
+\usepackage{colortbl}
+\arrayrulecolor{black}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{positioning}
+\fancypagestyle{plain}{
+  \fancyhead{}
+  %\fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  
+}
+
+\makeatletter
+\def\@textbottom{\vskip \z@ \@plus 1pt}
+\let\@texttop\relax
+\makeatother
+%\usepackage[style=alphabetic-verb,backend=bibtex,isbn=false,doi=false,backref=true,url=false]{biblatex}
+%\addbibresource{references.bib}
+%\addbibresource{JabRef.bib}
+\inputencoding{utf8}
+
+
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else%
+  \hbox{}%
+  \thispagestyle{empty}%
+  \newpage%
+  \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+
+\usepackage{amsthm}
+\usepackage{amssymb,amsmath,bbm,epic,eepic,amsfonts}
+\usepackage{mathtools}
+\usepackage{systeme}
+\usepackage{array}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage[footnote]{acronym}
+\usepackage{enumitem}
+\newcommand*{\SET}[1]  {\ensuremath{\mathbf{#1}}}
+\newcommand*{\VEC}[1]  {\ensuremath{\boldsymbol{#1}}}
+\newcommand*{\FAM}[1]  {\ensuremath{\boldsymbol{#1}}}
+\newcommand*{\MAT}[1]  {\ensuremath{\boldsymbol{#1}}}
+\newcommand*{\OP}[1]  {\ensuremath{\mathrm{#1}}}
+\newcommand*{\NORM}[1]  {\ensuremath{\left\|#1\right\|}}
+\newcommand*{\DPR}[2]  {\ensuremath{\left \langle #1,#2 \right \rangle}}
+\newcommand*{\calbf}[1]  {\ensuremath{\boldsymbol{\mathcal{#1}}}}
+\newcommand*{\shift}[1]  {\ensuremath{\boldsymbol{#1}}}
+
+\newcommand{\eqdef}{\stackrel{\mathrm{def}}{=}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\ud}{\, \mathrm{d}}
+\newcommand{\vect}{\text{Vect}}
+\newcommand{\sinc}{\ensuremath{\mathrm{sinc}}}
+\newcommand{\esp}{\ensuremath{\mathbb{E}}}
+\newcommand{\hilbert}{\ensuremath{\mathcal{H}}}
+\newcommand{\fourier}{\ensuremath{\mathcal{F}}}
+\newcommand{\sgn}{\text{sgn}}
+\newcommand{\intTT}{\int_{-T}^{T}}
+\newcommand{\intT}{\int_{-\frac{T}{2}}^{\frac{T}{2}}}
+\newcommand{\intinf}{\int_{-\infty}^{+\infty}}
+\newcommand{\Sh}{\ensuremath{\boldsymbol{S}}}
+\newcommand{\C}{\SET{C}}
+\newcommand{\R}{\SET{R}}
+\newcommand{\Z}{\SET{Z}}
+\newcommand{\N}{\SET{N}}
+\newcommand{\K}{\SET{K}}
+\newcommand{\reel}{\mathcal{R}}
+\newcommand{\imag}{\mathcal{I}}
+\newcommand{\cmnr}{c_{m,n}^\reel}
+\newcommand{\cmni}{c_{m,n}^\imag}
+\newcommand{\cnr}{c_{n}^\reel}
+\newcommand{\cni}{c_{n}^\imag}
+\newcommand{\tproto}{g}
+\newcommand{\rproto}{\check{g}}
+\newcommand{\LR}{\mathcal{L}_2(\SET{R})}
+\newcommand{\LZ}{\ell_2(\SET{Z})}
+\newcommand{\LZI}[1]{\ell_2(\SET{#1})}
+\newcommand{\LZZ}{\ell_2(\SET{Z}^2)}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\noise}{z}
+\newcommand{\Noise}{Z}
+\newcommand{\filtnoise}{\zeta}
+\newcommand{\tp}{g}
+\newcommand{\rp}{\check{g}}
+\newcommand{\TP}{G}
+\newcommand{\RP}{\check{G}}
+\newcommand{\dmin}{d_{\mathrm{min}}}
+\newcommand{\Dmin}{D_{\mathrm{min}}}
+\newcommand{\Image}{\ensuremath{\text{Im}}}
+\newcommand{\Span}{\ensuremath{\text{Span}}}
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}% partial derivative
+%Declaration of the Mathematical operations
+\DeclareMathOperator{\comb}{C} % combinaison
+\DeclareMathOperator{\e}{e}% exponentielle
+%%Declaration of braket (bra and ket) Dirac notation
+\DeclarePairedDelimiter\bra{\langle}{\rvert}
+\DeclarePairedDelimiter\ket{\lvert}{\rangle}
+\DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1 \delimsize\vert #2}
+
+%%%Define macros \etc, \ie in latex%%%
+
+\usepackage{xspace}
+
+% Add a period to the end of an abbreviation unless there's one
+% already, then \xspace.
+\makeatletter
+\DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+\def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
+
+\def\eg{\emph{e.g}\onedot} \def\Eg{\emph{E.g}\onedot}
+\def\ie{\emph{i.e}\onedot} \def\Ie{\emph{I.e}\onedot}
+\def\cf{\emph{c.f}\onedot} \def\Cf{\emph{C.f}\onedot}
+\def\etc{\emph{etc}\onedot} \def\vs{\emph{vs}\onedot}
+\def\wrt{w.r.t\onedot} \def\dof{d.o.f\onedot}
+\def\etal{\emph{et al}\onedot}
+\def\cad{\emph{c.-à-d}\onedot}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtheoremstyle{break}
+  {11pt}{11pt}%
+  {\itshape}{}%
+  {\bfseries}{}%
+  {\newline}{}%
+\theoremstyle{break}
+
+%\theoremstyle{definition}
+\newtheorem{definition}{Définition}[chapter]
+
+%\theoremstyle{definition}
+\newtheorem{theoreme}{Théorème}[chapter]
+
+%\theoremstyle{remark}
+\newtheorem{remarque}{Remarque}[chapter]
+
+%\theoremstyle{plain}
+\newtheorem{propriete}{Propriété}[chapter]
+\newtheorem{exemple}{Exemple}[chapter]
+
+\parskip=5pt
+%\sloppy
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+%\algrenewcommand\algorithmicrequire{\algkeyword{Entree:}}
+%\algrenewcommand\algorithmicensure{\algkeyword{Sortie:}}
+%\newcommand\algkeyword[1]{#1}
+
+%\algrenewcommand\algorithmicend{\algkeyword{end}}
+%\algrenewcommand\algorithmicdo{\algkeyword{do}}
+%\algrenewcommand\algorithmicwhile{\algkeyword{while}}
+%\algrenewcommand\algorithmicfor{\algkeyword{for}}
+%\algrenewcommand\algorithmicforall{\algkeyword{for all}}
+%\algrenewcommand\algorithmicloop{\algkeyword{loop}}
+%\algrenewcommand\algorithmicrepeat{\algkeyword{repeat}}
+%\algrenewcommand\algorithmicuntil{\algkeyword{until}}
+%\algrenewcommand\algorithmicprocedure{\algkeyword{procedure}}
+%\algrenewcommand\algorithmicfunction{\algkeyword{function}}
+%\algrenewcommand\algorithmicif{\algkeyword{if}}
+%\algrenewcommand\algorithmicthen{\algkeyword{then}}
+%\algrenewcommand\algorithmicelse{\algkeyword{else}}
+%\algrenewcommand\algorithmicrequire{\algkeyword{Require:}}
+%\algrenewcommand\algorithmicensure{\algkeyword{Ensure:}}
+%\algrenewcommand\algorithmicreturn{\algkeyword{return}}
+\begin{document}
+%%%%%%%%%%%%%%%%%%
+%%% First page %%%
+%%%%%%%%%%%%%%%%%%
+%\thispagestyle{empty}
+%\pagestyle{empty}
+
+%-------------------------------------------------------------------------------
+
+%	TITLE PAGE
+%-------------------------------------------------------------------------------
+\frontmatter
+\begin{titlepage}
+\centering 
+ \includepdf[]{images/1_Page_de_Garde_These_CED.pdf}
+\end{titlepage}
+
+%\begin{titlepage}
+%\frontmatter   % Use roman page numbering style (i, ii, iii, iv...) for 
+%the pre-content pages
+%%%%%%%%%%%%%%%%%%
+%%% First page %%%
+%%%%%%%%%%%%%%%%%%
+%\thispagestyle{empty}
+%\pagestyle{empty}
+  %\maketitle
+%\begin{center}
+%\hfill%
+%\begin{minipage}{0.6\textwidth}\raggedright
+%université Abdelmalek Essaâdi\\
+%Faculté des Sciences\\
+%Tétouan\\
+%\end{minipage}
+%\imagetext{logo-univ}{UNIVERSTÉ ABDELMALEK ESSAÂDI\\FACULTÉ DES 
+%SCIENCES\\TÉTOUAN}
+%\includegraphics[width=0.13\textwidth]{logo-univ}%[0.2cm]
+%\begin{center}
+ %\textbf{Centre d’Etudes Doctorales}\\
+%\textbf{«Sciences et Technologies»}\\
+%\textbf{Formation Doctorale : «Mathématiques, Physiques et Nouvelles 
+%Technologies»}\\[0.2cm]
+%\rule{\linewidth}{0.5mm} \\[0.4cm]
+
+%{\huge \textcolor{blue}{THÈSE}}\\
+%\textbf{Présentée à la Faculté des Sciences de TÉTOUAN pour obtenir le grade 
+%de:}\\
+%\textbf{Docteur en Physique}\\
+%\textbf{Spécialité : Physique statistique \& Informatique} \\[0.5cm]
+
+% Title
+%\rule{\linewidth}{0.5mm} \\[0.4cm]
+%\titlebox{TITRE}{ \centering\bfseries MODÉLISATION DE LA 
+%DYNAMIQUE DE PROPAGATION DES VIRUS INFORMATIQUES SUR UN RÉSEAU SANS ÉCHELLE 
+%RÉDUIT. 
+%\\[0.4cm]}
+%\rule{\linewidth}{0.5mm} \\[1.5cm]
+%Par:\\
+%Mohamed ESSOUIFI\\
+%\end{center}
+%Soutenue le 08/12/2018 devant le Jury
+%\begin{center}
+% Author and supervisor
+%\noindent
+%\begin{minipage}{0.45\textwidth}
+%  \begin{flushleft} %\large
+    %\emph{Auteurs :}\\
+ %   M. Prénom \textsc{Nom}\\
+%    M. Prénom \textsc{Nom}\\
+ %   M. Prénom \textsc{Nom}\\
+ %   M. Abdelfattah \textsc{ACHAHBAR}
+  %\end{flushleft}
+%\end{minipage}%
+%\begin{minipage}{0.45\textwidth}
+ % \begin{flushright} %\large
+    %\emph{Encadrants :} \\
+  %  \textsc{\it Président}\\
+   % \textsc{\it Rapporteur-Examinateur}\\
+    %\textsc{\it Rapporteur-Examinateur}\\
+    %\textsc{\it Directeur de thèse}
+  %\end{flushright}
+%\end{minipage}
+
+%\vfill
+%{\small Structure de recherche accréditée d’accueil :
+%Équipe de physique de la matière condensée/ l'université Abdelmalek Essaâdi, Faculté des Sciences-Tétouan}
+% Bottom of the page
+%Version 0.1 du\\ \today
+
+%\end{center}
+%\end{titlepage}
+
+
+%\frontmatter   % Use roman page numbering style (i, ii, iii, iv...) for 
+%the pre-content pages
+%\frontmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Non-significant pages %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\thispagestyle{empty}
+ \begin{flushleft}
+   \begin{cursive}
+   \vspace*{3cm}
+This doctoral thesis is dedicated to:
+
+My mother and my father two inexhaustible sources of tenderness, patience and 
+sacrifice. Your prayers and blessings have been of great help to me throughout 
+my life.
+
+May Almighty Allah preserve you and grant you health, long life and happiness.
+\vspace*{2cm}
+
+It is also dedicated to all my family especially my brothers and my two 
+sisters\ldots
+
+
+
+\end{cursive}
+\pagebreak
+\end{flushleft}
+
+\newpage
+
+
+\chapter*{\begin{cursive}Remerciements\end{cursive}}
+%\noindent\rule[5pt]{\textwidth}{0.5pt}
+{\em Tout d'abord, je voudrais remercier Allah tout puissant de m'avoir 
+donné la puissance et la bénédiction de terminer ce travail de thèse.
+Ensuite, j’aimerais adresser mes sincères remerciements à mon directeur de 
+thèse, Abdelfattah Achahbar, professeur 
+à la Faculté des Sciences de Tétouan, qui m’a permis d’intégrer son équipe au 
+sein du laboratoire de Physique de la Matière Condensée
+et qui m’a soutenu, guidé, conseillé et encouragé durant ce parcours du 
+combattant.
+J’aimerais notamment saluer sa motivation et sa patience dont il a fait preuve 
+pour mener à bien tous les travaux et les notes que
+je lui ai proposés tout au long de ces années. En tant que spécialiste 
+en physique 
+statistique et réseaux complexes, j'ai profité de son expertise durant mon 
+Master et pendant la préparation 
+de cette thèse, notamment au niveau de la théorie des graphes et réseaux 
+complexes aussi bien que dans le domaine de
+la programmation et modélisation numérique. J'avoue fièrement que cette étude 
+interdisciplinaire, qui regroupe la physique statistique, la physique 
+de la matière condensée, les mathématiques, l'informatique et l'épidémiologie, 
+n'aurait pas été possible sans son soutien continu et son immense 
+apport de connaissances, et que ses conseils et ses encouragements sont 
+derrière 
+les résultats obtenus. Finalement, je tiens à le remercier vivement d'avoir 
+corrigé cette mémoire de thèse durant ces derniers mois.
+
+Un très grand merci également aux membres du jury que je n’ai pas cité encore, 
+le professeur Ahmed Qachaou à la Faculté des Sciences de Kénitra pour avoir 
+bien voulu présider ce jury, Ez-Zahraouy Hamid professeur à la Faculté 
+des Sciences de Rabat, Jamal El Khamkhami et Mohamed El Marouani professeurs à 
+la Faculté des Sciences de Tétouan  pour avoir pris le temps de relire en 
+profondeur mon manuscrit de thèse pour en rédiger le rapport, et les 
+professeurs Mohammed Loulidi à la Faculté des Sciences de Rabat et Koutaiba 
+Ameziane à la Faculté des Sciences de Tétouan pour avoir accepter d’examiner ce 
+travail.
+
+Je tiens également à remercier mon ami Jaouad El Habbouch professeur 
+assistant à la Faculté des Lettres de Tétouan d'avoir corrigé la langue 
+anglaise de mes travaux malgré ses engagements et ses préoccupations. Je lui 
+espère une bonne continuation dans son nouveau poste.
+
+Je me sens très chanceux d'avoir fait partie d'un si merveilleux groupe 
+des doctorants à la Faculté des Sciences de Tétouan notamment au département
+de la Physique. Nos cafés du matin et du soir à la buvette et ailleurs, ainsi 
+que les matchs de football organisés de temps en temps
+m'ont motivé et m'ont permis de créer des amitiés durables.
+Je tenais à les remercier tous pour m’avoir encouragé durant ces quelques 
+années 
+et surtout ces derniers mois qui ont été les plus durs. Un grand merci 
+s'adresse spécialement aux doctorants et chercheurs de notre laboratoire de 
+physique de la matière condensée pour le partage et l'échange des idées pour 
+enrichir la qualité de recherche dans ce travail de thèse. 
+%Merci d’avoir su faire avec mes indisponibilités remarquées (et remarquables?) 
+pour nos sorties, etc. 
+
+Et finalement, j’adresse un énorme merci à mes parents, à mes deux sœurs et à 
+mes frères qui ont toujours cru en moi et qui ne cessent de m'encourager durant 
+ces années de ce travail. 
+
+Tout ceci n’aurait évidemment pas été possible sans le concours de toutes les 
+personnes que j'ai nommées supra.}
+
+
+%\newpage
+
+
+
+\let\cleardoublepage\clearpage
+
+\dominitoc
+%%%%%%%%%%%%%%%%
+%%% Abstract-Français %%%
+%%%%%%%%%%%%%%%%
+\chapter*{Résumé}
+\addstarredchapter{Résumé}
+%\markboth{Résumé}{Résumé}
+%\thispagestyle{empty}
+%\pagestyle{empty}
+%\vspace*{\fill}
+\noindent\rule[2pt]{\textwidth}{0.5pt}\\
+{\large\textbf{Français---}}La science des réseaux complexes est un domaine de recherche fondamental qui permet de modéliser et étudier les réseaux artificiels et naturels dans notre monde réel. La découverte
+des propriétés universelles communes, quasiment à tous les réseaux réels, tel que la propriété petit-monde et la distribution sans-échelle, a révolutionné la façon
+d’étudier, modéliser et traiter ces réseaux.
+Un réseau est dit complexe s'il est constitué d'un grand nombre d'entités en interactions d’où l’émergence
+des propriétés à grande échelle. L'objectif de cette thèse est d'apporter quelques contributions à ce domaine. Au début, nous présentons l’état de l’art nécessaire aux lecteurs, puis nous analysons
+le modèle de Barabási et Albert en s'appuyant sur un nouveau modèle ayant le complément de la probabilité du précédent. Puis, nous étudions les réseaux sans-échelle non corrélés, en se basant sur des étapes et des hypothèses simples.
+%, nous obtenons les expressions explicites du nombre de nœuds à une distance donnée d'un nœud arbitraire, profitant de la forme du résultat obtenu, nous déduisons l'expression explicite du plus court chemin
+Ensuite, nous traitons le modèle petit-monde de Newman et Watts en s'appuyant sur la transformation de groupe de renormalisation.
+%, nous commençons par établir une formule plus précise de la fonction universelle de Newman, Moore et Watts, puis nous montrons que celle-ci n'est pas toujours vraie. En effet nous constatons une saturation de raccourcis et l'apparition d'une nouvelle fonction universelle dont les variables sont différentes. Nous en déduisons que l'émergence de la propriété petit-monde dans ce modèle est spectaculaire
+Enfin, nous proposons une méthode permettant de prédire le type des transitions de phase  dans le phénomène de percolation au voisinage du point critique.
+%, cette méthode s'appuyant sur deux paramètres, le premier est l'exposant de la distribution d'amas au voisinage du point critique, le second est l'exposant de la distribution d'amas avec lesquels les amas sont choisies, nous concluons qu'au voisinage du point critique le type de la transition de phase dépend uniquement du premier paramètre. 
+
+{\large\textbf{Mots clés:}}
+{modèles épidémiologiques, virus informatiques, sécurité, réseau sans échelle 
+réduit, modèle mixte SIR-SIS, équilibre viral, approche déterministe, 
+approche stochastique, chaine de Markov, Monte Carlo, champ moyen.}\\
+\noindent\rule[2pt]{\textwidth}{0.5pt}
+
+\begin{center}
+  Équipe de Physique de la Matière Condensée,\\ 
+  Département de Physique, Faculté des Sciences,\\
+Université Abdelmalek ESSAADI\\
+B.P 2121, Tétouan, Maroc\\
+\end{center}
+
+%\begin{center}
+%{\large\textbf{Title in english\\}}
+%\end{center}
+%\thispagestyle{empty}
+%\clearpage
+%\begin{vcenterpage}
+%\cleardoublepage
+
+%\vspace{0.5cm}
+\newpage
+%%%%%%%%%%%%%%%%
+%%% Abstract-Anglais %%%
+%%%%%%%%%%%%%%%%
+
+%\vspace*{\fill}
+%\noindent\rule[2pt]{\textwidth}{0.5pt}\\
+%\begin{center}
+%{\large\textbf{Title in english\\}}
+%\end{center}
+%\markboth{Abstract}{Abstract}
+{\large\textbf{English---}}
+Complex networks is a fundamental field of research that model and study artificial and natural networks in our real world. The discovery of common universal properties, almost to all real networks, such as small-world property and scale-free distribution, has revolutionized the way as these networks are studied, modeled and processed.
+A complex network consists of a large number of interacting entities, hence the emergence of properties at large-scale. The object of this thesis is to introduce some contributions to this domaine. In the beginning, we present the state of the art necessary to the readers, next we analyze the model of Barabási and Albert relying on a new model having the complement of the probability of the first one. After, we study uncorrelated scale-free networks, based on simple steps and assumptions. Then, we treat Newman and Watts' small-world model by relying on renormalization group transformation. 
+Finally, we propose a method to predict the type of phase transitions in the percolation phenomenon in the vicinity of the critical point.
+
+{\large\textbf{Keywords:}}
+{Epidemiological models, computer viruses, security, reduced scale 
+free network, SIR-SIS mixed model, viral equilibrium, deterministic approach, 
+stochastic approach, Markov chain, Monte Carlo, mean field.}\\
+\noindent\rule[2pt]{\textwidth}{0.5pt}
+\begin{center}
+  Condensed Matter Physics team\\
+Department of Physics, Faculty of Sciences\\
+Abdelmalek ESSAADI University\\
+B.P 2121, Tétouan, Morocco\\
+  
+\end{center}
+%\end{vcenterpage}
+
+%\clearpage
+
+%\vspace{0.5cm}
+
+%\vspace*{\fill}
+
+%\clearpage
+
+\tableofcontents
+\markboth{Table des matières}{Table des matières}
+\addstarredchapter{Table des matières}
+\let\cleardoublepage\clearpage
+\listoftables
+\addstarredchapter{Liste des tableaux}
+\let\cleardoublepage\clearpage
+%\listofalgorithms
+%\addstarredchapter{Table des algorithmes}
+\listoffigures
+\addstarredchapter{Table des figures}
+\let\cleardoublepage\clearpage
+%\chapter*{Liste des sigles et acronymes}
+%\addstarredchapter{Liste des sigles et acronymes}
+%\markboth{Liste des sigles et acronymes}{Liste des sigles et acronymes}
+%\noindent\rule[2pt]{\textwidth}{0.5pt}-
+% Remember to use italic fonts for foreign words
+%\begin{acronym}[CP-OFDMX] % Specify the longest acronym in order to set the first column width
+%\acro{CTMC}{\emph{Continue Time Markov Chain}}
+%\acro{DoS}{\emph{Denial of Service}} 
+%\acro{DTMC}{\emph{Discret Time Markov Chain}}
+%\acro{FAT}{\emph{File Allocation Table}}
+%\acro{IBM}{\emph{International Business Machines}}
+%\acro{IDS}{\emph{Intrusion Detection System}}
+%\acro{IP}{\emph{Internet protocol}}
+%\acro{IPS}{\emph{Intrusion Prevention System}}
+%\acro{LAN}{\emph{Local Area Network}}
+%\acro{MS-DOS}{\emph{Microsoft Disk Operating System}} 
+%\acro{ODE}{\emph{Ordinary Differential Equation}}
+%\acro{RSE}{\emph {Réseau Sans Échelle}}
+%\acro{RSER}{\emph {Réseau Sans Échelle Réduit}}
+%\acro{RSFN}{\emph {Reduced Scale Free Network}}
+%\acro{SAIR}{\emph {Susceptible-Antidotal-Infected-Recovered}}
+%\acro{SDE}{\emph{Stochastic Differential Equation}}
+%\acro{SDN}{\emph{Software Defined Network}}
+%\acro{SEIQRS}{\emph{Susceptible-Exposed-Infected-Quarantined-Recovered-Susceptible}}
+%\acro{SEIQV}{\emph{Susceptible-Exposed-Infected-Quarantined-Vaccinated}}
+%\acro{SEIR}{\emph{Susceptible-Exposed-Infected-Recovered}}
+%\acro{SEIRS}{\emph{Susceptible-Exposed-Infected-Recovered-Susceptible}}
+%\acro{SFN}{\emph {Scale Free Network}}
+%\acro{SIN}{\emph {State-Interdependent Network}}
+%\acro{SIPS}{\emph {Susceptible-Infected-Patched-Susceptible}}
+%\acro{SIR}{\emph {Susceptible-Infected-Recovered}}
+%\acro{SIRS}{\emph {Susceptible-Infected-Recovered-Susceptible}}
+%\acro{SIS}{\emph{Susceptible-Infected-Scusceptible}}
+%\acro{SLBS}{\emph{Susceptible-Latent-Bursting-Susceptible}}
+%\acro{URL}{\emph{Uniform Resource Locator}}
+%\acro{VEISV}{\emph{Vulnerable–Exposed–Infectious–Secured–Vulnerable}}
+%\acro{WAF}{\emph{Web Application Firewall}}
+%\acro{WAN}{\emph{Wide Area Network }}
+%\acro{WWW}{\emph{World Wide Web}}
+
+%\end{acronym}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Content of the report and references %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\mainmatter
+\pagestyle{fancy}
+\cleardoublepage
+
+\include{files/intro}
+\include{files/chap1}
+\include{files/chap2}
+\include{files/chap3}
+\include{files/chap4}
+\include{files/chap5}
+\include{files/conclu}
+
+%\appendix
+%\include{Annexe}
+\newpage
+%\bibliographystyle{authoryear-fr}
+%\bibliography{references}
+\bibliographystyle{unsrt}
+\bibliography{JabRef}
+%\printbibliography
+%\addstarredchapter{Bibliographie}
+%\markboth{Bibliographie}{Bibliographie}
+
+
+
+\end{document}
