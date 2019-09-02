@@ -1,0 +1,1004 @@
+\begin{thebibliography}{100}
+
+\bibitem{Fronczak-al2004}
+A.~Fronczak, P.~Fronczak, and J.~A. Holyst.
+\newblock Average path length in random networks.
+\newblock {\em Phys. Rev. E}, 70:056110, (2004).
+
+\bibitem{Achlioptas-al2009}
+D.~Achlioptas, R.~M. D’Souza, and J.~Spencer.
+\newblock Explosive percolation in random networks.
+\newblock {\em Science}, 323 (5920):1453–1455, (2009).
+
+\bibitem{Je-al2000}
+Jeong H., B.Tombor, R.Albert, Z.N.Oltvai, and A.L.Barabasi.
+\newblock The large-scale organization of a metabolic networks.
+\newblock {\em Nature}, 407:651--654, (2000).
+
+\bibitem{F-al1999}
+M.~Faloutsos, P.~Faloutsos, and C.~Faloutsos.
+\newblock On power-law relationships of the internet topology.
+\newblock {\em Computer Communication Review}, 29:251, (1999).
+
+\bibitem{BA1999}
+A.-L. Barabasi and R.~Albert.
+\newblock Emergence of scaling in random networks.
+\newblock {\em Science}, 286:509–512, (1999).
+
+\bibitem{Co-al1990}
+{Cohen, J. E.}, {Briand F.}, and {Newman, C. M.}
+\newblock Community food webs: Data and theory.
+\newblock {\em Biomathematics}, 20, (1990).
+
+\bibitem{Pim-al2002}
+{Pimm, S. L}.
+\newblock {\em Food Webs}.
+\newblock University of Chicago Press, Chicago, 2nd ed. (2002).
+
+\bibitem{Newman-Watts1999-2}
+M.~E.~J. Newman and D.~J. Watts.
+\newblock Renormalization group analysis of the small-world network model.
+\newblock {\em Phys. Lett.A}, 263:341, (1999).
+
+\bibitem{Flory}
+P.~J. Flory.
+\newblock Molecular size distribution in three-dimensional polymers. i.
+  gelation.
+\newblock {\em Journal of the American Chemical Society}, 63:3083--3090,
+  (1941).
+
+\bibitem{Erdos-Renyi1959}
+P.~Erdos and A.~Rényi.
+\newblock On random graphs.
+\newblock {\em Publicationes Mathematicae}, 6:290–297, (1959).
+
+\bibitem{Erdos-Renyi1960}
+P.~Erdos and A.~Rényi.
+\newblock On the evolution of random graphs.
+\newblock {\em Publications of the Mathematical Institute of the Hungarian
+  Academy of Sciences}, 5:17–61, (1960).
+
+\bibitem{Erdos-Renyi1961}
+P.~Erdos and A.~Rényi.
+\newblock On the strength of connectedness of a random graph.
+\newblock {\em Acta Mathematica Scientia Hungary}, 12:261--267, (1961).
+
+\bibitem{WS1998}
+D.~J. Watts and S.~H. Strogatz.
+\newblock Collective dynamics of “small-world” networks.
+\newblock {\em Nature}, 393:440–442, (1998).
+
+\bibitem{Girvan}
+M.~Girvan and M.~E.~J. Newman.
+\newblock Community structure in social and biological networks.
+\newblock {\em edings of the National Academy of Science}, 99:7821--7826,
+  (2002).
+
+\bibitem{Pi1965}
+{F. R. Pitts}.
+\newblock A graph theoretic approach to historical geography.
+\newblock {\em The Professional Geographer}, 17:15–20, (1965).
+
+\bibitem{Am-al2000}
+{L. A. N. Amaral}, {A. Scala}, {M. Barthélémy}, and {H. E. Stanley}.
+\newblock Classes of small-world networks.
+\newblock {\em Proc. Natl. Acad. Sci}, USA 97:11149–11152, (2000).
+
+\bibitem{Do-al2007}
+{I. Dobson}, {B. A. Carreras}, { V. E. Lynch}, and {D. Newman}.
+\newblock Complex systems analysis of series ofblackouts: Cascading failure,
+  critical points, and self-organization.
+\newblock {\em Chaos}, 17:026103, (2007).
+
+\bibitem{Se-al2003}
+{P. Sen}, {S. Dasgupta}, {A. Chatterjee}, {P. A. Sreeram}, {G. Mukherjee}, and
+  {S. S. Manna}.
+\newblock Small-world properties of the indian railway network.
+\newblock {\em Phys.Rev. E}, 67:036106, (2003).
+
+\bibitem{BC2001}
+{A. Broido} and { K. C. Claffy}.
+\newblock Internet topology: Connectivity of ip graphs, in s. fahmy and k.
+  park, eds., scalability and traffic control in ip networks, no. 4526 in proc.
+  spie.
+\newblock {\em International Society for Optical Engineering}, page 172–187,
+  (2001).
+
+\bibitem{WB1997}
+G.~B. West, J.~H. Brown, and B.~J. Enquist.
+\newblock A general model for the origin of allometric scaling laws in biology.
+\newblock {\em Science}, 276:122–126, (1997).
+
+\bibitem{DM2003}
+S.~N. Dorogovtsev and J.~F.~F. Mendes.
+\newblock {\em Evolution of Networks: From Biological Nets to the Internet and
+  WWW}.
+\newblock Oxford Univ Press, Oxford, (2003).
+
+\bibitem{Cohen-Havlin2003}
+R.~Cohen and S.~Havlin.
+\newblock Scale-free networks are ultrasmall.
+\newblock {\em Phys. Rev. Lett}, 90:058701, (2003).
+
+\bibitem{Do-al2003}
+S.~N. Dorogovtsev, J.~F.~F. Mendes, and A.~N. Samukhin.
+\newblock Metric structure of random networks.
+\newblock {\em Nucl. Phys. B}, 653:307, (2003).
+
+\bibitem{ChL2003}
+F.~Chung and L.~Lu.
+\newblock The average distance in a random graph with given expected degrees.
+\newblock {\em Internet Math}, 1:91--113, (2003).
+
+\bibitem{Mi-al2002}
+R.~Milo, S.~Shen-Orr, S.~Itzkovitz, N.~Kashtan, D.~Chklovskii, and U.~Alon.
+\newblock Network motifs: simple building blocks of complex networks.
+\newblock {\em Science}, 298:824–827, (2002).
+
+\bibitem{JS2000}
+J.~Scott.
+\newblock {\em Social Network Analysis: A Handbook}.
+\newblock Sage Publications, London, 2nd ed. (2000).
+
+\bibitem{WW1977}
+W.~W. Zachary.
+\newblock An information flow model for conflict and fission in small groups.
+\newblock {\em Journal of Anthropological Research}, 33:452–473, (1977).
+
+\bibitem{Mo1934}
+{J. L. Moreno}.
+\newblock {\em {Who Shall Survive ?}}
+\newblock Beacon House, Beacon, (1934).
+
+\bibitem{JP1977}
+J.~Galaskiewicz and P.~V. Marsdeny.
+\newblock Interorganizational resource networks: Formal patterns of overlap.
+\newblock {\em Social Science Research}, 7:89–107, (1978).
+
+\bibitem{K-al2012}
+{Krioukov, D.}, {Kitsak, M.}, {Sinkovits, R. S.}, {Rideout, D.}, {Meyer, D.},
+  and {Boguna, M.}
+\newblock Network cosmology.
+\newblock {\em Scientific Reports}, 2:793, (2012).
+
+\bibitem{BS2009}
+{E. Bullmore} and {O. Sporns}.
+\newblock Complex brain networks: Graph theoretical analysis of structural and
+  functional systems.
+\newblock {\em Nat Rev Neurosci}, 10:168–198, (2009).
+
+\bibitem{La-al2009}
+{D. Lazer} and al.
+\newblock Computational social science.
+\newblock {\em Science}, 323:721–723, (2009).
+
+\bibitem{Li-al2011}
+{Y.Y. Liu}, {J.J. Slotine}, and {A.L. Barabasi}.
+\newblock Controllability of complex networks.
+\newblock {\em Nature}, 473:167–173, (2011).
+
+\bibitem{Sm1997}
+{L. Smolin}.
+\newblock {\em The life of the cosmos}.
+\newblock Oxford University Press, Oxford, (1997).
+
+\bibitem{Tr2015}
+C.~A. Trugenberger.
+\newblock Quantum gravity as an information network: Self-organization of a 4d
+  universe.
+\newblock {\em Phys.Rev. D}, 92:084014, (2015).
+
+\bibitem{Bi-al2015}
+{Bianconi, G.}, {Rahmede, C.}, and {Wu, Z.}
+\newblock Complex quantum network geometries: Evolution and phase transitions.
+\newblock {\em Phys. Rev. E}, 92:022815, (2015).
+
+\bibitem{BR2006}
+B.~Bollobas and O.~Riordan.
+\newblock {\em Percolation}.
+\newblock Cambridge University Press, Cambridge, (2006).
+
+\bibitem{Ac-al2007}
+A.~Acin, J.~I. Cirac, and M.~Lewenstein.
+\newblock Entanglement percolation in quantum networks.
+\newblock {\em Nature Physics}, 3:256, (2007).
+
+\bibitem{Sa1999}
+S.~Sachdev.
+\newblock {\em Quantum Phase Transitions}.
+\newblock Cambridge University Press, Cambridge, (1999).
+
+\bibitem{J-al2015}
+J.~Novotny, G.~Alber, and I.~Jex.
+\newblock Universality in random quantum networks.
+\newblock {\em Phys. Rev. A}, 92:062335, December (2015).
+
+\bibitem{BG2007}
+{D. Bruß} and {G. Leuchs (eds.)}.
+\newblock {\em Lectures on Quantum Information}.
+\newblock {Weinheim, Wiley-VCH}, (2007).
+
+\bibitem{MC2000}
+M.~A. Nielsen and I.~L. Chuang.
+\newblock {\em Quantum Computation and Quantum Information}.
+\newblock Cambridge University Press, Cambridge, (2000).
+
+\bibitem{Mitchell2006}
+M.~Mitchell.
+\newblock Complex systems: Network thinking.
+\newblock {\em Artificial Intelligence}, 170:1194–1212, (2006).
+
+\bibitem{Basheer-Hajmeerb2000}
+I.A. Basheer~M. Hajmeer.
+\newblock {Artificial neural networks: fundamentals, computing, design and
+  application}.
+\newblock {\em Journal of Microbiological Methods}, 43:3–31, (2000).
+
+\bibitem{Passerini-al2017}
+A.~Passerini, G.~Tack, and T.~Guns.
+\newblock Introduction to the special issue on combining constraint solving
+  with mining and learning.
+\newblock {\em Artificial Intelligence}, 244:1--5, (2017).
+
+\bibitem{Ha1995}
+{F. Harary}.
+\newblock {\em Graph Theory}.
+\newblock Perseus, Cambridge, MA (1995).
+
+\bibitem{West1996}
+{D. B. West}.
+\newblock {\em Introduction to Graph Theory}.
+\newblock Prentice Hall, Upper Saddle River, NJ (1996).
+
+\bibitem{Mi1967}
+{S. Milgram}.
+\newblock The small world problem.
+\newblock {\em Psychology Today}, page 56–67, May (1967).
+
+\bibitem{TM1969}
+{J. Travers} and S.~Milgram.
+\newblock {\em Sociometry}, 32:425, (1969).
+
+\bibitem{D-al2003}
+{P. Dodds}, {R. Muhamad}, and {D. Watts}.
+\newblock An experimental study of search in global social networks.
+\newblock {\em Science}, 301(5634):827–829, (2003).
+
+\bibitem{PV2004}
+{R. Pastor-Satorras} and {A. Vespignani}.
+\newblock {\em {Evolution and Structure of the Internet: A Statistical Physics
+  Approach}}.
+\newblock Cambridge University Press, Cambridge, (2004).
+
+\bibitem{Wa1994}
+{S. Wasserman} and {K. Faust}.
+\newblock {\em {Social Network Analysis: Methods and Applications}}.
+\newblock Cambridge University Press, Cambridge, (1994).
+
+\bibitem{Bo-al2006}
+Boccaletti, Stefano, and al.
+\newblock Complex networks: Structure and dynamics.
+\newblock {\em Physics reports}, 424.4:175--308, (2006).
+
+\bibitem{Qi-al2010}
+Q.~Ye, B.~Wu, and B.~Wang.
+\newblock Distance distribution and average shortest path length estimation in
+  real-world networks.
+\newblock {\em In Proceedings of the 6th international conference on Advanced
+  data mining and applications: Part I}, volume 6440 of Lecture Notes in
+  Computer Science:322–333, (2010).
+
+\bibitem{Latora-Marchiori2001}
+V.~Latora and M.~Marchiori.
+\newblock Efficient behavior of small-world networks.
+\newblock {\em Phys. Rev. Lett}, 87(19):198701, Oct (2001).
+
+\bibitem{Melnik-al2011}
+S.~Melnik, A.~Hackett, M.~A. Porter, P.~J. Mucha, and J.~P. Gleeson.
+\newblock The unreasonable effectiveness of tree-based theory for networks with
+  clustering.
+\newblock {\em Phys. Rev. E}, 83:036112, (2011).
+
+\bibitem{Zhao-al2006}
+M.~Zhao, T.~Zhou, B.-H. Wang, G.~Yan, H.-J. Yang, and W.-J. Bai.
+\newblock {Relations between average distance, heterogeneity and network
+  synchronizability}.
+\newblock {\em Physica A}, 371:377, (2006).
+
+\bibitem{Albert-al2000}
+R.~Albert, H.~Jeong, and {A. L. Barab\'{a}si}.
+\newblock Error and attack tolerance of complex networks.
+\newblock {\em Nature (London)}, 406:378, (2000).
+
+\bibitem{Lad1999}
+L.~A. Adamic.
+\newblock The small world web. in proceedings of the third european conference
+  on research and advanced technology for digital libraries.
+\newblock {\em Sociometry}, 1696 of Lecture Notes in Computer
+  Science:443–452, (1999).
+
+\bibitem{Seb-al2022}
+P.~Sen, S.~Dasgupta, A.~Chatterjee, P.~A. Sreeram, G.~Mukherjee, and S.~S.
+  Manna.
+\newblock {\em Small-world properties of the indian railway network}.
+\newblock (2002).
+
+\bibitem{WD2000}
+A.~Wagner and D.~Fell.
+\newblock {\em The small world inside large metabolic networks}.
+\newblock (August 21 2000).
+
+\bibitem{SC2001}
+S.~Bilke and C.~Peterson.
+\newblock Topological properties of citation and metabolic networks.
+\newblock {\em Rev. E}, 64:036106, (2001).
+
+\bibitem{Ne2003}
+M.~E.~J. Newman.
+\newblock The structure and function of complex networks.
+\newblock {\em SIAM Rev45}, 2:167–256, (2003).
+
+\bibitem{BC2003}
+G.~Bianconi and A.~Capocci.
+\newblock Number of loops of size h in growing scale-free networks.
+\newblock {\em Phys. Rev. Lett}, 90:art. no. 078701, (2003).
+
+\bibitem{Fron-al2002}
+A.~Fronczak, J.~A. Holyst, M.~Jedynak, and J.~Sienkiewicz.
+\newblock Higher order clustering coefficients in barabasi-albert networks.
+\newblock {\em Phys. A}, 316:688–694, (2002).
+
+\bibitem{Gle-al2001}
+P.~M. Gleiss, P.~F. Stadler, A.~Wagner, and D.~A. Fell.
+\newblock Relevant cycles in chemical reaction networks.
+\newblock {\em Adv. in Complex Systems}, 4:207–226, (2001).
+
+\bibitem{BP2002}
+{M. Boguñá} and {R. Pastor-Satorras}.
+\newblock {\em Phys. Rev. E}, 66:047104, (2002).
+
+\bibitem{MS2002}
+{S. Maslov} and {K. Sneppen}.
+\newblock Specificity and stability in topology of protein networks.
+\newblock {\em Science}, 296:910–913, (2002).
+
+\bibitem{Dehmer2011}
+M.~Dehmer.
+\newblock {\em Structural Analysis of Complex Networks}.
+\newblock Springer, (2011).
+
+\bibitem{Hage-Harary1995}
+P.~Hage and F.~Harary.
+\newblock Eccentricity and centrality in networks.
+\newblock {\em Soc Networks}, 17:57–63, (1995).
+
+\bibitem{Wasserman-Faust1994}
+S.~Wasserman and K.~Faust.
+\newblock {\em Social network analysis: methods and applications. Structural
+  analysis in the social sciences}.
+\newblock Cambridge University Press, Cambridge, (1994).
+
+\bibitem{Freeman1977}
+L.~C. Freeman.
+\newblock A set of measures of centrality based on betweenness.
+\newblock {\em Sociometry}, 40:35–41, (1977).
+
+\bibitem{RG1999}
+Famous trails~to Paul~Erdos.
+\newblock Relevant cycles in chemical reaction networks.
+\newblock {\em Math. Intelligencer}, 51:51–63, (1999).
+
+\bibitem{New2005}
+M.~E.~J. Newman.
+\newblock Power laws, pareto distributions and zipf's law.
+\newblock {\em Contemporary Physics}, 46:323--351, (2005).
+
+\bibitem{Aa-al2009}
+Aaron Clauset, Cosma~Rohilla Shalizi, and M.~E.~J. Newman.
+\newblock Power-law distributions in empirical data.
+\newblock {\em SIAM Review}, 51 n.4:661--703, November (2009).
+
+\bibitem{GuR1944}
+B.~Gutenberg and R.~F. Richter.
+\newblock Energy ratio of reflected and refracted seismic waves.
+\newblock {\em Bull. Seismol. Soc. Am}, 34:85--102, (1944).
+
+\bibitem{NeI1994}
+G.~Neukum and B.A. Ivanov.
+\newblock {\em in Hazards Due to Comets and Asteroids}.
+\newblock edited by T. Gehrels, {(University of Arizona Press, Tucson, AZ,
+  1994),pp. 359 – 416}.
+
+\bibitem{Zipf1949}
+G.K. Zipf.
+\newblock {\em Human Behaviour and the Principle of Least Effort}.
+\newblock {Addison-Wesley,Reading}, {MA, 1949}.
+
+\bibitem{Estoup1916}
+J.B. Estoup.
+\newblock {\em Gammes Stenographiques}.
+\newblock {Institut Stenographique de France, Paris}, (1916).
+
+\bibitem{ZaM2001}
+D.H. Zanette and S.C. Manrubia.
+\newblock Vertical transmission of culture and the distribution of family
+  names.
+\newblock {\em Physica A}, 295:1, (2001).
+
+\bibitem{LoW1926}
+A.J. Lotka.
+\newblock The frequency distribution of scientific productivity.
+\newblock {\em Acad. Sci}, 16:317--323, (1926).
+
+\bibitem{Price1965}
+D.J. de~S.~Price.
+\newblock Networks of scientific papers.
+\newblock {\em Science}, 149:510--515, (1965).
+
+\bibitem{AdH2000}
+L.~A. Adamic and B.~A. Huberman.
+\newblock Q. j. electron.
+\newblock {\em Commerce}, 1:512, (2000).
+
+\bibitem{Cox-al1995}
+R.A.K. Cox, J.M. Felton, and K.C. Chung.
+\newblock The concentration of commercial success in popular music: an analysis
+  of the distribution of gold records.
+\newblock {\em J. Cult. Econ}, 19:333--340, (1995).
+
+\bibitem{WilY1922}
+J.C. Willis and G.U. Yule.
+\newblock Some statistics of evolution and geographical distribution in plants
+  and animals and their significance.
+\newblock {\em Nature}, 109:177, (1922).
+
+\bibitem{Pareto1896}
+V.~Pareto.
+\newblock {\em {Cours d’Economie Politique}}.
+\newblock Droz, Geneva, (1896).
+
+\bibitem{BiR2015}
+G.~Bianconi and C.~Rahmede.
+\newblock Complex quantum network manifolds in dimension $d>2$ are scale-free.
+\newblock {\em Scientific Reports}, 5:13979, (2015).
+
+\bibitem{Dou-al2007}
+{Dourisboure, Y.}, {F. Geraci,}, and {M. Pellegrini}.
+\newblock {in WWW’07: Proceedings of the 16th international conference on the
+  World Wide Web (ACM, New York, NY, USA)}.
+\newblock pages 461--470, (2007).
+
+\bibitem{Flak-al2002}
+Flake, G.~W., S.~Lawrence, C.~Lee Giles, and F.~M. Coetzee.
+\newblock Self-organization and identification of web communities.
+\newblock {\em IEEE Computer}, 35:66, (2002).
+
+\bibitem{ChY2006}
+J.~Chen and B.~Yuan.
+\newblock Detecting functional modules in the yeast protein–protein
+  interaction network.
+\newblock {\em Bioinformatics}, 22(18):2283, (2006).
+
+\bibitem{RivT2003}
+A.~W. Rives and T.~Galitski.
+\newblock Modular organization of cellular networks.
+\newblock {\em Proc. Natl. Acad. Sci.USA}, 100(3):1128, (2003).
+
+\bibitem{KriW2000}
+B.~Krishnamurthy and J.~Wang.
+\newblock On network-aware clustering of web clients.
+\newblock {\em {Proceedings of the conference on Applications, Technologies,
+  Architectures, and Protocols for Computer Communication}}, 30(4):97, (2000).
+
+\bibitem{Steen2001}
+M.~Steenstrup.
+\newblock Cluster-based networks.
+\newblock {\em Addison Wesley, Reading, USA}, {chapter 4}:75–138, (2001).
+
+\bibitem{Csermely2008}
+P.~Csermely.
+\newblock Cluster-based networks.
+\newblock {\em Trends Biochem. Sci}, 33(12):569, (2008).
+
+\bibitem{Chowdhury-Stauffer2000}
+D.~Chowdhury and D.~Stauffer.
+\newblock {\em Principles of equilibrium statistical mechanics}.
+\newblock Wiley-VCH, Weinheim, (2000).
+
+\bibitem{Hsu-al2003}
+H-P. Hsu, V.~Mehra, and P.~Grassberger.
+\newblock Structure optimization in an off-lattice protein model.
+\newblock {\em Phys Rev E}, 68:037703, (2003).
+
+\bibitem{Watss-Strogatz1998}
+D.J. Watts and S.H. Strogatz.
+\newblock Collective dynamics of { small-world} networks.
+\newblock {\em Nature}, 393:440–442, (1998).
+
+\bibitem{NR1998}
+{Nicholas Rescher}.
+\newblock {\em Complexity: A philosophical overview}.
+\newblock Transaction Publishers, 1998.
+
+\bibitem{MMW1993}
+{Mitchell M Waldrop}.
+\newblock {\em The emerging science at the edge of order and chaos}.
+\newblock Simon and Schuster, 1993.
+
+\bibitem{RG1996}
+{Roger Highfield}.
+\newblock {\em Frontiers of complexity: The search for order in a chaotic
+  world}.
+\newblock Ballantine Books, 1996.
+
+\bibitem{MMAM2009}
+{Marc Mezard and Andrea Montanari}.
+\newblock {\em Information, physics, and computation}.
+\newblock Oxford University Press, 2009.
+
+\bibitem{NFJ2007}
+{Neil F Johnson}.
+\newblock {\em Two’s company, three is complexity: A simple guide to the
+  science of all sciences}.
+\newblock Oneworld Pubns Ltd, 2007.
+
+\bibitem{AB2002}
+R.~Albert and {A.-L. Barab\'{a}si}.
+\newblock Statistical mechanics of complex networks.
+\newblock {\em Rev. Mod. Phys}, 74:47, (2002).
+
+\bibitem{Dorogovtsev-Mendes2002}
+S.~N. Dorogovtsev and J.~F.~F. Mendes.
+\newblock Evolution of networks.
+\newblock {\em Adv. Phys}, 51:1079, (2002).
+
+\bibitem{Newman2003}
+M.~E.~J. Newman.
+\newblock The structure and function of complex networks.
+\newblock {\em SIAM Rev}, 45:167, (2003).
+
+\bibitem{Pareto1897}
+V.~Pareto.
+\newblock {\em {Cours d' \'{E}conomie Politique}}.
+\newblock { (Lausanne, 1897)}.
+
+\bibitem{Deng-al2009}
+W.~B. Deng, L.~Guo, W.~Li, and X.~Cai.
+\newblock World wide marine transportation network: Efficiency and container
+  throughput.
+\newblock {\em Chin. Phys. Lett}, 26:118901, (2009).
+
+\bibitem{Albert-al2004}
+R.~Albert, I.~Albert, and G.~L. Nakarado.
+\newblock Structural vulnerability of the north american power grid.
+\newblock {\em Phys. Rev. E}, 69:025103, (2004).
+
+\bibitem{Achacoso-Yamamoto1992}
+T.~B. Achacoso and W.~S. Yamamoto.
+\newblock {\em AY's Neuroanatomy of C. elegans for Computation}.
+\newblock CRC Press, { Boca Raton, FL}, (1992).
+
+\bibitem{BA-al1999}
+{A.-L. Barab\'{a}si}, H.~Jeong, and R.~Albert.
+\newblock Statistical mechanics and its applications.
+\newblock {\em Physica A}, 272:173, (1999).
+
+\bibitem{Xie-al2008}
+{Y.-B. Xie}, T.~Zhou, and {B.-H. Wang}.
+\newblock Scale-free networks without growth.
+\newblock {\em Physica A}, 387:1683, (2008).
+
+\bibitem{Samalam}
+V.~K. Samalam.
+\newblock {\em arXiv:1202.1498}.
+
+\bibitem{Krapivsky-al2000}
+P.~L. Krapivsky, S.~Redner, and F.~Leyvraz.
+\newblock Connectivity of growing random networks.
+\newblock {\em Physical Review Letters}, 85:4629–4632, (2000).
+
+\bibitem{Nordsieck-al1940}
+A.~Nordsieck, W.~E.~Lamb Jr., and G.~E. Uhlenbeck.
+\newblock On the theory of cosmic-ray showers i: The furry model and the
+  fluctuation problem.
+\newblock {\em Physica}, 7(4):344–360, (1940).
+
+\bibitem{Furry1937}
+W.~H. Furry.
+\newblock On fluctuation phenomena in the passage of high energy electrons
+  through lead.
+\newblock {\em Phys. Rev}, 52(6):569–581, (1937).
+
+\bibitem{Feller1939}
+W.~Feller.
+\newblock Die grundlagen der volterraschen theorie des kampfes ums dasein in
+  wahrscheinlichkeitstheoretischer behandlung.
+\newblock {\em Acta Biotheor}, 52(6):11–40, (1939).
+
+\bibitem{Delbruck1940}
+M.~Delbrück.
+\newblock Statistical fluctuations in autocatalytic reactions.
+\newblock {\em J. Chem. Phys}, 8(1):120–124, (1940).
+
+\bibitem{Kampen2007}
+N.~G. van Kampen.
+\newblock {\em Stochastic Processes in Physics and Chemistry}.
+\newblock North-Holland Personal Library. Elsevier, Amsterdam, {3rd edition,
+  2007}.
+
+\bibitem{Gardiner2009}
+C.~Gardiner.
+\newblock {\em Stochastic Methods - A Handbook for the Natural and Social
+  Sciences}.
+\newblock volume 13 of Springer Series in Synergetics, Amsterdam, { Springer,
+  Berlin, Heidelberg, 4th edition, 2009}.
+
+\bibitem{Weber-Frey2017}
+Weber~M F and Frey E.
+\newblock Master equations and the theory of stochastic path integrals.
+\newblock {\em Rep. Prog. Phys}, 80:046601, (2017).
+
+\bibitem{Glauber1963}
+R.~J. Glauber.
+\newblock Time-dependent statistics of the ising model.
+\newblock {\em J. Math. Phys}, 4(2):294–307, (1963).
+
+\bibitem{Kawasaki1966-1}
+K.~Kawasaki.
+\newblock Diffusion constants near the critical point for time-dependent ising
+  models. i.
+\newblock {\em Phys. Rev}, 145(1):224–230, (1966).
+
+\bibitem{Kawasaki1966-2}
+K.~Kawasaki.
+\newblock Diffusion constants near the critical point for time-dependent ising
+  models. ii.
+\newblock {\em Phys. Rev}, 148(1):375–381, (1966).
+
+\bibitem{Kawasaki1966-3}
+K.~Kawasaki.
+\newblock Diffusion constants near the critical point for time-dependent ising
+  models. iii.
+\newblock {\em Phys. Rev}, 150:285–290, (1966).
+
+\bibitem{Walczak-al2009}
+A.~M. Walczak, A.~Mugler, and C.~H. Wiggins.
+\newblock A stochastic spectral analysis of transcriptional regulatory
+  cascades.
+\newblock {\em Proc. Natl. Acad. Sci. USA}, 106:6529–6534, (2009).
+
+\bibitem{Rao-al2002}
+C.~V. Rao, D.~M. Wolf, , and A.~P. Arkin.
+\newblock {Control, exploitation and tolerance of intracellular noise}.
+\newblock {\em Nature}, 420:231–237, (2002).
+
+\bibitem{Tsimring2014}
+L.~S. Tsimring.
+\newblock Noise in biology.
+\newblock {\em Rep. Prog. Phys}, 77:026601, (2014).
+
+\bibitem{Bailey1950}
+N.~T.~J. Bailey.
+\newblock A simple stochastic epidemic.
+\newblock {\em Biometrika}, 37:193–202, (1950).
+
+\bibitem{Rock2014}
+K.~Rock, S.~Brand, J.~Moir, and M.~J. Keeling.
+\newblock Dynamics of infectious diseases.
+\newblock {\em Rep. Prog. Phys}, 77:026602, (2014).
+
+\bibitem{Clayton-al2007}
+E.~Clayton, D.~P. Doupé, A.~M. Klein, D.~J. Winton, B.~D.Simons, and P.~H.
+  Jones.
+\newblock A single type of progenitor cell maintains normal epidermis.
+\newblock {\em Nature}, 446:185–189, (2007).
+
+\bibitem{Weidlich-Braun1992}
+W.~Weidlich and M.~Braun.
+\newblock The master equation approach to nonlinear economics.
+\newblock {\em J. Evol. Econ}, 2:233–265, (1992).
+
+\bibitem{Gross-al2008}
+D.~Gross, J.~F. Shortle, J.~M. Thompson, and C.~M. Harris.
+\newblock Fundamentals of queueing theory.
+\newblock {\em {John Wiley and Sons,} {Hoboken,} NJ{, 4th edition}}, (2008).
+
+\bibitem{Barabasi2015}
+A.~L. Barabási.
+\newblock {\em Network Science}.
+\newblock Cambridge University Press, (2015).
+
+\bibitem{Dorogovtsev-al2000-2}
+S.~N. Dorogovtsev, J.~F.~F. Mendes, and A.~N. Samukhin.
+\newblock Structure of growing networks with preferential linking.
+\newblock {\em Phys. Rev. Lett}, 85:4633–4636, (2000).
+
+\bibitem{Bollobas-Riordan2002}
+B.~Bollobás and O.~Riordan.
+\newblock A polynomial of graphs on surfaces.
+\newblock {\em Math. Ann}, 323:1--35, (2002).
+
+\bibitem{Barabasi2002}
+A.~L. Barabási.
+\newblock {\em Linked: The New Science of Networks}.
+\newblock Perseus, Cambridge, 2002.
+
+\bibitem{Barrat-a2008l}
+A.~Barrat et~al.
+\newblock {\em Dynamical Processes on Complex Networks}.
+\newblock { (Cambridge University Press, 2008)}.
+
+\bibitem{Cohen-Havlinl2010}
+R.~Cohen and S.~Havlin.
+\newblock {\em {Complex Networks: Structure, Robustness and Function}}.
+\newblock { (Cambridge University Press, 2010)}.
+
+\bibitem{Metropolis-al1953}
+N.~Metropolis, A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and E.~Teller.
+\newblock Equation of state calculations by fast computing machines.
+\newblock {\em Journal of Chemical Physics}, 21:1087–1092, (1953).
+
+\bibitem{Newman2010-456}
+M.~E.~J. Newman.
+\newblock {\em {Networks: An Introduction}}.
+\newblock University of Michigan and Santa Fe Institute Press, (2010)p.456.
+
+\bibitem{Cohen-Havlinl2010-72}
+R.~Cohen and S.~Havlin.
+\newblock {\em {Complex Networks: Structure, Robustness and Function}}.
+\newblock { (Cambridge University Press, 2010).pp:72-77}.
+
+\bibitem{Kalisky-al2006}
+T.~Kalisky, R.~Cohen, O.~Mokryn, D.~Dolev, Y.~Shavitt, and S.~Havlin.
+\newblock Tomography of scale-free networks and shortest path trees.
+\newblock {\em Phys. Rev. E}, 74:066108, (2006).
+
+\bibitem{Bollobas1985}
+{B. Bollobás}.
+\newblock {\em Random Graphs}.
+\newblock Academic Press, London, (1985).
+
+\bibitem{Nitzan2016}
+M.~Nitzan, E.~Katzav, R.~Khn, and O.~Biham.
+\newblock {\em Phys. Rev. E}, 93:062309, (2016).
+
+\bibitem{Katzav-al2015}
+E.~Katzav, M.~Nitzan, D.~ben Avraham, P.~L. Krapivsky, R.~Khn, N.Ross, and
+  O.~Biham.
+\newblock {\em EPL}, 111:26006, (2015).
+
+\bibitem{Katzav-al2018}
+E.~Katzav, O.r Biham, and A.~K. Hartmann.
+\newblock {\em Phys. Rev. E}, 98:012301, (2018).
+
+\bibitem{Cohen-Havlin2009}
+R.~Cohen and S.~Havlin.
+\newblock {\em {Scaling properties of complex networks and spanning trees,
+  Chapter 3 in ”Handbook of Large-Scale Random Networks”, Eds. Bela
+  Bollobas, Robert Kozma and Dezso Miklos}}.
+\newblock (Bolyai Society of Mathematical Studies and Springer, 2009).
+
+\bibitem{Bollobas-Riordan2004}
+B.~Bollobás and O.~Riordan.
+\newblock The diameter of a scale-free random graph.
+\newblock {\em Combinatorica}, 24:5--34, (2004).
+
+\bibitem{Chung-Lu2002}
+F.~Chung and L.~Lu.
+\newblock The average distances in random graphs with given expected degrees.
+\newblock {\em PNAS}, 99:15879--15882, (2002).
+
+\bibitem{Akbarzadeh-Estrada2018}
+M.~Akbarzadeh and E.~Estrada.
+\newblock {\em Nature Human Behaviour}, 2:645652, (2018).
+
+\bibitem{Cohen-al2002}
+R.~Cohen, S.~Havlin, and D.~ben Avraham.
+\newblock {\em { Structural properties of scale free networks, in: S. Bornholdt
+  and H. G. Schuster, editors, Handbook of graphs and networks, chapter 4}}.
+\newblock Wiley-VCH, Berlin, (2002).
+
+\bibitem{Fox-Bellwood2014}
+R.~J. Fox and D.~R. Bellwood.
+\newblock Herbivores in a small world: network theory highlights vulnerability
+  in the function of herbivory on coral reefs.
+\newblock {\em Fuctional Ecology}, 28:642, (2014).
+
+\bibitem{Hofstad-al2014}
+R.~van~der Hofstad, G.~Hooghiemstra, and D.~Znamenski.
+\newblock Distances in random graphs with finite mean and infinite variance
+  degrees.
+\newblock {\em Electronic Journal of Probability}, 12:703766, (2007).
+
+\bibitem{Hofstad-al2004}
+R.~van~der Hofstad, G.~Hooghiemstra, and P.~Van Mieghem.
+\newblock Random graphs with arbitrary i.i.d. degrees.
+\newblock {\em Random Structures and Algorithms}, 26:76123, (2006).
+
+\bibitem{Bollobas-Riodan2002}
+{B. Bollobás and O. Riordan}.
+\newblock {\em Handbook of graphs and networks, eds. S. Bornholdt and H. G.
+  Schuster}.
+\newblock Wiley-VCH, Berlin, (2002).
+
+\bibitem{Newman2010}
+M.~E.~J. Newman.
+\newblock {\em {Networks: An Introduction}}.
+\newblock University of Michigan and Santa Fe Institute Press, (2010).
+
+\bibitem{Newman-Watts1999}
+M.~Newman and D.~Watts.
+\newblock Scaling and percolation in the small-world network model.
+\newblock {\em Phys. Lett. A}, 341, (1999).
+
+\bibitem{Barrat-Weigt2000}
+A.~Barrat and M.~Weigt.
+\newblock On the properties of small-world network models.
+\newblock {\em Eur. Phys. J. B}, 13:547, (2000).
+
+\bibitem{Newman-al2000}
+M.~E.~J. Newman, C.~Moore, and D.J. Watts.
+\newblock Mean-field solution of the small-world network model.
+\newblock {\em Phys. Rev. Lett}, 84:3201, (2000).
+
+\bibitem{Barthelemy-Amaral1999}
+M.~Barthélemy and L.~A.~N. Amaral.
+\newblock Small-world networks: Evidence for a crossover.
+\newblock {\em Phys. Rev. Lett}, 82:3180, (1999).
+
+\bibitem{Barrat}
+A.~Barrat.
+\newblock {Comment on ‘Small-world networks: crossover picture’}.
+
+\bibitem{Newman-Watts1999-3}
+M.~E.~J. Newman and D.~J. Watts.
+\newblock Scaling and percolation in the small-world network model.
+\newblock {\em Phys. Rev.E}, 60:7332, (1999).
+
+\bibitem{Argollo-al2000}
+M.~Argollo de~Menezes, C.~Moukarzel, and T.J.P. Penna.
+\newblock {\em Europhys. Lett}, 50:574, (2000).
+
+\bibitem{Newman-al2002}
+M.~E.~J. Newman, D.~J. Watts, and S.~H. Strogatz.
+\newblock Random graph models of social networks.
+\newblock {\em Proc. Natl Acad. Sci}, 99:2566–2572, (2002).
+
+\bibitem{Dorogovtsev-al2008}
+S.~N. Dorogovtsev, A.~V. Goltsev, and J.~F.~F. Mendes.
+\newblock Critical phenomena in complex networks.
+\newblock {\em Rev. Mod. Phys}, 80:1275–1335, (2008).
+
+\bibitem{Rozenfeld-al2010}
+H.~D. Rozenfeld, L.~K. Gallos, and H.~A. Makse.
+\newblock Explosive percolation in the human protein homology networks.
+\newblock {\em Eur. Phys. J.}, E 75:305–310, (2010).
+
+\bibitem{Bollobas1998}
+B.~Bollobás.
+\newblock Modern graph theory.
+\newblock {\em Springer}, (1998,New York).
+
+\bibitem{Adler1991}
+J.~Adler.
+\newblock Bootstrap percolation.
+\newblock {\em Physica A}, 453:171, (1991).
+
+\bibitem{Dorogovtsev2-2006}
+S.~N. Dorogovtsev, A.~V. Goltsev, and J.~F.~F. Mendes.
+\newblock k-core organization of complex networks.
+\newblock {\em Phys. Rev. Lett}, 96:040601, (2006).
+
+\bibitem{Echenique-al2005}
+P.~Echenique, J.~Gómez-Gardeñes, and Y.~Moreno.
+\newblock Dynamics of jamming transitions in complex networks.
+\newblock {\em EPL (Europhysics Letters)}, 71 (2):325–331, (2005).
+
+\bibitem{Costa-al2010}
+R.~A. da~Costa, S.~N. Dorogovtsev, A.~V. Goltsev, and J.~F.~F. Mendes.
+\newblock Explosive percolation transition is actually continuous.
+\newblock {\em Phys. Rev. Lett}, 105:255701, (2010).
+
+\bibitem{Costa-al2015}
+R.~A. da~Costa, S.~N. Dorogovtsev, A.~V. Goltsev, and J.~F.~F. Mendes.
+\newblock Inverting the achlioptas rule for explosive percolation.
+\newblock {\em Phys. Rev. E}, 91, (2015).
+
+\bibitem{Cho-Kahng2011}
+Y.~S. Cho and B.~Kahng.
+\newblock Suppression effect on explosive percolation.
+\newblock {\em Phys. Rev. Lett}, 107:275703, (2011).
+
+\bibitem{Bollobas-1984}
+B.~Bollobas.
+\newblock The evolution of random graphs.
+\newblock {\em Trans. Amer. Math. Soc}, 286:257—274, (1984).
+
+\bibitem{Bohman-Frieze2001}
+T.~Bohman and A.M. Frieze.
+\newblock Avoiding a giant component.
+\newblock {\em Random Structures and Algorithms}, 19:75--85, (2001).
+
+\bibitem{Riordan-Warnke2011}
+O.~Riordan and L.~Warnke.
+\newblock Explosive percolation is continuous.
+\newblock {\em Science}, 333:322, (2011).
+
+\bibitem{Riordan-Warnke2012}
+O.~Riordan and L.~Warnke.
+\newblock Achlioptas process phase transitions are continuous.
+\newblock {\em The Ann. Appl.Prob}, 22:1450–1464, (2012).
+
+\bibitem{Nagler-al2012}
+J.~Nagler, T.~Tiessen, and H.~W. Gutch.
+\newblock Continuous percolation with discontinuities.
+\newblock {\em Phys. Rev. X}, 2:031009, (2012).
+
+\bibitem{Boccaletti-al2016}
+S.~Boccaletti, J.~Almendral, S.~Guan, I.~Leyva, Z.~Liu, I.~Sendina-Nadal,
+  Z.~Wang, and Y.~Zou.
+\newblock {Explosive transitions in complex networks’ structure and dynamics:
+  percolation and synchronization}.
+\newblock {\em Physics Reports}, 660:1, (2016).
+
+\bibitem{Cho-al2010}
+Y.~S. Cho, B.~Kahng, and D.~Kim.
+\newblock Cluster aggregation model for discontinuous percolation transitions.
+\newblock {\em Phys. Rev. E}, 81:030103(R), (2010).
+
+\bibitem{Moreira-al2010}
+A.~A. Moreira, E.~A. Oliveira, S.~D.~S. Reis, H.~J. Herrmann, and J.~S.
+  Andrade.
+\newblock Hamiltonian approach for explosive percolation.
+\newblock {\em Phys. Rev. E}, 81:040101, (2010).
+
+\bibitem{Bastas-al2014}
+N.~Bastas, P.~Giazitzidis, M.~Maragakis, and K.~Kosmidis.
+\newblock Explosive percolation: Unusual transitions of a simple model.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  407:54–65, (2014).
+
+\bibitem{Cao-Schwarz2012}
+L.~Cao and J.~M. Schwarz.
+\newblock Correlated percolation and tricriticality.
+\newblock {\em Phys. Rev. E}, 86:061131, (2012).
+
+\bibitem{Fan-al2012}
+J.~Fan, M.~Liu, L.~Li, and X.~Chen.
+\newblock Continuous percolation phase transitions of random networks under a
+  generalized achlioptas process.
+\newblock {\em Phys. Rev. E}, 85:061110, (2012).
+
+\bibitem{Baxter-al2010}
+G.~J. Baxter, S.~N. Dorogovtsev, A.~V. Goltsev, and J.~F.~F. Mendes.
+\newblock Bootstrap percolation on complex networks.
+\newblock {\em Phys. Rev. E}, 82 (1), (2010).
+
+\bibitem{Cho2-Kahng2011}
+Y.~S. Cho and B.~Kahng.
+\newblock Discontinuous percolation transitions in real physical systems.
+\newblock {\em Phys. Rev. E}, 84:050102(R), (2011).
+
+\bibitem{Schulman1983}
+L.~S. Schulman.
+\newblock Long range percolation in one dimension.
+\newblock {\em Journal of Physics A: Mathematical and General}, 16:L639,
+  (1983).
+
+\bibitem{Aizenman-Newman1986}
+M.~Aizenman and C.~M. Newman.
+\newblock Discontinuity of the percolation density in one dimensional
+  $\frac{1}{\mid x-y\mid^2}$ percolation models.
+\newblock {\em Commun. Math. Phys}, 107:611, (1986).
+
+\bibitem{Lee-al2016}
+D.~Lee, Y.S. Cho, and B.~Kahng.
+\newblock Diverse types of percolation transitions.
+\newblock {\em J. Stat. Mech. Theor. Exp}, 107:124002, (2016).
+
+\bibitem{Newman2010-403}
+M.E.J. Newman.
+\newblock {\em {Networks: An Introduction}}.
+\newblock University of Michigan and Santa Fe Institute Press, (2010)p.403-408.
+
+\end{thebibliography}

@@ -1,0 +1,92 @@
+\select@language {french}
+\contentsline {starchapter}{R\IeC {\'e}sum\IeC {\'e}}{iv}{chapter*.2}
+\contentsline {starchapter}{Table des mati\IeC {\`e}res}{ix}{chapter*.3}
+\contentsline {starchapter}{Liste des tableaux}{x}{chapter*.4}
+\contentsline {starchapter}{Table des figures}{xvi}{chapter*.5}
+\contentsline {starchapter}{Introduction}{1}{chapter*.6}
+\contentsline {chapter}{\numberline {1}Notions et pr\IeC {\'e}liminaire}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Les r\IeC {\'e}seaux complexes}{5}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Introduction}{5}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}D\IeC {\'e}finition}{5}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Diff\IeC {\'e}rents types des R\IeC {\'e}seaux complexes}{5}{subsection.1.1.3}
+\contentsline {subsubsection}{\numberline {1.1.3.1}R\IeC {\'e}seaux Technologiques}{6}{subsubsection.1.1.3.1}
+\contentsline {subsubsection}{\numberline {1.1.3.2}R\IeC {\'e}seaux Biologiques}{7}{subsubsection.1.1.3.2}
+\contentsline {subsubsection}{\numberline {1.1.3.3}R\IeC {\'e}seaux Sociaux}{8}{subsubsection.1.1.3.3}
+\contentsline {subsubsection}{\numberline {1.1.3.4}R\IeC {\'e}seaux d'informations}{9}{subsubsection.1.1.3.4}
+\contentsline {section}{\numberline {1.2}Les r\IeC {\'e}seaux complexes, la physique moderne et l'unification}{9}{section.1.2}
+\contentsline {section}{\numberline {1.3}La th\IeC {\'e}orie des graphes}{11}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Bref historique}{12}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}L\IeC {\textquoteright }exp\IeC {\'e}rience de Milgram}{12}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Repr\IeC {\'e}sentation d'un graphe}{13}{subsection.1.3.3}
+\contentsline {subsubsection}{\numberline {1.3.3.1}La matrice d\IeC {\textquoteright }adjacence}{13}{subsubsection.1.3.3.1}
+\contentsline {subsubsection}{\numberline {1.3.3.2}La liste d\IeC {\textquoteright }adjacence}{14}{subsubsection.1.3.3.2}
+\contentsline {section}{\numberline {1.4}Caract\IeC {\'e}ristiques des r\IeC {\'e}seaux complexes}{15}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Plus court chemin}{15}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Coefficient de regroupement (Clustering)}{16}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Distribution des degr\IeC {\'e}s}{17}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Degr\IeC {\'e} de corr\IeC {\'e}lation}{18}{subsection.1.4.4}
+\contentsline {subsection}{\numberline {1.4.5}Mesures de la centralit\IeC {\'e}}{19}{subsection.1.4.5}
+\contentsline {section}{\numberline {1.5}Propri\IeC {\'e}t\IeC {\'e}s des r\IeC {\'e}seaux r\IeC {\'e}els}{20}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}La propri\IeC {\'e}t\IeC {\'e} petit-monde}{20}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}La distribution des degr\IeC {\'e}s sans \IeC {\'e}chelle}{21}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Structure communautaire}{22}{subsection.1.5.3}
+\contentsline {section}{\numberline {1.6}Les mod\IeC {\`e}les th\IeC {\'e}oriques les plus connus}{23}{section.1.6}
+\contentsline {subsubsection}{\numberline {1.6.0.1}R\IeC {\'e}seaux simples}{24}{subsubsection.1.6.0.1}
+\contentsline {subsubsection}{\numberline {1.6.0.2}R\IeC {\'e}seaux al\IeC {\'e}atoires}{24}{subsubsection.1.6.0.2}
+\contentsline {subsubsection}{\numberline {1.6.0.3}R\IeC {\'e}seaux petit-monde}{24}{subsubsection.1.6.0.3}
+\contentsline {subsubsection}{\numberline {1.6.0.4}R\IeC {\'e}seaux sans \IeC {\'e}chelle}{25}{subsubsection.1.6.0.4}
+\contentsline {section}{\numberline {1.7}Recours \IeC {\`a} la physique statistique}{25}{section.1.7}
+\contentsline {chapter}{\numberline {2}Mod\IeC {\`e}le de l'attachement pr\IeC {\'e}f\IeC {\'e}rentiel en faveur des ``pauvres''}{27}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{27}{section.2.1}
+\contentsline {section}{\numberline {2.2}Les processus dynamiques: th\IeC {\'e}orie et simulation}{29}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Introduction}{29}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}\IeC {\'E}quation ma\IeC {\^\i }tresse}{30}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Mod\IeC {\'e}lisation et simulations num\IeC {\'e}riques}{31}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}L'\IeC {\'e}volution dynamique et l'attachement pr\IeC {\'e}f\IeC {\'e}rentiel dans les r\IeC {\'e}seaux r\IeC {\'e}els}{32}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}L'\IeC {\'e}volution dynamique}{32}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Le mod\IeC {\`e}le sans \IeC {\'e}chelle BA}{33}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}L'attachement pr\IeC {\'e}f\IeC {\'e}rentielle et le m\IeC {\'e}canisme "rich get richer"}{36}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Attachement pr\IeC {\'e}f\IeC {\'e}rentiel sans l'effet "rich get richer"}{37}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Le mod\IeC {\`e}le}{37}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Distribution des degr\IeC {\'e}s en utilisant l'\IeC {\'e}quation ma\IeC {\^\i }tresse}{38}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Comparaison au niveau microscopique avec le mod\IeC {\`e}le de BA}{39}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}conclusion}{44}{section.2.5}
+\contentsline {chapter}{\numberline {3}Structure des r\IeC {\'e}seaux sans \IeC {\'e}chelle non corr\IeC {\'e}l\IeC {\'e}s: couches et plus court chemin}{45}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{45}{section.3.1}
+\contentsline {section}{\numberline {3.2}Caract\IeC {\'e}risation des r\IeC {\'e}seaux sans \IeC {\'e}chelle}{46}{section.3.2}
+\contentsline {section}{\numberline {3.3}Quelques notions math\IeC {\'e}matiques de la loi de puissance}{47}{section.3.3}
+\contentsline {section}{\numberline {3.4}Les r\IeC {\'e}seaux sans \IeC {\'e}chelle non corr\IeC {\'e}l\IeC {\'e}s}{49}{section.3.4}
+\contentsline {section}{\numberline {3.5}Structure des couches dans les r\IeC {\'e}seaux sans \IeC {\'e}chelle non corr\IeC {\'e}l\IeC {\'e}s}{50}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Quelques contributions importantes}{50}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Nouvelle approche}{53}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Plus court chemin}{59}{section.3.6}
+\contentsline {section}{\numberline {3.7}conclusion}{62}{section.3.7}
+\contentsline {chapter}{\numberline {4}\IeC {\'E}mergence de la propri\IeC {\'e}t\IeC {\'e} petit-monde dans le mod\IeC {\`e}le de Newman-Watts}{63}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{63}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Mod\IeC {\`e}le de Watts-Strogatz}{64}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Mod\IeC {\`e}le de Newman-Watts}{66}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Structure du r\IeC {\'e}seau de NW: couches de voisins et plus court chemin }{68}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Couches de voisins}{68}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Plus court chemin}{78}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}\IeC {\'E}mergence de la propri\IeC {\'e}t\IeC {\'e} petit-monde dans le mod\IeC {\`e}le de NW}{81}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Validit\IeC {\'e} de la fonction universelle de NW}{81}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Une nouvelle fonction universelle }{82}{section.4.4}
+\contentsline {section}{\numberline {4.5}Conclusion}{84}{section.4.5}
+\contentsline {chapter}{\numberline {5}Percolation dans les r\IeC {\'e}seaux complexes}{86}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{86}{section.5.1}
+\contentsline {section}{\numberline {5.2}Percolation}{87}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Percolation dans le r\IeC {\'e}seau al\IeC {\'e}atoire d'Erd\H {o}s-R\IeC {\'e}nyi}{89}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Percolation explosive}{91}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Percolation explosive dans d'autres mod\IeC {\`e}les}{93}{subsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.3.1}Le mod\IeC {\`e}le de probabilit\IeC {\'e}}{93}{subsubsection.5.2.3.1}
+\contentsline {subsubsection}{\numberline {5.2.3.2}Les mod\IeC {\`e}les Hybrides}{94}{subsubsection.5.2.3.2}
+\contentsline {subsubsection}{\numberline {5.2.3.3}Les mod\IeC {\`e}les bootstrap}{94}{subsubsection.5.2.3.3}
+\contentsline {section}{\numberline {5.3}Nouvelle approche pour pr\IeC {\'e}dir le type de la transition dans les syst\IeC {\`e}mes percolatifs}{94}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}\'{E}tat de l'art}{94}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Nouvelle approche}{95}{subsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Composante g\IeC {\'e}ante:}{96}{subsubsection.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.2}D\IeC {\'e}termination du point de la transition:}{99}{subsubsection.5.3.2.2}
+\contentsline {subsubsection}{\numberline {5.3.2.3}D\IeC {\'e}termination du type de la transition de phase:}{99}{subsubsection.5.3.2.3}
+\contentsline {section}{\numberline {5.4}Conclusion}{103}{section.5.4}
+\contentsline {chapter}{Conclusion}{105}{chapter*.58}
+\contentsline {chapter}{Bibliographie}{107}{chapter*.59}

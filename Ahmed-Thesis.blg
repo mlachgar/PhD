@@ -1,0 +1,89 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Ahmed-Thesis.aux
+A level-1 auxiliary file: files/intro.aux
+A level-1 auxiliary file: files/chap1.aux
+A level-1 auxiliary file: files/chap2.aux
+A level-1 auxiliary file: files/chap3.aux
+A level-1 auxiliary file: files/chap4.aux
+A level-1 auxiliary file: files/chap5.aux
+A level-1 auxiliary file: files/conclu.aux
+The style file: unsrt.bst
+Database file #1: JabRef.bib
+Repeated entry---line 1110 of file JabRef.bib
+ : @article{Krapivsky-al2000
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2065 of file JabRef.bib
+ : @book{Chowdhury-Stauffer2000
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Price"
+Warning--I didn't find a database entry for "Chen-al2018"
+Warning--I didn't find a database entry for "Melnik-Gleeson"
+Warning--I didn't find a database entry for "Ehrenfest1933"
+Warning--I didn't find a database entry for "Broadbent-Hammersley1957"
+Warning--I didn't find a database entry for "Stauffer1982"
+Warning--empty title in TM1969
+Warning--empty publisher in Seb-al2022
+Warning--empty publisher in WD2000
+Warning--empty title in BP2002
+Warning--empty year in NeI1994
+Warning--empty year in Estoup1916
+Warning--empty journal in Dou-al2007
+Warning--empty publisher in Pareto1897
+Warning--empty title in Samalam
+Warning--empty year in Samalam
+Warning--empty publisher in Barrat-a2008l
+Warning--empty publisher in Cohen-Havlinl2010
+Warning--empty publisher in Cohen-Havlinl2010-72
+Warning--empty title in Nitzan2016
+Warning--empty title in Katzav-al2015
+Warning--empty title in Katzav-al2018
+Warning--empty year in Cohen-Havlin2009
+Warning--empty title in Akbarzadeh-Estrada2018
+Warning--empty journal in Barrat
+Warning--empty year in Barrat
+Warning--empty title in Argollo-al2000
+You've used 190 entries,
+            1791 wiz_defined-function locations,
+            1633 strings with 27819 characters,
+and the built_in function-call counts, 39620 in all, are:
+= -- 3386
+> -- 1650
+< -- 3
++ -- 633
+- -- 443
+* -- 2553
+:= -- 6496
+add.period$ -- 561
+call.type$ -- 190
+change.case$ -- 139
+chr.to.int$ -- 0
+cite$ -- 211
+duplicate$ -- 1788
+empty$ -- 4085
+format.name$ -- 443
+if$ -- 8791
+int.to.chr$ -- 0
+int.to.str$ -- 190
+missing$ -- 233
+newline$ -- 944
+num.names$ -- 190
+pop$ -- 463
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 650
+stack$ -- 0
+substring$ -- 2760
+swap$ -- 231
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 21
+while$ -- 330
+width$ -- 193
+write$ -- 2039
+(There were 2 error messages)

@@ -1,0 +1,75 @@
+\BOOKMARK [0][-]{chapter*.2}{R\351sum\351}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Table des mati\350res}{}% 2
+\BOOKMARK [0][-]{chapter*.4}{Liste des tableaux}{}% 3
+\BOOKMARK [0][-]{chapter*.5}{Table des figures}{}% 4
+\BOOKMARK [0][-]{chapter*.6}{Introduction}{}% 5
+\BOOKMARK [0][-]{chapter.1}{Notions et pr\351liminaire}{}% 6
+\BOOKMARK [1][-]{section.1.1}{Les r\351seaux complexes}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.1.1}{Introduction}{section.1.1}% 8
+\BOOKMARK [2][-]{subsection.1.1.2}{D\351finition}{section.1.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.3}{Diff\351rents types des R\351seaux complexes}{section.1.1}% 10
+\BOOKMARK [1][-]{section.1.2}{Les r\351seaux complexes, la physique moderne et l'unification}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.3}{La th\351orie des graphes}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.3.1}{Bref historique}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.2}{L\220exp\351rience de Milgram}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.3}{Repr\351sentation d'un graphe}{section.1.3}% 15
+\BOOKMARK [1][-]{section.1.4}{Caract\351ristiques des r\351seaux complexes}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.4.1}{Plus court chemin}{section.1.4}% 17
+\BOOKMARK [2][-]{subsection.1.4.2}{Coefficient de regroupement \(Clustering\)}{section.1.4}% 18
+\BOOKMARK [2][-]{subsection.1.4.3}{Distribution des degr\351s}{section.1.4}% 19
+\BOOKMARK [2][-]{subsection.1.4.4}{Degr\351 de corr\351lation}{section.1.4}% 20
+\BOOKMARK [2][-]{subsection.1.4.5}{Mesures de la centralit\351}{section.1.4}% 21
+\BOOKMARK [1][-]{section.1.5}{Propri\351t\351s des r\351seaux r\351els}{chapter.1}% 22
+\BOOKMARK [2][-]{subsection.1.5.1}{La propri\351t\351 petit-monde}{section.1.5}% 23
+\BOOKMARK [2][-]{subsection.1.5.2}{La distribution des degr\351s sans \351chelle}{section.1.5}% 24
+\BOOKMARK [2][-]{subsection.1.5.3}{Structure communautaire}{section.1.5}% 25
+\BOOKMARK [1][-]{section.1.6}{Les mod\350les th\351oriques les plus connus}{chapter.1}% 26
+\BOOKMARK [1][-]{section.1.7}{Recours \340 la physique statistique}{chapter.1}% 27
+\BOOKMARK [0][-]{chapter.2}{Mod\350le de l'attachement pr\351f\351rentiel en faveur des ``pauvres''}{}% 28
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.2}{Les processus dynamiques: th\351orie et simulation}{chapter.2}% 30
+\BOOKMARK [2][-]{subsection.2.2.1}{Introduction}{section.2.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.2}{\311quation ma\356tresse}{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.3}{Mod\351lisation et simulations num\351riques}{section.2.2}% 33
+\BOOKMARK [1][-]{section.2.3}{L'\351volution dynamique et l'attachement pr\351f\351rentiel dans les r\351seaux r\351els}{chapter.2}% 34
+\BOOKMARK [2][-]{subsection.2.3.1}{L'\351volution dynamique}{section.2.3}% 35
+\BOOKMARK [2][-]{subsection.2.3.2}{Le mod\350le sans \351chelle BA}{section.2.3}% 36
+\BOOKMARK [2][-]{subsection.2.3.3}{L'attachement pr\351f\351rentielle et le m\351canisme "rich get richer"}{section.2.3}% 37
+\BOOKMARK [1][-]{section.2.4}{Attachement pr\351f\351rentiel sans l'effet "rich get richer"}{chapter.2}% 38
+\BOOKMARK [2][-]{subsection.2.4.1}{Le mod\350le}{section.2.4}% 39
+\BOOKMARK [2][-]{subsection.2.4.2}{Distribution des degr\351s en utilisant l'\351quation ma\356tresse}{section.2.4}% 40
+\BOOKMARK [2][-]{subsection.2.4.3}{Comparaison au niveau microscopique avec le mod\350le de BA}{section.2.4}% 41
+\BOOKMARK [1][-]{section.2.5}{conclusion}{chapter.2}% 42
+\BOOKMARK [0][-]{chapter.3}{Structure des r\351seaux sans \351chelle non corr\351l\351s: couches et plus court chemin}{}% 43
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 44
+\BOOKMARK [1][-]{section.3.2}{Caract\351risation des r\351seaux sans \351chelle}{chapter.3}% 45
+\BOOKMARK [1][-]{section.3.3}{Quelques notions math\351matiques de la loi de puissance}{chapter.3}% 46
+\BOOKMARK [1][-]{section.3.4}{Les r\351seaux sans \351chelle non corr\351l\351s}{chapter.3}% 47
+\BOOKMARK [1][-]{section.3.5}{Structure des couches dans les r\351seaux sans \351chelle non corr\351l\351s}{chapter.3}% 48
+\BOOKMARK [2][-]{subsection.3.5.1}{Quelques contributions importantes}{section.3.5}% 49
+\BOOKMARK [2][-]{subsection.3.5.2}{Nouvelle approche}{section.3.5}% 50
+\BOOKMARK [1][-]{section.3.6}{Plus court chemin}{chapter.3}% 51
+\BOOKMARK [1][-]{section.3.7}{conclusion}{chapter.3}% 52
+\BOOKMARK [0][-]{chapter.4}{\311mergence de la propri\351t\351 petit-monde dans le mod\350le de Newman-Watts}{}% 53
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 54
+\BOOKMARK [2][-]{subsection.4.1.1}{Mod\350le de Watts-Strogatz}{section.4.1}% 55
+\BOOKMARK [2][-]{subsection.4.1.2}{Mod\350le de Newman-Watts}{section.4.1}% 56
+\BOOKMARK [1][-]{section.4.2}{Structure du r\351seau de NW: couches de voisins et plus court chemin }{chapter.4}% 57
+\BOOKMARK [2][-]{subsection.4.2.1}{Couches de voisins}{section.4.2}% 58
+\BOOKMARK [2][-]{subsection.4.2.2}{Plus court chemin}{section.4.2}% 59
+\BOOKMARK [1][-]{section.4.3}{\311mergence de la propri\351t\351 petit-monde dans le mod\350le de NW}{chapter.4}% 60
+\BOOKMARK [2][-]{subsection.4.3.1}{Validit\351 de la fonction universelle de NW}{section.4.3}% 61
+\BOOKMARK [1][-]{section.4.4}{Une nouvelle fonction universelle }{chapter.4}% 62
+\BOOKMARK [1][-]{section.4.5}{Conclusion}{chapter.4}% 63
+\BOOKMARK [0][-]{chapter.5}{Percolation dans les r\351seaux complexes}{}% 64
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 65
+\BOOKMARK [1][-]{section.5.2}{Percolation}{chapter.5}% 66
+\BOOKMARK [2][-]{subsection.5.2.1}{Percolation dans le r\351seau al\351atoire d'Erdos-R\351nyi}{section.5.2}% 67
+\BOOKMARK [2][-]{subsection.5.2.2}{Percolation explosive}{section.5.2}% 68
+\BOOKMARK [2][-]{subsection.5.2.3}{Percolation explosive dans d'autres mod\350les}{section.5.2}% 69
+\BOOKMARK [1][-]{section.5.3}{Nouvelle approche pour pr\351dir le type de la transition dans les syst\350mes percolatifs}{chapter.5}% 70
+\BOOKMARK [2][-]{subsection.5.3.1}{\311tat de l'art}{section.5.3}% 71
+\BOOKMARK [2][-]{subsection.5.3.2}{Nouvelle approche}{section.5.3}% 72
+\BOOKMARK [1][-]{section.5.4}{Conclusion}{chapter.5}% 73
+\BOOKMARK [0][-]{chapter*.58}{Conclusion}{}% 74
+\BOOKMARK [0][-]{chapter*.59}{Bibliographie}{}% 75
